@@ -2,7 +2,7 @@
 title: Neuerungen? Versionshinweise - Automatisierter Forms-Konvertierungsdienst
 description: 'Erfahren Sie mehr über die neuesten Funktionen und den Fehler, der für den automatisierten Forms-Konvertierungsdienst behoben wurde '
 translation-type: tm+mt
-source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
+source-git-commit: ec3a85ccd4c5d535ebc31c55702adab9aa92cf4e
 
 ---
 
@@ -24,7 +24,7 @@ Der automatisierte Forms-Konvertierungsdienst wird laufend verbessert. Um sich �
 
 **Automatische Erkennung von logischen Abschnitten in einem Formular**
 
-Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Mit der **[!UICONTROL Auto-detect logical sections]** Option können Sie jetzt Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) ablegen und nur logische Bedienfelder erstellen.  Außerdem werden die Felder, die nicht zu einem Abschnitt gehören, mit vorheriger logischer Sektion verschlüsselt. Außerdem werden Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten verteilen, in einen einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
+Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Mit der **[!UICONTROL Auto-detect logical sections]** Option können Sie jetzt Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) ablegen und nur logische Bedienfelder erstellen.  Außerdem werden die Felder, die keinem Abschnitt zugeordnet sind, mit dem vorherigen logischen Abschnitt und die Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten verteilen, in einem einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
 
 ### Verbesserte Funktionen
 
