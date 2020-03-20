@@ -2,7 +2,7 @@
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
 translation-type: tm+mt
-source-git-commit: c552f4073ac88ca9016a746116a27a5898df7f7d
+source-git-commit: 5f27fcbf756350a03b7143af489f737e01a7f0e3
 
 ---
 
@@ -43,6 +43,7 @@ Bereiten Sie vor der Verwendung des Dienstes Ihre AEM-Autoreninstanz für die Ve
 1. [Herunterladen und Installieren von AEM 6.4 oder AEM 6.5](#aemquickstart)
 1. [Herunterladen und Installieren des neuesten AEM Service Packs](#servicepack)
 1. [Herunterladen und Installieren des neuesten Add-On-Pakets für AEM Forms](#downloadaemformsaddon)
+1. [Laden Sie das neueste Connector-Paket herunter und installieren Sie es](#installConnectorPackage)
 1. [Erstellen benutzerdefinierter Designs und Vorlagen](#referencepackage)
 
 ### Herunterladen und Installieren von AEM 6.4 oder AEM 6.5 {#aemquickstart}
@@ -65,8 +66,20 @@ Laden Sie das aktuelle AEM Service Pack herunter und installieren Sie es. For de
 Eine AEM-Instanz enthält grundlegende Formularfunktionen. Der Konvertierungsdienst erfordert sämtliche Funktionen von AEM Forms. Laden Sie das AEM Forms-Add-On-Paket herunter und installieren Sie es, um alle Funktionen von AEM Forms nutzen zu können. Das Paket ist erforderlich, um den Konvertierungsdienst einzurichten und auszuführen. Detaillierte Anweisungen finden Sie unter [Installieren und Konfigurieren von Datenerfassungsfunktionen](https://helpx.adobe.com/experience-manager/6-5/forms/using/installing-configuring-aem-forms-osgi.html).
 
 >[!NOTE]
-> Wenn Sie bereits Benutzer des Dienstes für die automatische Formularkonvertierung sind, installieren Sie das neueste AEM Forms-Add-on, um den Dienst weiterhin nutzen zu können. Das Connector-Paket wird mit dem AEM Forms Add-On-Paket zusammengeführt. Das zusätzliche Connector-Paket ist nicht mehr erforderlich.
 > Stellen Sie sicher, dass Sie nach der Installation des Add-On-Pakets die obligatorischen Konfigurationen nach der Installation durchführen.
+
+
+### Connector-Paket herunterladen und installieren {#installConnectorPackage}
+
+Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von AEM Package Share herunterladen.
+
+| Betriebssystem | Link zum Herunterladen des Connector-Pakets |
+| ------------- | ------------- |
+| Microsoft Windows | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+| Linux | https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN |
+
+>[!NOTE]
+> Wenn Sie bereits über eine Umgebung des automatisierten Forms-Konvertierungsdiensts verfügen, installieren Sie zur Verwendung der neuesten Funktionen des Konvertierungsdiensts das neueste Service Pack, das neueste Add-On-Paket für AEM Forms und das neueste Connector-Paket in der oben genannten Reihenfolge.
 
 
 ### Erstellen benutzerdefinierter Designs und Vorlagen{#referencepackage}
