@@ -2,7 +2,7 @@
 title: Neuerungen? Versionshinweise - Automatisierter Forms-Konvertierungsdienst
 description: 'Erfahren Sie mehr über die neuesten Funktionen und den Fehler, der für den automatisierten Forms-Konvertierungsdienst behoben wurde '
 translation-type: tm+mt
-source-git-commit: 01dfd20951314017d47713bfb1a2a5f2d563f434
+source-git-commit: 6d658dbb181c09e42073e328e0232e40d4fb6b58
 
 ---
 
@@ -18,15 +18,13 @@ Der automatisierte Forms-Konvertierungsdienst wird laufend verbessert. Um sich �
 * Besondere Hinweise
 * Künftige Änderungspläne
 
-Diese Seite wird monatlich aktualisiert. Besuchen Sie sie daher regelmäßig erneut.
-
 ## 20. März 2020 (AFC-2020.03.1)
 
 ### Neuerungen
 
 **Automatische Erkennung von logischen Abschnitten in einem Formular**
 
-Standardmäßig erstellt der Dienst für jede Seite eines PDF-Eingabedatums einen eigenen Bereich auf der obersten Ebene. Jetzt können Sie die **[!UICONTROL Auto-detect logical sections]** Option auswählen, um die Vorstellung zu entfernen, dass für jede PDF-Seite ein separates Bedienfeld auf der obersten Ebene erstellt und logische Abschnitte automatisch erkannt werden. Die Service Clubs verknüpften Felder eines Formulars mit einem logischen Abschnitt. Beispielsweise werden alle mit der Rechnungsadresse zusammenhängenden Felder in einen Abschnitt unterteilt und alle mit der Lieferadresse zusammenhängenden Felder in einen anderen Abschnitt unterteilt. Der Dienst erstellt für jeden automatisch erkannten logischen Abschnitt auch einen eigenen Bereich auf der obersten Ebene.
+Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Mit der **[!UICONTROL Auto-detect logical sections]** Option können Sie jetzt Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) ablegen und nur logische Bedienfelder erstellen.  Außerdem werden die Felder, die nicht zu einem Abschnitt gehören, mit vorheriger logischer Sektion verschlüsselt. Außerdem werden Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten verteilen, in einen einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
 
 ### Verbesserte Funktionen
 
