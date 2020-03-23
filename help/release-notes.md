@@ -2,7 +2,7 @@
 title: Neuerungen? Versionshinweise - Automatisierter Forms-Konvertierungsdienst
 description: 'Erfahren Sie mehr über die neuesten Funktionen und den Fehler, der für den automatisierten Forms-Konvertierungsdienst behoben wurde '
 translation-type: tm+mt
-source-git-commit: ec3a85ccd4c5d535ebc31c55702adab9aa92cf4e
+source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
 
 ---
 
@@ -36,6 +36,6 @@ Der Dienst ist jetzt beim Erkennen von Listen mit Aufzählungszeichen und Nummer
 
 **Automatisches Forms Conversion Service Connector-Paket installieren**
 
-Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/servicepack/fd/AEM-Forms-6.5.4.0-WIN)herunterladen.
+Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)herunterladen.
 
 Wenn Sie bereits über eine Umgebung des automatisierten Forms-Konvertierungsdiensts verfügen, installieren Sie zur Verwendung der neuesten Funktionen des Konvertierungsdiensts das neueste Service Pack, das neueste Add-On-Paket für AEM Forms und das neueste Connector-Paket in der angegebenen Reihenfolge. For detailed instructions, see the [Configure the Automated Forms Conversion service](configure-service.md) article.
