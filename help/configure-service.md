@@ -2,7 +2,7 @@
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
 translation-type: tm+mt
-source-git-commit: e01334d9a22ab95749e9b9b459da8886ae1ccd78
+source-git-commit: 68824c2f398d00141d67996121f7b758af16d2e4
 
 ---
 
@@ -43,7 +43,7 @@ Bereiten Sie vor der Verwendung des Dienstes Ihre AEM-Autoreninstanz für die Ve
 1. [Herunterladen und Installieren von AEM 6.4 oder AEM 6.5](#aemquickstart)
 1. [Herunterladen und Installieren des neuesten AEM Service Packs](#servicepack)
 1. [Herunterladen und Installieren des neuesten Add-On-Pakets für AEM Forms](#downloadaemformsaddon)
-1. [Laden Sie das neueste Connector-Paket herunter und installieren Sie es](#installConnectorPackage)
+1. (Optional) [Laden Sie das neueste Connector-Paket herunter und installieren Sie es](#installConnectorPackage)
 1. [Erstellen benutzerdefinierter Designs und Vorlagen](#referencepackage)
 
 ### Herunterladen und Installieren von AEM 6.4 oder AEM 6.5 {#aemquickstart}
@@ -69,9 +69,9 @@ Eine AEM-Instanz enthält grundlegende Formularfunktionen. Der Konvertierungsdie
 > Stellen Sie sicher, dass Sie nach der Installation des Add-On-Pakets die obligatorischen Konfigurationen nach der Installation durchführen.
 
 
-### Connector-Paket herunterladen und installieren {#installConnectorPackage}
+### (Optional) Connector-Paket herunterladen und installieren {#installConnectorPackage}
 
-Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von AEM Package Share [herunterladen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Installieren Sie das Connector-Paket 1.1.38 oder höher, um die Funktionen und Verbesserungen der [automatischen Erkennung logischer Abschnitte](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von AEM Package Share [herunterladen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 >[!NOTE]
 > Wenn Sie bereits über eine Umgebung des automatisierten Forms-Konvertierungsdiensts verfügen, installieren Sie zur Verwendung der neuesten Funktionen des Konvertierungsdiensts das neueste Service Pack, das neueste Add-On-Paket für AEM Forms und das neueste Connector-Paket in der angegebenen Reihenfolge.
