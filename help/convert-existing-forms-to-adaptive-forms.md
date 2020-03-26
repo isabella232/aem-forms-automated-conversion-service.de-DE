@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: bcd55fa59f37b71b95b7cbfd80fcda368eaba408
+source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
@@ -21,7 +21,7 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * [**Konvertierungsdienst konfigurieren **](configure-service.md)
 
-* **Bereiten Sie die[Vorlagen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatische Formularkonvertierung keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet.
+* **Bereiten Sie die[Vorlagen](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatische Formularkonvertierung keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. Die in der Vorlage angegebenen Kopf- und Fußzeilen werden während der Konvertierung auf das adaptive Formular angewendet.
 
 * **Bereiten Sie die[Designs](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mit einem Design können Sie einen einheitlichen Stil auf alle adaptiven Formulare Ihrer Organisation anwenden.
 
@@ -38,11 +38,11 @@ Nachdem Sie Ihre AEM-Instanz mit dem Dienst für die automatische Formularkonver
 Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
 * Ein Ordner muss weniger als 15 Formulare und weniger als 50 Seiten enthalten.
-* Die Größe des Ordners muss kleiner als 10 MB sein. Speichern Sie Formulare nicht in einem Unterordner.
+* Die Größe des Ordners muss kleiner als 10 MB sein. Speichern Sie keine Formulare in einem Unterordner.
 * Ein Formular muss weniger als 15 Seiten umfassen.
 * Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
-* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)hoch. Der Dienst konvertiert keine PDF-Portfolios in adaptive Formulare.
+* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)hoch. Der Dienst konvertiert kein PDF-Portfolio in ein adaptives Formular.
 * Lesen Sie die Abschnitte [Bekannte Probleme](known-issues.md) und [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) und nehmen Sie die vorgeschlagenen Änderungen an den Formularen vor.
 
 Führen Sie die folgenden Schritte aus, um die zu konvertierenden Formulare in einen in Ihrer AEM Forms-Instanz hochzuladen:
@@ -67,8 +67,8 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
 
    * **[!UICONTROL Select a cloud configuration]**. Wenn Sie eine Konfiguration auswählen, sind Standardvorlage und -design bereits angegeben. Bei Bedarf können Sie eine andere Vorlage oder ein anderes Design angeben.
    * Geben Sie einen Speicherort an, an dem generierte adaptive Formulare und das entsprechende Design gespeichert werden sollen. Sie können Standardpfade verwenden oder benutzerdefinierte Pfade angeben.
-   * Verwenden Sie die Option **Adaptive(s) Formular(e) ohne Datenbindungen generieren**, um auszuwählen, ob Sie ein adaptives Formular mit oder ohne Datenmodellbindung(en) generieren möchten.
-Wenn Sie diese Option nicht auswählen, ordnet der Konvertierungsdienst das/die adaptive(n) Formular(e) automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Das **[!UICONTROL Save generated data model schema at]** Feld zeigt den Standardspeicherort zum Speichern des generierten JSON-Schemas an. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
+   * Use the **Generate adaptive forms without data model bindings** option to select if you want to generate an adaptive form with or without data model bindings.
+Wenn Sie diese Option nicht auswählen, verknüpft der Konvertierungsdienst die adaptiven Formulare automatisch mit einem JSON-Schema und erstellt eine Datenbindung zwischen den im adaptiven Formular verfügbaren Feldern und dem JSON-Schema. Das **[!UICONTROL Save generated data model schema at]** Feld zeigt den Standardspeicherort zum Speichern des generierten JSON-Schemas an. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
 Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach einer erfolgreichen Konvertierung können Sie ein adaptives Formular einem Formulardatenmodell, einem XML-Schema oder einem JSON-Schema zuordnen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html).
    <!--
    Comment Type: draft
@@ -91,7 +91,7 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
 
 
    * Wählen Sie die **[!UICONTROL Auto-detect multi-column layout of input forms]** Option, um das Layout des Quellformulars für große Bildschirme wie Desktop- und Laptop-Computer beizubehalten. Diese Option ist hilfreich, um das mehrspaltige Layout von Quellformularen beizubehalten. Wenn eine Quell-PDF-Datei beispielsweise ein zweispaltiges Layout aufweist, generiert der Dienst ein adaptives Ausgabeformular mit einem zweispaltigen Layout für große Bildschirme und einem einspaltigen Layout für Geräte mit kleinem Bildschirm wie Mobiltelefone. Die Funktion weist einige bekannte Probleme mit der Struktur des Datenquellenschemas auf. Weitere Informationen finden Sie im Artikel [Bekannte Probleme](known-issues.md).
-   * Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Mit der **[!UICONTROL Auto-detect logical sections]** Option können Sie jetzt Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) ablegen und nur logische Bedienfelder erstellen. Außerdem werden die Felder, die keinem Abschnitt zugeordnet sind, mit dem vorherigen logischen Abschnitt und die Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten verteilen, in einem einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
+   * Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Jetzt können Sie die **[!UICONTROL Auto-detect logical sections]** Option verwenden, um keine Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) zu erstellen und nur logische Bedienfelder zu erstellen. Außerdem werden die Felder, die nicht zu einem Abschnitt mit vorhergehender logischer Ausrichtung gehören, und die Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten erstrecken, in einen einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
 
       >[!NOTE]
       > Sie benötigen das Connector-Paket 1.1.38 oder höher, um die **[!UICONTROL Auto-detect logical sections]** Funktion verwenden zu können.
@@ -129,7 +129,7 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
 
    >[!NOTE]
    >
-   >Wenn der Konvertierungsprozess länger als 60 Minuten dauert und das PDF-Formular noch nicht in ein adaptives Formular konvertiert ist, erstellen Sie einen neuen Ordner in der AEM Forms-Instanz, laden Sie das PDF-Formular in den neu erstellten Ordner hoch und starten Sie die Konvertierung neu.
+   >Wenn der Konvertierungsprozess länger als 60 Minuten dauert und das PDF-Formular noch nicht in ein adaptives Formular konvertiert wird, erstellen Sie einen Ordner in der AEM Forms-Instanz, laden Sie das PDF-Formular in den neu erstellten Ordner hoch und starten Sie die Konvertierung neu.
 
 ## Überprüfen und korrigieren Sie die konvertierten Formulare{#review-and-correct-the-converted-forms}
 
