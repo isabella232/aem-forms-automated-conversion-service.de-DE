@@ -1,78 +1,78 @@
 ---
-title: 'Bewährte Verfahren und Überlegungen '
-seo-title: 'Bewährte Verfahren und Überlegungen '
-description: Bewährte Verfahren und Überlegungen zum Dienst für die automatisierte Formularkonvertierung
-seo-description: Liste von Stilen und Mustern in PDF-Quellformularen, die vom Dienst für die automatisierte Formularkonvertierung schwer zu identifizieren ist
+title: 'Best Practices und Hinweise '
+seo-title: 'Best Practices und Hinweise '
+description: Best Practices und Hinweise zum Dienst für die automatisierte Formularkonvertierung
+seo-description: Liste der Stile und Muster in PDF-Quellformularen, die der Dienst für die automatische Formularkonvertierung nur schwer erkennen kann
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 0f413a8bc0bb444b6faaddaf32f84f36e38438a5
+source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
 
 ---
 
 
-# Bewährte Verfahren und bekannte komplexe Muster {#Best-practices-and-considerations2}
+# Best Practices und bekannte komplexe Muster {#Best-practices-and-considerations2}
 
-Dieses Dokument enthält Richtlinien und Empfehlungen, von denen Forms-Administratoren, -Autoren und -Entwickler profitieren können, wenn sie mit dem Automatisierten Forms-Konvertierungsdienst arbeiten. Es beschreibt bewährte Verfahren, angefangen bei der Vorbereitung von Quellformularen bis zur Behebung komplexer Muster, die zusätzliche Anstrengungen zur automatischen Konvertierung erfordern. Diese Best Practices tragen zusammen zur Gesamtleistung und Ausgabe des automatisierten Formularkonvertierungsdiensts bei.
+Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administratoren, Verfasser und Entwickler profitieren können, wenn sie mit dem Dienst zur automatischen Formularkonvertierung und insbesondere mit adaptiven Formularkomponenten arbeiten. Es werden bewährte Methoden erläutert, die von der Vorbereitung der Quellformulare bis zur Korrektur komplexer Muster reichen und für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese bewährten Methoden tragen zusammen zur Gesamtleistung und Ausgabe des Dienstes zur automatischen Formularkonvertierung bei.
 
 ## Best Practices
 
-Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können bei Bedarf alle PDF-Formulare gleichzeitig oder in einem bestimmten Zeitabschnitt hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
+Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
-* Halten Sie die Anzahl der Formulare in einem Ordner unter 15 und behalten Sie die Gesamtanzahl der Seiten in einem Ordner unter 50.
-* Halten Sie die Größe des Ordners unter 10 MB. Speichern Sie keine Formulare in einem Unterordner.
-* Halten Sie die Anzahl der Seiten in einem Formular unter 15.
-* Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und geschützten Formulare.
-* Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)nicht hoch. Der Dienst konvertiert kein PDF-Portfolio in adaptive Formulare.
-* Laden Sie keine gescannten, farbigen, nicht englischsprachigen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
-* Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie den Leerraum aus dem Namen der Datei, bevor Sie die Formulare hochladen.
-* Verwenden Sie Vorlagen für adaptive Formulare, um Kopf- und Fußzeile für das adaptive Formular für die Ausgabe anzugeben. Der Dienst ignoriert die Kopf- und Fußzeile von PDF-Quelldokumenten und verwendet die in der Vorlage für adaptive Formulare angegebene Kopfzeile.
+* Ein Ordner muss weniger als 15 Formulare und weniger als 50 Seiten enthalten.
+* Die Größe des Ordners muss kleiner als 10 MB sein. Speichern Sie Formulare nicht in einem Unterordner.
+* Ein Formular muss weniger als 15 Seiten umfassen.
+* Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
+* Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert keine PDF-Portfolios in adaptive Formulare.
+* Laden Sie keine Formulare hoch, die gescannt wurden, farbig sind, nicht auf Englisch oder ausgefüllt sind. Solche Formulare werden nicht unterstützt.
+* Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
+* Verwenden Sie Vorlagen für adaptive Formulare, um Kopf- und Fußzeile für das adaptive Formular für die Ausgabe anzugeben. Der Dienst ignoriert die Kopf- und Fußzeile von PDF-Quelldokumenten und verwendet die in der adaptiven Formularvorlage angegebene Kopfzeile.
 
 ## Komplexe Muster kennen
 
-Der AEM Forms Automated Conversion-Dienst verwendet Algorithmen für künstliche Intelligenz und maschinelles Lernen, um das Layout und die Felder des Quellformulars zu verstehen. Jeder maschinelle Lerndienst lernt ständig aus den Quelldaten und erzeugt mit jeder Kehrtwende eine verbesserte Ausgabe. Diese Dienste lernen von Erfahrungen wie Menschen.
+Der Dienst verwendet künstliche Intelligenz und Algorithmen für maschinelles Lernen, um das Layout und die Felder des Quellformulars zu verstehen. Jeder auf maschinellem Lernen basierende Dienst lernt kontinuierlich aus den Quelldaten und liefert eine verbesserte Ausgabe. Diese Dienste lernen aus Erfahrung, genau wie Menschen.
 
-Der Dienst für die automatisierte Formularkonvertierung wird für eine große Anzahl von Formularen geschult. Es identifiziert einfach Felder in einem Quellformular und erzeugt adaptive Formulare. Es gibt jedoch einige Felder und Stile in PDF-Formularen, die für das menschliche Auge leicht sichtbar, aber für den Dienst schwer zu verstehen sind. Der Dienst kann bestimmten Feldern oder Stilen unterschiedliche Feldtypen oder Bereiche zuweisen. Alle diese Felder- und Stilmuster sind unten aufgeführt.
+Der Dienst zur automatischen Formularkonvertierung wird für eine Vielzahl von Formularen geschult. Er erkennt problemlos Felder in einem Quellformular und erzeugt adaptive Formulare. Es gibt jedoch einige Felder und Stile in PDF-Formularen, die für das menschliche Auge leicht sichtbar, für den Dienst jedoch schwer zu verstehen sind. Der Dienst weist einigen Feldern oder Stilen eventuell andere als die zutreffenden Feldtypen oder Bedienfelder zu. Alle diese Feld- und Stilmuster sind nachfolgend aufgeführt.
 
-Der Dienst würde beginnen, diese Muster zu identifizieren und ihnen korrekte Felder oder Bereiche zuzuweisen, da er weiterhin aus den Quelldaten lernt. Vorläufig können Sie diese Probleme mit dem Editor &quot; [Überprüfen&quot;und &quot;Korrigieren](review-correct-ui-edited.md) &quot;beheben. Bevor Sie mit der Behebung der Probleme beginnen oder weitere Informationen lesen, sollten Sie sich mit den [adaptiven Formularkomponenten](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)vertraut machen.
+Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder Bedienfelder zuzuweisen, da er weiterhin aus den Quelldaten lernt. Derzeit können Sie den Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md) verwenden, um solche Probleme zu beheben. Machen Sie sich mit [adaptiven Formularkomponenten](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/introduction-forms-authoring.html) vertraut, bevor Sie mit der Behebung der Probleme beginnen oder weiterlesen.
 
 ### Allgemeine Muster {#general}
 
-| Muster | Auflösung |
+| Muster | Beispiel |
 |--- |--- |
-| **Der Musterdienst** konvertiert keine farbigen PDF-Formulare <br> in adaptive Formulare. <br><br>**Auflösung **<br>Verwenden Sie PDF-Formulare in Schwarzweiß oder Graustufen. | ![Farbiges Formular](assets/best-practice-coloured-forms.png) |
-| **Der Musterdienst** konvertiert <br>keine ausgefüllten PDF-Formulare in adaptive Formulare. <br><br>**Auflösung **<br>Verwenden Sie leere adaptive Formulare. | ![Ausgefülltes Formular](assets/best-practice-filled-forms.png) |
-| **Der Musterdienst** kann <br>Text und Felder in einem dichten Formular nicht erkennen. <br><br>**Auflösung **<br>Erhöhen Sie die Breite zwischen Text und Feldern eines dichten Formulars, bevor Sie mit der Konvertierung beginnen. |  |
-| **Der Musterdienst** <br>unterstützt keine gescannten Formulare. <br><br>**Auflösung **<br>Verwenden Sie keine gescannten Formulare. | ![Gescanntes Formular](assets/scanned-forms.png) |
-| **Der Musterdienst** extrahiert <br>keine Bilder und keinen Text in Bildern. <br><br>**Auflösung **<br>Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
-| **Mustertabellen** mit gepunkteten oder unklaren <br>Begrenzungen und Rahmen werden nicht konvertiert. <br><br>**Auflösung **<br>Verwenden Sie Tabellen mit klaren und eindeutigen Begrenzungen. unterstützt. | ![Nicht eindeutiges Tabellenformular](assets/best-practice-table-dotted-non-clear.png) |
-| **Muster** <br> Adaptives Formular unterstützt nicht standardmäßig vertikalen Text. Der Dienst konvertiert daher keinen vertikalen Text in den entsprechenden Text für adaptive Formulare. <br><br>**Auflösung **<br>Verwenden Sie den Editor für adaptive Formulare, um bei Bedarf vertikalen Text hinzuzufügen. | ![Nicht eindeutiges Tabellenformular](assets/vertical-text.png) |
+| **Muster** <br>Der Dienst konvertiert keine farbigen PDF-Formulare in adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie Schwarzweiß- oder Graustufen-PDF-Formulare. | ![Farbige Form](assets/best-practice-coloured-forms.png) |
+| **Muster** <br> Der Dienst konvertiert keine ausgefüllten PDF-Formulare in adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie leere adaptive Formulare. | ![Ausgefülltes Formular](assets/best-practice-filled-forms.png) |
+| **Muster** <br>Der Dienst kann Text und Felder möglicherweise nicht erkennen, wenn sie im Formular zu dicht beieinander stehen. <br><br>**Lösung **<br>Erhöhen Sie die Breite zwischen Text und Feldern eines dichten Formulars, bevor Sie mit der Konvertierung beginnen. |  |
+| **Muster** <br>Der Dienst unterstützt keine gescannten Formulare. <br><br>**Lösung **<br>Verwenden Sie keine gescannten Formulare. | ![Gescanntes Formular](assets/scanned-forms.png) |
+| **Muster** <br>Der Dienst extrahiert keine Bilder und Texte in Bildern. <br><br>**Lösung **<br>Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
+| **Muster** <br>Tabellen mit gepunkteten oder unklaren Begrenzungen und Rahmen werden nicht konvertiert. <br><br>**Lösung **<br>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen. unterstützt. | ![Nicht eindeutiges Tabellenformular](assets/best-practice-table-dotted-non-clear.png) |
+| **Muster** <br>Das adaptive Formular unterstützt keinen sofort einsatzbereiten vertikalen Text. Der Dienst konvertiert daher keinen vertikalen Text in den entsprechenden Text für adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie bei Bedarf den adaptiven Formulareditor, um vertikalen Text hinzuzufügen. | ![Nicht eindeutiges Tabellenformular](assets/vertical-text.png) |
 
 
 
-### Auswahlgruppe {#choice-group}
+### Auswahlgruppe  {#choice-group}
 
-| Muster | Auflösung |
+| Muster | Lösung |
 |--- |--- |
-| **Optionen für Muster** - <br> Auswahlgruppen mit anderen Formen als &quot;Feld&quot;oder &quot;Kreis&quot;werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Auflösung **<br>Ändern Sie Auswahloptionen in Form von Feldern oder Kreisen oder verwenden Sie den Editor Überprüfen und Korrigieren, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
+| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung **<br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
 
-### Form fields {#form-fields}
+### Formularfelder {#form-fields}
 
-| Muster | Auflösung |
+| Muster | Lösung |
 |--- |--- |
-| **Der Musterdienst** identifiziert keine Felder ohne klare Grenzen <br> . <br><br>**Lösung **<br>Verwenden Sie den Editor &quot;Review&quot;und &quot;Richtig&quot;, um solche Felder zu identifizieren. | ![Felder mit nicht klaren Grenzen](assets/best-practice-fields-without-clear-borders.png) |
-| **Der Musterdienst** <br> identifiziert möglicherweise keine Auswahlgruppenformularfelder mit Beschriftungen am unteren oder rechten Rand eines Formulars. <br><br>**Auflösung **<br>Verwenden Sie den Editor &quot;Überprüfung&quot;und &quot;Richtig&quot;, um solche Felder zu identifizieren | ![Auswahlfelder](assets/best-practice-caption-bottom-right.png) |
-| **Der Musterdienst** <br> führt einige Formularfelder zusammen oder weist ihnen einen falschen Typ zu, die sehr nahe beieinander liegen oder keine klaren Ränder aufweisen. <br><br>**Lösung **<br>Verwenden Sie den Editor &quot;Review&quot;und &quot;Richtig&quot;, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-placed-very-near.png) |
-| **Der Musterdienst** kann Felder mit weit entfernten Beschriftungen oder einer gepunkteten Linie zwischen dem Beschriftungs- und dem Eingabefeld nicht erkennen <br> . <br><br>**Lösung **<br>Verwenden Sie Formularfelder mit klaren Begrenzungen oder verwenden Sie den Editor zum Überprüfen und Korrigieren, um diese Probleme zu beheben. | ![Entfernt Felder oder gepunktete Linie zwischen Beschriftungsfeldern](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| **Muster** <br>Der Dienst erkennt keine Felder ohne klare Rahmen. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Felder mit unklaren Begrenzungen](assets/best-practice-fields-without-clear-borders.png) |
+| **Muster** <br> Der Dienst erkennt möglicherweise keine Auswahlgruppenformularfelder mit Beschriftungen am unteren oder rechten Rand eines Formulars. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-caption-bottom-right.png) |
+| **Muster** <br>Der Dienst führt einige Formularfelder zusammen oder weist ihnen einen falschen Typ zu, wenn sie sehr nahe beieinander liegen oder keine klaren Grenzen haben. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-placed-very-near.png) |
+| **Muster** <br>Der Dienst kann Felder mit weit entfernten Beschriftungen oder einer gepunkteten Linie zwischen Beschriftung und Eingabefeld möglicherweise nicht erkennen. <br><br>**Lösung **<br>Verwenden Sie Formularfelder mit klaren Begrenzungen oder den Editor „Überprüfen und Korrigieren“, um diese Probleme zu beheben. | ![Weit entfernte Felder oder gepunktete Linie zwischen dem Beschriftungsfeld](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listen {#lists}
 
-| Muster | Auflösung |
+| Muster | Lösung |
 |--- |--- |
-| **Musterlisten** , die <br>Formularfelder enthalten, werden zusammengeführt oder nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung **: Formularfelder mit klaren Grenzen<br>verwenden oder den Editor zum Überprüfen und Korrigieren verwenden, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-lists-containing-form-fields.png) |
-| **Der Musterdienst** <br>kann einige verschachtelte Listen als nicht identifizierte <br><br>**Auflösungsdatei **<br>mit dem Editor Überprüfung und Korrektur verwenden lassen, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-nested-lists.png) |
-| **Der Musterdienst** führt einige Listen mit Auswahlgruppen zusammen, um diese Probleme zu beheben, indem er die <br>Auflösungs<br><br>** - **<br>und Überprüfungs-Editor verwendet. | ![Listen mit Auswahlgruppen](assets/best-practice-check-box-in-table-cells.png) |
+| **Muster** <br>Listen, die Formularfelder enthalten, werden zusammengeführt oder nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung **<br>Verwenden Sie Formularfelder mit klaren Grenzen oder den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-lists-containing-form-fields.png) |
+| **Muster** <br>Der Dienst kann einige verschachtelte Listen nicht identifizieren.<br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-nested-lists.png) |
+| **Muster** <br>Der Dienst führt einige Listen mit Auswahlgruppen zusammen.<br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
