@@ -1,6 +1,6 @@
 ---
-title: '[KEINE VERÖFFENTLICHUNG] Erweitern Sie das standardmäßige Meta-Modell'
-seo-title: '[KEINE VERÖFFENTLICHUNG] Erweitern Sie das standardmäßige Meta-Modell'
+title: '[NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells'
+seo-title: '[NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells'
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -9,10 +9,10 @@ topic-tags: forms
 discoiquuid: 9fce5d31-0a3e-4401-b9d7-bb63799121bf
 privatebeta: true
 index: false
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: afe461baa5bcfc1106c16aae2d6a9c839ea675e8
 
 ---
 
 
-# [NICHT VERÖFFENTLICHEN] Erweitern des standardmäßigen Meta-Modells{#do-not-publish-extend-the-default-meta-model}
+# [NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells{#do-not-publish-extend-the-default-meta-model}
