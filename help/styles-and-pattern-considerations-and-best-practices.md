@@ -7,27 +7,49 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 8e373b978535cd6616072cf50c223bd7f4f7c35a
+source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
 
 ---
 
 
 # Best Practices und bekannte komplexe Muster {#Best-practices-and-considerations2}
 
-Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administratoren, Verfasser und Entwickler profitieren können, wenn sie mit dem Dienst zur automatischen Formularkonvertierung und insbesondere mit adaptiven Formularkomponenten arbeiten. Es werden bewährte Methoden erläutert, die von der Vorbereitung der Quellformulare bis zur Korrektur komplexer Muster reichen und für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese bewährten Methoden tragen zusammen zur Gesamtleistung und Ausgabe des Dienstes zur automatischen Formularkonvertierung bei.
+Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administratoren, Verfasser und Entwickler profitieren können, wenn sie mit dem Dienst zur automatischen Formularkonvertierung und insbesondere mit adaptiven Formularkomponenten arbeiten. Es werden bewährte Methoden erläutert, die von der Vorbereitung der Quellformulare bis zur Korrektur komplexer Muster reichen und für die automatisierte Konvertierung einen zusätzlichen Aufwand erfordern. Diese Best Practices tragen zusammen zur Gesamtleistung und -ausgabe des Dienstes &quot;Automatisierte Formularkonvertierung&quot;bei.
 
 ## Best Practices
 
-Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
+Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Die unten aufgeführten Best Practices helfen Ihnen, die Konvertierungsgeschwindigkeit und -genauigkeit zu verbessern. Darüber hinaus können Sie mit diesen Best Practices Zeit sparen, die Sie nach den Konversionsmaßnahmen verbringen.
+
+### Vor dem Hochladen von Quellformularen
+Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
 * Ein Ordner muss weniger als 15 Formulare und weniger als 50 Seiten enthalten.
 * Die Größe des Ordners muss kleiner als 10 MB sein. Speichern Sie Formulare nicht in einem Unterordner.
 * Ein Formular muss weniger als 15 Seiten umfassen.
+* Organisieren Sie Quelldateien in einem Dokumente von 8-15 Dokumenten. Quellformulare mit gängigen adaptiven Formularfragmenten in einem einzigen Stapel aufbewahren.
 * Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
-* Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert keine PDF-Portfolios in adaptive Formulare.
-* Laden Sie keine Formulare hoch, die gescannt wurden, farbig sind, nicht auf Englisch oder ausgefüllt sind. Solche Formulare werden nicht unterstützt.
+* Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert kein PDF-Portfolio in ein adaptives Formular.
+* Laden Sie keine gescannten, farbigen, nicht englischsprachigen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
-* Verwenden Sie Vorlagen für adaptive Formulare, um Kopf- und Fußzeile für das adaptive Formular für die Ausgabe anzugeben. Der Dienst ignoriert die Kopf- und Fußzeile von PDF-Quelldokumenten und verwendet die in der adaptiven Formularvorlage angegebene Kopfzeile.
+
+Wenn Sie ein XDP-Formular zur Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XPD-Quellformulare hochladen:
+
+* Analysieren Sie das XDP-Formular und beheben Sie visuelle Probleme. Stellen Sie sicher, dass das Quell-Dokument vorgesehene Steuerelemente und Strukturen verwendet. Das Quellformular kann beispielsweise Kontrollkästchen anstelle von Optionsfeldern für eine Auswahl enthalten. Ändern Sie Kontrollkästchen in Optionsfelder, um ein adaptives Formular mit den gewünschten Komponenten zu erstellen.
+* [Hinzufügen Bindungen an das XDP-Formular](http://www.adobe.com/go/learn_aemforms_designer_65) vor Beginn der Konvertierung. Wenn Bindungen im Quell-XDP-Formular verfügbar sind, wendet der Dienst während der Konvertierung automatisch Bindungen auf entsprechende adaptive Formularfelder an. Dadurch sparen Sie Zeit, um die Bindungen manuell anzuwenden.
+* [Hinzufügen Sie Adobe Sign-Tags](https://helpx.adobe.com/sign/using/text-tag.html) zur XDP-Datei. Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe-Signaturfeldern. Eine vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) .
+* Verwenden Sie Teilformulare in XDP-Dokumenten, um Bereiche in adaptiven Formularen zu erstellen. Dienst konvertiert jedes Teilformular während der Konvertierung in einen Bereich für adaptive Formulare.
+* Konvertieren Sie komplexe Tabellen in XDP-Dokumenten nach Möglichkeit in einfache Tabellen.
+
+### Vor dem Beginn der Konvertierung
+
+* Erstellen Sie Vorlagen für adaptive Formulare. Mithilfe von Vorlagen können Sie eine einheitliche Struktur für Formulare in Ihrer Organisation oder Abteilung festlegen.
+* Geben Sie die Kopf- und Fußzeile in den Vorlagen für adaptive Formulare an. Der Dienst ignoriert die Kopf- und Fußzeile der Quellformulare und verwendet die in der Vorlage des adaptiven Dokumente angegebene Kopf- und Fußzeile.
+* Erstellen Sie Themen für adaptive Formulare. Themen sorgen für ein einheitliches Erscheinungsbild der Formulare in Ihrer Organisation oder Abteilung.
+* Konfigurieren Sie das Formulardatenmodell zum Speichern und Abrufen aus einer Datenquelle. Erstellen und konfigurieren Sie Lese- und Schreibdienste für das Formulardatenmodell.
+* Erstellen Sie adaptive Formularfragmente und konfigurieren Sie den Dienst für die Verwendung der adaptiven Formularfragmente.
+* Erstellen Sie allgemeine Workflow-Modelle für Formulare, die eine Automatisierung der Geschäftsprozesse erfordern.
+* Adobe Analytics konfigurieren, falls erforderlich
+
 
 ## Komplexe Muster kennen
 
