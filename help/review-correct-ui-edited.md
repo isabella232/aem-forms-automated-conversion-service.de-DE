@@ -1,12 +1,12 @@
 ---
 title: Überprüfen und Korrigieren konvertierter Formulare
 seo-title: Überprüfen und Korrigieren konvertierter Formulare
-description: Überprüfen und korrigieren Sie die adaptiven Formulare, die vom Konvertierungsdienst für automatisierte Formulare konvertiert wurden.
-seo-description: Überprüfen und Korrigieren der adaptiven Formulare, die vom Konvertierungsdienst für automatisierte Formulare konvertiert wurden
+description: Überprüfen und korrigieren Sie die vom Dienst für die automatische Formularkonvertierung konvertierten adaptiven Formulare.
+seo-description: Überprüfen und korrigieren Sie die vom Dienst für die automatische Formularkonvertierung konvertierten adaptiven Formulare
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 3303c72b7d644dd183c036ba3cc48e629a9a503e
 
 ---
@@ -14,179 +14,179 @@ source-git-commit: 3303c72b7d644dd183c036ba3cc48e629a9a503e
 
 # Überprüfen und Korrigieren konvertierter Formulare{#review-and-correct-converted-forms}
 
-Der AEM Forms Automated Forms Conversion-Dienst identifiziert Felder, Inhalte und das Layout des PDF-Eingabedokuments und konvertiert das PDF-Dokument in ein adaptives Formular. Das adaptive Formular für die Ausgabe kann einige fehlende oder falsch konvertierte Felder enthalten. Sie können den Editor &quot;Überprüfen&quot;und &quot;Korrigieren&quot;verwenden, um die identifizierten Felder zu verbessern und das adaptive Formular neu zu generieren, um eine Ausgabe näher an das gewünschte Erlebnis heranzubringen. Nach der ersten Konvertierung können Sie das PDF-Eingabedokument im Editor öffnen, um:
+Der Dienst für die automatische Formularkonvertierung von AEM Forms identifiziert Felder, Inhalt und Layout des eingegebenen PDF-Dokuments und konvertiert das PDF-Dokument in ein adaptives Formular. Das adaptive Ausgabeformular kann einige fehlende oder nicht ordnungsgemäß konvertierte Felder enthalten. Sie können mithilfe des Editors „Überprüfen und Korrigieren“ Verbesserungen an identifizierten Feldern vornehmen und das adaptive Formular neu generieren, um ein Ergebnis zu erhalten, das Ihren Erwartungen näher kommt. Nach der ersten Konvertierung können Sie das eingegebene PDF-Dokument im Editor öffnen, um:
 
-* Alle Felder und Inhalte anzeigen, die während der Konvertierung identifiziert wurden
-* Identifizieren Sie die Felder und Inhalte, die während der Konvertierung ausgelassen wurden.
-* Überprüfen Sie den Feldtyp und ändern Sie ihn bei Bedarf
-* Überprüfen der identifizierten Tabellen, Ändern der Spaltengröße und Ändern des Zelleninhalts
-* Zu Unrecht identifizierte Felder entfernen
+* alle Felder und Inhalte anzuzeigen, die während der Konvertierung identifiziert wurden
+* die Felder und Inhalte zu identifizieren, die während der Konvertierung übersehen wurden
+* den Typ eines Feldes zu überprüfen und gegebenenfalls seinen Typ zu ändern
+* die identifizierten Tabellen zu überprüfen, die Größe der Spalten zu ändern und den Zelleninhalt zu ändern
+* falsch identifizierte Felder zu entfernen
 
-Nachdem Sie die erforderlichen Änderungen vorgenommen haben, senden Sie die PDF-Formulare an den Konvertierungsdienst. Bei erfolgreicher Konvertierung werden aktualisierte Assets, einschließlich des adaptiven Formulars und Schemas, in Ihre AEM Forms-Instanz heruntergeladen. Sie können den Prozess wiederholen, bis das gewünschte Erlebnis erreicht ist. ![](assets/stages-of-form-2.gif)
+Nachdem Sie die erforderlichen Änderungen vorgenommen haben, senden Sie die PDF-Formulare erneut an den Konvertierungsdienst. Nach einer erfolgreichen Konvertierung werden die aktualisierten Assets einschließlich des adaptiven Formulars und des Schemas in Ihre AEM Forms-Instanz heruntergeladen. Sie können den Vorgang wiederholen, bis das gewünschte Ergebnis erreicht ist. ![](assets/stages-of-form-2.gif)
 
-Sie benötigen Google Chrome, Mozilla FireFox oder den Microsoft Edge-Browser, um den Review- und den korrekten Editor zu verwenden. Internet Explorer wird vom Editor nicht unterstützt.
+Sie benötigen einen der Browser Google Chrome, Mozilla FireFox oder Microsoft Edge, um den Editor „Überprüfen und Korrigieren“ verwenden zu können. Der Editor unterstützt Internet Explorer nicht.
 
-## Willkommen beim Editor für Review und Korrektur {#welcome-to-review-and-correct-editor}
+## Willkommen beim Editor „Überprüfen und Korrigieren“ {#welcome-to-review-and-correct-editor}
 
-Der Editor &quot;Überprüfen und korrigieren&quot;bietet eine benutzerfreundliche Oberfläche. Es enthält die folgenden Komponenten:
+Der Editor „Überprüfen und Korrigieren“ bietet eine benutzerfreundliche Oberfläche. Er weist folgende Komponenten auf:
 
-* Content Browser: Sie können den Inhaltsbrowser verwenden, um die Position eines Elements zu ändern. Mit dem Inhaltsbrowser können Sie ein Formularobjekt per Drag &amp; Drop verschieben, um seine Position zu ändern. Verschieben einer Tabelle beispielsweise vor einem Textfeld Die Tab-Reihenfolge des adaptiven Formulars für die Ausgabe wird entsprechend geändert.
-* Eigenschaftenbrowser: Es zeigt die Eigenschaften eines ausgewählten Felds an. Sie können auch die Eigenschaften ändern.
-* Symbolleiste: Die Symbolleiste befindet sich oben im Editor. Es werden Werkzeuge zum Hinzufügen, Ändern, Gruppieren, Aufheben und Löschen von Feldern angezeigt.
-* Eigenschaften öffnen: Die Option &quot;Eigenschaften öffnen&quot;wird angezeigt, wenn Sie auf das ![](assets/properties.png) Symbol tippen. Sie können auf Eigenschaften öffnen klicken, um die Formulareigenschaften zu öffnen und weitere Optionen anzuzeigen.
-* Filterschaltfläche: Die Filterschaltfläche ![](assets/toggle_eye.png) befindet sich oben im Editor. Sie können die Felder so filtern, dass nur Texte, Felder, Auswahlgruppen, Bereiche oder alle Komponenten angezeigt werden.
-* Schaltfläche &quot;Speichern&quot;: Die **[!UICONTROL Save]** Schaltfläche befindet sich in der oberen rechten Ecke des Editors. Sie können auch mit dem Pfeil neben der Schaltfläche Speichern die Option zum Senden des Formulars zur Konvertierung anzeigen.
+* Inhaltsbrowser: Mit dem Inhaltsbrowser können Sie die Position eines Elements ändern. Mit dem Inhaltsbrowser können Sie ein Formularobjekt per Drag &amp; Drop verschieben, um seine Position zu ändern. Beispiel: Verschieben einer Tabelle vor ein Textfeld. Dies ändert die Tab-Reihenfolge des adaptiven Ausgabeformulars entsprechend.
+* Eigenschaftenbrowser: Zeigt die Eigenschaften eines ausgewählten Feldes an. Sie können die Eigenschaften auch ändern.
+* Symbolleiste: Die Symbolleiste befindet sich oben im Editor. Es werden Tools zum Hinzufügen, Ändern, Gruppieren, Aufheben der Gruppierung und Löschen von Feldern angezeigt.
+* Eigenschaften öffnen: Die Option „Eigenschaften öffnen“ wird angezeigt, wenn Sie auf das Symbol ![](assets/properties.png) tippen. Sie können auf „Eigenschaften öffnen“ klicken, um Formulareigenschaften zu öffnen und zusätzliche Optionen anzuzeigen.
+* Schaltfläche „Filter“: Die Schaltfläche „Filter“ ![](assets/toggle_eye.png) befindet sich oben im Editor. Sie können die Felder filtern, um nur Texte, Felder, Auswahlgruppen, Bedienfelder oder alle Komponenten anzuzeigen.
+* Schaltfläche „Speichern“: Die Schaltfläche **[!UICONTROL Speichern]** befindet sich in der oberen rechten Ecke des Editors. Über den Pfeil neben der Schaltfläche „Speichern“ können Sie auch die Option zum Senden des Formulars zur Konvertierung anzeigen.
 
-* PDF-Formular: Der Editor zeigt das PDF-Quelldokument an und überlagert es mit identifizierten Feldern. Sie können die Felder mit den Werkzeugen der Symbolleiste ändern.
-* Seiten: Ein Quellformular kann mehrere Seiten haben. Der Editor bietet eine Schaltfläche in der rechten oberen Ecke, um zwischen den Seiten zu navigieren.
+* PDF-Formular: Der Editor zeigt das Quell-PDF-Dokument an und überlagert es mit identifizierten Feldern. Sie können die Werkzeuge in der Symbolleiste verwenden, um die Felder zu ändern.
+* Seiten: Ein Quellformular kann mehrere Seiten umfassen. In der oberen rechten Ecke des Editors befindet sich eine Schaltfläche, um zwischen den Seiten zu navigieren.
 
-![Benutzeroberfläche überprüfen und korrigieren](assets/reviewcorrectui.png)
+![Überprüfen und korrigieren](assets/reviewcorrectui.png)
 
-**************A. Inhaltsbrowser** B. Eigenschaftenbrowser **C.** Symbolleiste **D. Schaltfläche &quot;Eigenschaften&quot;** E. Filterschaltfläche **F. Schaltfläche** G speichern. PDF-Formular mit identifizierten Feldern überlagert
+**A.** Inhaltsbrowser **B.** Eigenschaftenbrowser **C.** Symbolleiste **D.** Eigenschaftenschaltfläche **E.** Filterschaltfläche **F.** Schaltfläche „Speichern“ **G.** PDF-Formular mit identifizierten Feldern überlagert
 
-Nach der ersten erfolgreichen Konvertierung überlagert der Konvertierungsdienst das PDF-Quelldokument mit identifizierten Feldern und Komponenten. Diese Felder oder Komponenten sind vom Typ: Text, Feld, Bereich, Auswahlgruppe und Tabelle:
+Nach der ersten erfolgreichen Konvertierung überlagert der Konvertierungsdienst das Quell-PDF-Dokument mit identifizierten Feldern und Komponenten. Diese Felder oder Komponenten sind vom Typ: Text, Feld, Bedienfeld, Auswahlgruppe und Tabelle:
 
-* Text: Text im PDF-Quelldokument. Beispiel: Der Text für die Kreditanwendung in der Abbildung oben.
-* Feld: Kombination von Text oder Symbolbeschriftung, die mit einem Wert oder Eingabefeld verknüpft ist. Beispiel: Der Vorfeldname in der Abbildung oben. Es verfügt über eine Textbeschriftung und ein Eingabefeld. Ein Feld unterstützt die Datentypen Text, Nummerisch, Dropdown, Datum, E-Mail, Telefonnummer, Unterschrift, Währung und Kennwort.
-* Bereich: Logische Sammlung von Inhalten und Komponenten. Beispiel: Persönliche Details der Bedienfelder &quot;Person 1&quot;und &quot;Person 2&quot;in oben stehender Abbildung.
-* Auswahlgruppe: Kombination von Text, der mit mehreren Auswahloptionen verknüpft ist: Kontrollkästchen und Optionsfeld. Zum Beispiel Familienstand und vorhandener Kunde in oben stehender Abbildung.\
-   Je nach Auswahlgruppenbeschriftung und den Optionen für mehrere Auswahlen konvertiert der Konvertierungsdienst automatisch eine Auswahlgruppe in ein Optionsfeld oder ein Kontrollkästchen mit mehreren Auswahlen. Wenn zum Beispiel eine Auswahl **auswählen** ist, da die Auswahlgruppenkoption oder die Mehrfachauswahl-Optionen es Ihnen ermöglichen, nur eine Option auszuwählen: **Ja** oder **Nein**, konvertiert der Konvertierungsdienst die Auswahlgruppe automatisch in ein Optionsfeld mit nur einer Auswahl. Gleichermaßen wandelt der Konvertierungsdienst die Auswahlgruppe automatisch in ein Kontrollkästchen mit mehreren Auswahlen um, wenn alle Auswahlgruppen **auswählen, die mehrere Optionen anwenden** oder mehrere **Optionen** auswählen, als Auswahlgruppenbeschriftung oder mit den Mehrfachoptionen.
+* Text: Nur Text im Quell-PDF-Dokument. Zum Beispiel der Kreditantragstext im oben gezeigten Bild.
+* Feld: Kombination von Text oder Symbolbezeichnung, die einem Wert oder einem Eingabefeld zugeordnet ist. Zum Beispiel der erste Feldname im obigen Bild. Dies hat eine Textbezeichnung und ein Eingabefeld. Ein Feld unterstützt die Datentypen Text, Zahlen, Dropdown, Datum, E-Mail, Telefonnummer, Signatur, Währung und Kennwort.
+* Bedienfeld: Logische Sammlung von Inhalten und Komponenten. Beispiel: Persönliche Details der Bereiche Person 1 und Person 2 im obigen Bild.
+* Auswahlgruppe: Kombination von Text mit Multiple-Choice-Optionen: Kontrollkästchen und Optionsfeld. Zum Beispiel Familienstand und Bestehender Kunde im obigen Bild.\
+   Basierend auf der Beschriftung der Auswahlgruppe und ihren Multiple-Choice-Optionen konvertiert der Konvertierungsdienst eine Auswahlgruppe automatisch in ein Optionsfeld mit einfacher Auswahl oder ein Kontrollkästchen mit mehrfacher Auswahl. Wenn beispielsweise **Eine Option auswählen** als Auswahlgruppenbeschriftung angegeben ist oder die Multiple-Choice-Optionen nur zulassen, eine einzige Option, **Ja** oder **Nein** zu wählen, konvertiert der Konvertierungsdienst die Auswahlgruppe automatisch in ein Optionsfeld mit Einfachauswahl. In ähnlicher Weise konvertiert der Konvertierungsdienst die Auswahlgruppe automatisch in ein Kontrollkästchen für die Mehrfachauswahl, wenn **Alle zutreffenden auswählen** oder **Mehrere auswählen** als Auswahlgruppenbeschriftung angegeben ist oder die Multiple-Choice-Optionen die Auswahl mehrerer Optionen ermöglichen.
 
-* Tabelle: Eine 2-D-Tabelle mit Informationen, die in Spalten und Zeilen dargestellt werden. Sie können einer Tabelle Zeilen oder Spalten hinzufügen oder entfernen.
+* Tabelle: Eine 2D-Tabelle mit Informationen in Spalten und Zeilen. Sie können einer Tabelle Zeilen oder Spalten hinzufügen oder daraus entfernen.
 
-## Konvertierung überprüfen {#start-reviewing-a-conversion}
+## Überprüfen einer Konvertierung{#start-reviewing-a-conversion}
 
-Nach der ersten erfolgreichen Konvertierung überlagert der Konvertierungsdienst das PDF-Quelldokument mit identifizierten Feldern und Komponenten. Sie können Verbesserungen an identifizierten Feldern vornehmen und das adaptive Formular neu generieren, um eine Ausgabe näher an das gewünschte Erlebnis heranzuführen. Sie können eine Konvertierung erst nach der ersten erfolgreichen Konvertierung überprüfen.
+Nach der ersten erfolgreichen Konvertierung überlagert der Konvertierungsdienst das Quell-PDF-Dokument mit identifizierten Feldern und Komponenten. Sie können Verbesserungen an identifizierten Feldern vornehmen und das adaptive Formular neu generieren, um ein Ergebnis zu erhalten, das Ihren Erwartungen näher kommt. Sie können mit der Überprüfung einer Konvertierung erst nach der ersten erfolgreichen Konvertierung beginnen.
 
 ### Bevor Sie beginnen {#before-you-start}
 
-* Der Editor &quot;Überprüfen&quot;und &quot;Korrigieren&quot;unterstützen keine Fragmente. Verwenden Sie den Editor nicht, um Konvertierungen zu überprüfen, bei denen die Option &quot;Fragment **extrahieren** &quot;während der Konvertierungen aktiviert war. Sie können für solche Konvertierungen den [Editor](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) für adaptive Formulare verwenden.
+* Der Editor „Überprüfen und Korrigieren“ unterstützt keine Fragmente. Verwenden Sie den Editor nicht, um Konvertierungen zu überprüfen, bei denen die Option **Fragment extrahieren** während der Konvertierung aktiviert war. Für solche Konvertierungen können Sie den [adaptiven Formulareditor](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/introduction-forms-authoring.html) verwenden.
 
-* Im Editor &quot;Überprüfen&quot;und &quot;Korrigieren&quot;wird die Aktion &quot;Rückgängig&quot;nicht ausgeführt. Verwenden Sie die Schaltfläche Speichern nur, um die Änderungen dauerhaft zu speichern.
+* Der Editor zum Überprüfen und Korrigieren hat keine Aktion zum Rückgängigmachen. Verwenden Sie die Schaltfläche „Speichern“ nur, um die Änderungen dauerhaft zu speichern.
 
-### Review starten {#start-the-review}
+### Starten einer Überprüfung {#start-the-review}
 
-Um Konvertierungen zu überprüfen, wählen Sie das für die Konvertierung verwendete PDF-Quelldokument aus und klicken Sie auf **Konvertierungen**&#x200B;überprüfen. Der Editor zum Überprüfen und Korrigieren wird in einer neuen Registerkarte geöffnet. Sie können mit der Überprüfung der Konversionen beginnen. Führen Sie die folgenden grundlegenden Überprüfungen vor der Behebung eines anderen Problems durch:
+Um mit der Überprüfung von Konvertierungen zu beginnen, wählen Sie das für die Konvertierung verwendete PDF-Quelldokument aus und tippen Sie auf **Konvertierungen überprüfen**. Der Editor „Überprüfen und Korrigieren“ wird in einer neuen Registerkarte geöffnet. Sie können mit der Überprüfung der Konvertierungen beginnen. Führen Sie die folgenden grundlegenden Überprüfungen durch, bevor Sie andere Probleme beheben:
 
 ![](assets/usingreviewandcorrecteditor.png)
 
-1. **Markieren Sie den Typ aller Felder**: Der Konvertierungsdienst kann einem Feld einen falschen Typ zuweisen. Geben Sie beispielsweise Text anstelle des Typs Telefon in das Handyfeld ein. Sie können den Mauszeiger auf ein Feld bewegen, um den Feldtyp zu suchen.
+1. **Typ aller Felder überprüfen**: Der Konvertierungsdienst kann einem Feld einen falschen Typ zuweisen. Beispielsweise wird dem Mobiltelefonfeld der Typ Text anstelle des Typs Telefon zugewiesen. Sie können mit der Maus über ein Feld fahren, um den Feldtyp zu ermitteln.
 
-   Um den Typ eines Felds zu ändern, wählen Sie das Feld aus, öffnen Sie den Eigenschaftenbrowser, wählen Sie einen Wert aus der **[!UICONTROL Type]** Dropdown-Liste aus und tippen Sie auf **[!UICONTROL Save]**. Der Typ wird geändert.
+   Um den Feldtyp zu ändern, wählen Sie das Feld aus, öffnen Sie den Eigenschaftenbrowser, wählen Sie einen Wert aus der Dropdown-Liste **[!UICONTROL Typ]** aus und tippen Sie auf **[!UICONTROL Speichern]**. Der Typ ist geändert.
 
    ![](assets/check-typex75.gif)
 
-1. **Entfernen Sie zusätzliche Bedienfelder**: Der Konvertierungsdienst kann zusätzliche Bereiche generieren. Beispiel: Ein zusätzliches Unterfeld ist im übergeordneten Bedienfeld enthalten, leerer Raum wird in ein Bedienfeld umgewandelt, ein Kontrollkästchen wird in ein Bedienfeld umgewandelt. Überprüfen Sie die Begrenzungen aller Bereiche und entfernen Sie zusätzliche Bereiche. Sie können die Filterschaltfläche oder den ![](assets/toggle_eye.png) Inhaltsbrowser verwenden, um alle Bereiche anzuzeigen.
+1. **Zusätzliche Bedienfelder entfernen**: Der Konvertierungsdienst kann zusätzliche Bedienfelder generieren. Ein übergeordnetes Bedienfeld könnte beispielsweise ein zusätzliches Unterbedienfeld enthalten oder ein leerer Bereich oder ein Kontrollkästchen könnte in ein Bedienfeld konvertiert worden sein. Überprüfen Sie die Grenzen aller Bedienfelder und entfernen Sie zusätzliche Bedienfelder. Sie können die Schaltfläche Filter ![](assets/toggle_eye.png) oder den Inhaltsbrowser verwenden, um alle Bedienfelder anzuzeigen.
 
-   Sie können ein Bedienfeld löschen oder die Gruppierung aufheben, um es zu entfernen. Bei Verwendung der Option zum Löschen werden auch die untergeordneten Felder oder Komponenten des Bedienfelds gelöscht:
+   Sie können ein Bedienfeld löschen oder die Gruppierung aufheben, um es zu entfernen. Bei Verwendung der Löschoption werden auch die untergeordneten Felder oder Komponenten des Bedienfelds gelöscht:
 
-   * Um ein Bedienfeld zu löschen, wählen Sie das Bedienfeld aus und tippen Sie in der Symbolleiste auf das Symbol zum Löschen ![](assets/delete-icon.png) . Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Confirm]**. Tap **[!UICONTROL Save]** to save the changes.
+   * Um ein Bedienfeld zu löschen, wählen Sie das Bedienfeld aus und tippen Sie in der Symbolleiste auf das Symbol Löschen ![](assets/delete-icon.png). Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Bestätigen]**. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-   * Um die Gruppierung eines Bedienfelds aufzuheben, wählen Sie das Bedienfeld aus und tippen Sie auf das Symbol &quot;Gruppierung aufheben&quot;in der Symbolleiste. Die Gruppierung des Bereichs wird aufgehoben, und untergeordnete Felder des nicht gruppierten Bereichs werden an das übergeordnete Feld angepasst. Tap **[!UICONTROL Save]**to save the changes.
+   * Um die Gruppierung für ein Bedienfeld aufzuheben, wählen Sie das Bedienfeld aus und tippen Sie in der Symbolleiste auf das Symbol „Gruppierung aufheben“. Die Gruppierung des Bedienfelds wird aufgehoben und untergeordnete Felder des nicht gruppierten Bedienfelds werden an das übergeordnete Feld angepasst. Klicken Sie auf **[!UICONTROL Speichern]**, um die Änderungen zu speichern.
 
-1. **Erstellen Sie logische Textgruppen**: Validieren Sie die identifizierten Texte auf Vollständigkeit und Richtigkeit. Überprüfen Sie auch, dass die Texte logisch in die richtigen Bereiche oder Gruppen eingefügt werden. In einem mehrspaltigen Layout werden beispielsweise die Texte einer logischen Gruppe in eine andere Gruppe eingefügt.
+1. **Logische Textgruppen erstellen**: Überprüfen Sie die identifizierten Texte auf Vollständigkeit und Richtigkeit. Überprüfen Sie auch, ob die Texte logisch in den richtigen Feldern oder Gruppen platziert sind. Beispiel: In einem mehrspaltigen Layout werden die Texte einer logischen Gruppe in eine andere Gruppe eingefügt.
 
-   * Um Vollständigkeit und Richtigkeit des Textes zu überprüfen, verwenden Sie die ![](assets/toggle_eye.png) Schaltfläche &quot;Filter&quot;, um nur Text anzuzeigen, auf jeden Text zu klicken und zu validieren. Korrigieren Sie ggf. die Rechtschreibungs-, Tippfehler- oder Grammatikprobleme.
+   * Um die Vollständigkeit und Richtigkeit des Textes zu überprüfen, verwenden Sie die Filterschaltfläche ![](assets/toggle_eye.png), um nur Text anzuzeigen, klicken Sie dann auf jeden Text und überprüfen Sie ihn. Beheben Sie ggf. Rechtschreib-, Tipp- oder Grammatikprobleme.
 
-   * Um dem Formular Text hinzuzufügen, tippen Sie auf die Schaltfläche + und dann auf **[!UICONTROL Text]**. Zeichnen Sie das Feld, öffnen Sie den Eigenschaftenbrowser und geben Sie den Text ein, der dem Feld &quot;Inhalt&quot;hinzugefügt werden soll.
+   * Um dem Formular Text hinzuzufügen, tippen Sie auf die Schaltfläche + und anschließend auf **[!UICONTROL Text]**. Zeichnen Sie das Feld, öffnen Sie den Eigenschaftenbrowser und geben Sie den hinzuzufügenden Text in das Inhaltsfeld ein.
 
-1. **** Überprüfungstabellen: Stellen Sie sicher, dass alle Tabellengrenzen identifiziert werden. Stellen Sie außerdem sicher, dass der Inhalt der Zellen korrekt identifiziert wird.
+1. **Tabellen überprüfen:** Stellen Sie sicher, dass alle Ränder der Tabelle identifiziert sind. Stellen Sie außerdem sicher, dass der Inhalt der Zellen korrekt identifiziert wird.
 
-   * Verwenden Sie die **[!UICONTROL Add Column]** oder- **[!UICONTROL Add Row]** Option, um fehlende Ränder zu identifizieren.
+   * Verwenden Sie die Option **[!UICONTROL Spalte hinzufügen]** oder **[!UICONTROL Zeile hinzufügen]**, um fehlende Rahmen zu identifizieren.
 
-   * Verwenden Sie zum Entfernen zusätzlicher Ränder die **[!UICONTROL Delete Column]** Option oder **[!UICONTROL Delete Row]** .
+   * Verwenden Sie zum Entfernen zusätzlicher Rahmen die Option **[!UICONTROL Spalte löschen]** oder **[!UICONTROL Zeile löschen]**.
 
-Nachdem Sie die erforderlichen Änderungen vorgenommen haben, tippen Sie auf die **[!UICONTROL Save & Convert]** Schaltfläche, um die PDF-Formulare an den Konvertierungsdienst erneut zu senden. Jedes Feld wird in eine entsprechende adaptive Feldkomponente konvertiert. Nach der Konvertierung werden die aktualisierten Elemente einschließlich des adaptiven Formulars und Schemas in Ihre AEM Forms-Instanz heruntergeladen. Je nach Komplexität des Formulars kann der Dienst einige Zeit in Anspruch nehmen, um die Konvertierung abzuschließen.
+Tippen Sie nach den erforderlichen Änderungen auf die Schaltfläche **[!UICONTROL Speichern &amp; Konvertieren]**, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden. Jedes Feld wird in eine entsprechende adaptive Feldkomponente umgewandelt. Nach der Konvertierung werden die aktualisierten Assets einschließlich des adaptiven Formulars und des Schemas in Ihre AEM Forms-Instanz heruntergeladen. Abhängig von der Komplexität des Formulars kann es einige Zeit dauern, bis der Dienst die Konvertierung abgeschlossen hat.
 
-![Speichern und konvertieren](assets/save-and-convert.png)
+![Speichern und Konvertieren](assets/save-and-convert.png)
 
-Nachdem Sie die grundlegenden Prüfungen durchgeführt haben, können Sie das Formular überprüfen, um unternehmensspezifische Probleme zu beheben. Diese Probleme können mit dem Hinzufügen fehlender Felder und mehr zusammenhängen. In der Übersicht [Verwenden Sie die Werkzeuge](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) für den Review- und den Korrektur-Editor erfahren Sie mehr über alle Werkzeuge, die der Editor zur Behebung solcher Probleme bereitstellt.
+Nach Durchführung der grundlegenden Überprüfungen können Sie das Formular überprüfen, um organisationsspezifische Probleme zu beheben. Diese Probleme können unter anderem fehlende Felder betreffen, die hinzugefügt werden müssen. Im Abschnitt [Editor „Überprüfen und Korrigieren“ verwenden](review-correct-ui-edited.md#use-the-review-and-correct-editor-tools) erfahren Sie mehr über alle Tools, die der Editor zur Behebung solcher Probleme bereitstellt.
 
-Sie können auch daran arbeiten, identische Probleme zu erkennen, die in fast allen Ihren Formularen auftreten, und solche Muster an Adobe melden. Verwenden Sie den Editor Überprüfen und Korrigieren, bis das gewünschte Erlebnis erreicht ist.
+Sie können auch daran arbeiten, identische Probleme zu erkennen, die in fast allen Ihren Formularen auftreten, und solche Muster an Adobe melden. Verwenden Sie den Editor „Überprüfen und Korrigieren“, bis das gewünschte Ergebnis erreicht ist.
 
-## Verwenden der Werkzeuge zum Überprüfen und Korrigieren {#use-the-review-and-correct-editor-tools}
+## Verwenden Sie den Editor „Überprüfen und Korrigieren“{#use-the-review-and-correct-editor-tools}
 
-Mit dem Editor &quot;Review&quot;und &quot;Richtig&quot;können Sie:
+Der Editor „Überprüfen und Korrigieren“ ermöglicht Folgendes:
 
 * [Hinzufügen einer Komponente zum Formular](review-correct-ui-edited.md#add-a-component-to-the-form)
 * [Hinzufügen oder Bearbeiten einer Tabelle](review-correct-ui-edited.md)
 * [Typ einer Komponente ändern](review-correct-ui-edited.md#change-type-a-component)
 
-* [Bedienfeld erstellen oder entfernen](review-correct-ui-edited.md#create-or-remove-a-panel)
-* [Löschen eines Bereichs oder einer Komponente](review-correct-ui-edited.md#delete-a-panel-or-component)
-* [Eigenschaften einer Komponente festlegen](review-correct-ui-edited.md#set-properties-of-a-component)
-* [Formular zur Konvertierung senden](review-correct-ui-edited.md#send-a-form-for-conversion)
+* [Erstellen oder Entfernen eines Bedienfelds](review-correct-ui-edited.md#create-or-remove-a-panel)
+* [Löschen eines Bedienfelds oder einer Komponente](review-correct-ui-edited.md#delete-a-panel-or-component)
+* [Festlegen von Eigenschaften einer Komponente](review-correct-ui-edited.md#set-properties-of-a-component)
+* [Senden eines Formulars zur Konvertierung](review-correct-ui-edited.md#send-a-form-for-conversion)
 
-### Hinzufügen einer Komponente zum Formular {#add-a-component-to-the-form}
+### Hinzufügen einer Komponente zum Formular{#add-a-component-to-the-form}
 
-Der Konvertierungsdienst identifiziert möglicherweise einige Komponenten des Druckformulars nicht. Beispielsweise wird in einer Komponente **Geburtsdatum** eines Formulars während der Konvertierung nicht identifiziert. Sie können das **+** -Werkzeug verwenden, um solche Komponenten zu identifizieren. Mit dem Tool können Sie Text-, Feld-, Auswahlgruppe-, Tabellen- und Bereichskomponenten hinzufügen.
+Der Konvertierungsdienst identifiziert möglicherweise einige Komponenten des Druckformulars nicht. Beispielsweise könnte eine Komponente für ein **Geburtsdatum** in einem Formular während der Konvertierung nicht identifiziert werden. Sie können das Werkzeug **+** verwenden, um solche Komponenten zu identifizieren. Mit dem Tool können Sie Text-, Feld-, Auswahlgruppen-, Tabellen- und Bedienfeldkomponenten hinzufügen.
 
 ![](assets/add-component.gif)
 
-Um dem Formular eine Komponente hinzuzufügen, tippen **[!UICONTROL +]** und tippen Sie auf **[!UICONTROL Field]**. Zeichnen Sie ein Feld mit Beschriftung und Eingabefeld des Felds. Beispielsweise verwendet das obige Beispielbild die Feldkomponente, um dem Formular die Beschriftung **Geburtsdatum** und das Feld Wert darunter hinzuzufügen. Wenn Sie das Feld zeichnen, identifiziert der Konvertierungsdienst den Typ des Felds. Sie können den Feldtyp bei Bedarf im Eigenschaftenbrowser ändern. Öffnen Sie nach dem Erstellen der Komponente den Eigenschaftenbrowser und legen Sie die Eigenschaften der Komponente fest.
+Um dem Formular eine Komponente hinzuzufügen, tippen Sie auf **[!UICONTROL +]** und anschließend auf **[!UICONTROL Feld]**. Zeichnen Sie ein Feld mit der Beschriftung und dem Eingabefeld des Feldes. So wird im obigen Beispielbild die Feldkomponente verwendet, um die Beschriftung **Geburtsdatum** und das nachfolgende Wertefeld zum Formular hinzuzufügen. Wenn Sie das Feld zeichnen, identifiziert der Konvertierungsdienst den Feldtyp. Sie können den Feldtyp bei Bedarf im Eigenschaftenbrowser ändern. Öffnen Sie nach dem Erstellen der Komponente den Eigenschaftenbrowser und legen Sie die Eigenschaften der Komponente fest.
 
-Tippen Sie auf **[!UICONTROL Save]** &quot;Schaltfläche&quot;, um die Änderungen zu speichern, oder verwenden Sie die **[!UICONTROL Save & Convert]** Schaltfläche, um die PDF-Formulare an den Konvertierungsdienst erneut zu senden.
+Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche **[!UICONTROL Speichern &amp; Konvertieren]**, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden.
 
-### Hinzufügen oder Bearbeiten einer Tabelle {#addedittable}
+### Hinzufügen oder Bearbeiten einer Tabelle{#addedittable}
 
-Bei der Konvertierung können einige Zellen, Begrenzungen oder Inhalte einer Tabellenzelle nicht identifiziert werden. Beispielsweise wird eine Tabellenzeile nicht identifiziert. Sie können diese Elemente mit dem Editor &quot;Review &amp; Correct&quot;identifizieren. Sie können für eine Tabelle die folgenden Aktionen ausführen:
+Bei der Konvertierung werden einige Zellen, Grenzen oder Inhalte einer Tabellenzelle eventuell nicht identifiziert. Beispielsweise wird eine Zeile einer Tabelle nicht identifiziert. Sie können den Editor „Überprüfen und Korrigieren“ verwenden, um solche Elemente zu identifizieren. Sie können für eine Tabelle die folgenden Aktionen ausführen:
 
-* Um eine Tabelle auszuwählen, klicken Sie auf eine beliebige Tabellenzelle.
-* Doppelklicken Sie auf eine Zelle, um die Eigenschaften einer Zelle wie Name, Titel oder Typ zu ändern. Sie können auch auf die Zelle doppelklicken, um den Inhalt zu ändern, ein Feld als erforderlich zu markieren und andere Eigenschaften auszuwählen.
-* Verwenden Sie das **[!UICONTROL +]** Tool, um dem Formular eine vollständig nicht identifizierte oder neue Tabelle hinzuzufügen/zu identifizieren.
-* Wenn Sie die Größe von Zellen oder Zeilen einer Tabelle ändern möchten, klicken Sie mit einem Klick auf den leeren Bereich der Tabelle, halten Sie den Mauszeiger über die Zeilen- oder Spaltengrenze und verschieben Sie die Begrenzung, wenn sich der Zeiger ändert. Nachdem Sie die Größe geändert haben, klicken Sie auf **[!UICONTROL Done]** , um die Änderungen zu übernehmen. Sie können die **[!UICONTROL ESC]** Taste drücken, um die Größe zu verwerfen.
+* Um eine Tabelle auszuwählen, klicken Sie auf eine beliebige Zelle der Tabelle.
+* Doppelklicken Sie auf eine Zelle, um Eigenschaften einer Zelle wie Name, Titel oder Typ zu ändern. Sie können auch auf die Zelle doppelklicken, um den Inhalt zu ändern, ein Feld als erforderlich zu markieren und andere Eigenschaften auszuwählen.
+* Zum Hinzufügen/Identifizieren einer völlig unidentifizierten oder neuen Tabelle im Formular, verwenden Sie das Werkzeug **[!UICONTROL +]**.
+* Um die Größe von Zellen oder Zeilen einer Tabelle zu ändern, klicken Sie einfach auf den leeren Bereich der Tabelle und bewegen Sie den Mauszeiger über die Zeilen- oder Spaltengrenze. Wenn sich der Cursorzeiger ändert, wählen Sie die Grenze aus und verschieben Sie sie. Klicken Sie nach dem Ändern der Größe auf **[!UICONTROL Fertig]**, um die Änderungen zu übernehmen. Sie können die Taste **[!UICONTROL ESC]** drücken, um die Größenänderung zu verwerfen.
 
-* Um Zeilen oder Spalten hinzuzufügen oder zu löschen, wählen Sie eine Zelle in der Tabellenzeile aus und wählen Sie die **[!UICONTROL Add Row]**-, **[!UICONTROL Add Column]**- **[!UICONTROL Delete Row]** oder **[!UICONTROL Delete Column]** -Option im ![](assets/table_18x18.png) Menü aus.
+* Um Zeilen oder Spalten hinzuzufügen oder zu löschen, wählen Sie eine Zelle in der Zeile der Tabelle aus und wählen Sie **[!UICONTROL Zeile hinzufügen]**, **[!UICONTROL Spalte hinzufügen]**, **[!UICONTROL Zeile löschen]** oder **[!UICONTROL Spalt löschen]** aus dem Menü ![](assets/table_18x18.png).
 
-* Um eine Zelle in eine Tabelle zu teilen, wählen Sie die **[!UICONTROL Spilt Vertical]** bzw. **[!UICONTROL Split Horizontal]** -Option aus dem ![](assets/table_18x18.png) Menü.
+* Um eine Zelle in einer Tabelle zu teilen, wählen Sie die Option **[!UICONTROL Senkrecht teilen]** oder **[!UICONTROL Waagerecht teilen]** aus dem Menü ![](assets/table_18x18.png).
 
-* Wenn Sie Zellen einer Tabelle zusammenführen möchten, wählen Sie die zusammenzuführenden Zellen aus und wählen Sie die **[!UICONTROL Merge Cells]** Option im ![](assets/table_18x18.png) Tabellenmenü aus.
+* Um Zellen einer Tabelle zusammenzuführen, wählen Sie die zusammenzuführenden Zellen aus und wählen Sie die Option **[!UICONTROL Zellen zusammenführen]** im Tabellenmenü ![](assets/table_18x18.png).
 
 ### Typ einer Komponente ändern {#change-type-a-component}
 
-Der Konvertierungsdienst kann einige Felder vom falschen Typ erstellen. In der folgenden Abbildung wird beispielsweise das Feld &quot; **Geschlecht** &quot;fälschlicherweise als **Textfeld** identifiziert. Außerdem ist der Inhalt der Beschriftung falsch. Das Feld sollte ein Auswahlfeldtyp sein, und die Beschriftung sollte &quot;Geschlecht&quot;lauten. So ändern Sie den Typ einer Komponente und korrigieren Sie ihre Beschriftung:
+Der Konvertierungsdienst erstellt eventuell einige Felder vom falschen Typ. In der folgenden Abbildung wird das Feld **Geschlecht** beispielsweise fälschlicherweise als **Text**-Feld identifiziert. Auch der Inhalt der Beschriftung ist falsch. Das Feld sollte ein Auswahlfeld sein und die Bezeichnung sollte „Geschlecht“ sein. So ändern Sie den Typ einer Komponente und korrigieren die Beschriftung:
 
-Wählen Sie das zu konvertierende Feld aus, tippen ![](assets/smock_shuffle_18_n.svg) und tippen Sie auf einen Feldtyp. Das Feld wird in den ausgewählten Feldtyp umgewandelt. Ein Feld kann nur in Typen konvertiert werden, die in der folgenden Tabelle aufgeführt sind. Eine Bereichskomponente kann nur aufgehoben, nicht transformiert werden.
+Wählen Sie das zu konvertierende Feld aus, tippen Sie auf ![](assets/smock_shuffle_18_n.svg) und anschließend auf einen Feldtyp. Das Feld wird in den ausgewählten Feldtyp konvertiert. Ein Feld kann nur in die in der folgenden Tabelle aufgeführten Typen konvertiert werden. Eine Bedienfeld-Komponente kann nicht transformiert werden, es ist nur möglich, ihre Gruppierung aufzuheben.
 
-| **Komponente** | **Konvertiert in** |
+| **Komponente** | **Konvertiert zu** |
 |---|---|
-| Text | Feld- oder Auswahlgruppe |
+| Text | Feld oder Auswahlgruppe |
 | Feld | Text oder Auswahlgruppe |
-| Auswahlgruppe | Text oder Bereich |
+| Auswahlgruppe | Text oder Bedienfeld |
 
-Öffnen Sie nach der Konvertierung den Eigenschaftenbrowser, geben Sie eine Beschriftung an und geben Sie andere erforderliche Eigenschaften an. Tippen Sie auf **[!UICONTROL Save]** , um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche &quot;Speichern und konvertieren&quot;, um die PDF-Formulare an den Konvertierungsdienst erneut zu senden.
+Öffnen Sie nach der Konvertierung den Eigenschaftenbrowser, geben Sie die Bezeichnung an und geben Sie andere erforderliche Eigenschaften an. Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche Speichern &amp; Konvertieren, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden.
 
-### Bedienfeld erstellen oder entfernen {#create-or-remove-a-panel}
+### Erstellen oder Entfernen eines Bedienfelds {#create-or-remove-a-panel}
 
-Der Konvertierungsdienst aggregiert zugehörige Komponenten und Inhalte von Druckformularen in einem Bedienfeld. Das Formular kann beispielsweise einen Adressbereich mit Feldern wie z. B. Name, Plot-Nummer, Bereich, Stadt, Bundesland, Postleitzahl und Land haben. Diese Felder sind in einem Bedienfeld gruppiert. Ein Formular kann mehrere Bereiche haben.
+Der Konvertierungsdienst fasst verwandte Komponenten und Inhalte von Druckformularen zu einem Bedienfeld zusammen. Das Formular kann beispielsweise ein Bedienfeld für die Adresse mit Feldern wie Name, Grundstücksnummer, Gebiet, Stadt, Bundesland, Postleitzahl und Land enthalten. Diese Felder sind in einem Bedienfeld zusammengefasst. Ein Formular kann mehrere Bedienfelder enthalten.
 
-Der Konvertierungsdienst kann Bereiche erstellen, die Komponenten ohne Beziehung zu anderen enthalten oder eine relative Komponente aus dem Bedienfeld ausschließen. Sie können die Werkzeuge zur Gruppe oder Aufhebung der Gruppierung verwenden, um diese Bereiche zu beheben:
+Der Konvertierungsdienst erstellt eventuell Bedienfelder, deren Komponenten keine Beziehung zu anderen haben, oder lässt eine zugehörige Komponente im Bedienfeld aus. Sie können die Gruppen- oder Gruppierungstools verwenden, um solche Bedienfelder zu reparieren:
 
-* Um ein Bedienfeld zu entfernen, wählen Sie das Bedienfeld aus und tippen Sie auf ![Gruppierung aufheben](assets/ungroupX18.png). Das Bedienfeld wird entfernt und die untergeordneten Komponenten des Bedienfelds werden in die übergeordnete Komponente verschoben. Sie können auch die Option &quot;Komponente[ ](review-correct-ui-edited.md#delete-a-panel-or-component)löschen&quot;verwenden, um ein Bedienfeld und dessen untergeordnete Elemente zu löschen.
+* Um ein Bedienfeld zu entfernen, wählen Sie das Bedienfeld aus und tippen Sie auf ![Gruppierung aufheben](assets/ungroupX18.png). Das Bedienfeld wird entfernt und die untergeordneten Komponenten des Bedienfelds werden in die übergeordnete Komponente verschoben. Sie können auch die Option [Komponente löschen](review-correct-ui-edited.md#delete-a-panel-or-component) verwenden, um sowohl ein Bedienfeld als auch seine untergeordneten Elemente zu löschen.
 
-* Um ein Bedienfeld zu erstellen, verwenden Sie die Strg-Taste (unter Windows oder Linux) oder die Strg-Taste (unter Mac), um zugehörige Komponenten auszuwählen, und tippen Sie auf ![Gruppe](assets/group.jpg) , um ein Bedienfeld zu erstellen. Öffnen Sie den Eigenschaftenbrowser, um Eigenschaften des Bedienfelds anzugeben.
+* Verwenden Sie zum Erstellen eines Bedienfelds die Strg-Taste (unter Windows oder Linux) oder die Control-Taste (unter Mac), um zusammengehörige Komponenten auszuwählen, und tippen Sie auf ![Gruppieren](assets/group.jpg), um ein Bedienfeld zu erstellen. Öffnen Sie den Eigenschaftenbrowser, um die Eigenschaften des Bedienfelds anzugeben.
 
-Tippen Sie auf **[!UICONTROL Save]** &quot;Schaltfläche&quot;, um die Änderungen zu speichern, oder verwenden Sie die **[!UICONTROL Save & Convert]** Schaltfläche, um die PDF-Formulare an den Konvertierungsdienst erneut zu senden.
+Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche **[!UICONTROL Speichern &amp; Konvertieren]**, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden.
 
-### Löschen eines Bereichs oder einer Komponente {#delete-a-panel-or-component}
+### Löschen eines Bedienfelds oder einer Komponente {#delete-a-panel-or-component}
 
-Der Konvertierungsdienst kann einige falsche Bereiche oder Komponenten identifizieren. Die meisten dieser Komponenten sind nicht miteinander verknüpft. Sie können diese Bereiche oder Komponenten löschen.
+Der Konvertierungsdienst identifiziert eventuell einige falsche Bedienfelder oder Komponenten. Die meisten dieser Komponenten dieser Bedienfelder sind nicht miteinander verbunden. Sie können solche Bedienfelder oder Komponenten löschen.
 
-Um ein Bedienfeld oder eine Komponente zu löschen, wählen Sie ein Bedienfeld oder eine Komponente aus und tippen Sie auf das Löschen- ![](assets/delete-icon.png) Symbol. Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Confirm]**. Das ausgewählte Bedienfeld oder die ausgewählte Komponente wird gelöscht. Beim Löschen eines Bedienfelds werden auch alle untergeordneten Elemente des Bedienfelds gelöscht. Sie können die Strg-Taste (unter Windows oder Linux) oder die Strg-Taste (unter Mac) verwenden, um mehrere Komponenten oder Bereiche auszuwählen.
+Um ein Bedienfeld oder eine Komponente zu löschen, wählen Sie das Bedienfeld oder die Komponente aus und tippen Sie auf das Symbol zum Löschen ![](assets/delete-icon.png). Tippen Sie im Bestätigungsdialogfeld auf **[!UICONTROL Bestätigen]**. Das ausgewählte Bedienfeld oder die ausgewählte Komponente wird gelöscht. Beim Löschen eines Bedienfelds werden auch alle untergeordneten Elemente des Bedienfelds gelöscht. Sie können die Strg-Taste (unter Windows oder Linux) oder die Control-Taste (unter Mac) verwenden, um mehrere Komponenten oder Bedienfelder auszuwählen.
 
-### Eigenschaften einer Komponente festlegen {#set-properties-of-a-component}
+### Festlegen von Eigenschaften einer Komponente {#set-properties-of-a-component}
 
-Jede Komponente des Formulars verfügt über eine Reihe von Eigenschaften wie Name, Titel, Typ. Um die Eigenschaften einer Komponente festzulegen, wählen Sie die Komponente aus und tippen Sie auf den Eigenschaftenbrowser. Die Eigenschaften der ausgewählten Komponente werden angezeigt. Ändern oder legen Sie die Eigenschaften fest.
+Jede Komponente des Formulars verfügt über eine Reihe von Eigenschaften wie Name, Titel und Typ. Um die Eigenschaften einer Komponente festzulegen, wählen Sie die Komponente aus und tippen Sie auf den Eigenschaftenbrowser. Die Eigenschaften der ausgewählten Komponente werden angezeigt. Ändern Sie die Eigenschaften oder legen Sie sie fest.
 
-Tippen Sie auf **[!UICONTROL Save]** &quot;Schaltfläche&quot;, um die Änderungen zu speichern, oder verwenden Sie die **[!UICONTROL Save & Convert]** Schaltfläche, um die PDF-Formulare an den Konvertierungsdienst erneut zu senden.
+Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche **[!UICONTROL Speichern &amp; Konvertieren]**, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden.
 
-### Formular zur Konvertierung senden {#send-a-form-for-conversion}
+### Senden eines Formulars zur Konvertierung {#send-a-form-for-conversion}
 
-Nachdem Sie alle erforderlichen Änderungen im Review- und Korrektur-Editor vorgenommen haben, können Sie das Formular zur Konvertierung erneut senden. Um das Formular zur Konvertierung zu senden, tippen Sie auf **[!UICONTROL Save & Convert]**. Das Quellformular **[!UICONTROL Sent for conversion label]** wird auf den Ordner angewendet, der das Quelldokument enthält, und das aktualisierte Quellformular wird in den Konvertierungsdienst hochgeladen, der auf der Adobe-E/A ausgeführt wird.
+Nachdem Sie alle erforderlichen Änderungen im Editor „Überprüfen und Korrigieren“ vorgenommen haben, können Sie das Formular erneut zur Konvertierung senden. Um das Formular zur Konvertierung zu senden, tippen Sie auf **[!UICONTROL Speichern &amp; Konvertieren]**. Der Ordner, der das Quelldokument enthält, erhält die **[!UICONTROL Bezeichnung „Zur Konvertierung gesendet“]** und das aktualisierte Quellformular wird zum Konvertierungsdienst hochgeladen, der auf Adobe I/O läuft.
 
-Je nach der Komplexität des Formulars kann es einige Zeit dauern, bis der Konvertierungsdienst das Formular konvertiert. Nach Abschluss der Konvertierung werden das konvertierte adaptive Formular und zugehörige Elemente auf Ihren Computer heruntergeladen. Sie können das Formular nach Abschluss der Konvertierung im Editor überprüfen und das adaptive Formular gegebenenfalls im [Editor](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) für adaptive Formulare für den finalen Satz der Korrekturen öffnen.
+Je nach Komplexität des Formulars benötigt der Konvertierungsdienst einige Zeit, um das Formular zu konvertieren. Nach Abschluss der Konvertierung werden das konvertierte adaptive Formular und die zugehörigen Assets auf Ihren Computer heruntergeladen. Sie können das Formular nach Abschluss der Konvertierung im Editor überprüfen und das adaptive Formular im [Editor für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/introduction-forms-authoring.html) öffnen, um bei Bedarf die endgültigen Korrekturen durchzuführen.
 
-Wenn Sie ein Formular zur Konvertierung erneut senden, nachdem Sie das Formular im Editor für adaptive Formulare aktualisiert haben, gehen alle im adaptiven Formular vorgenommenen Änderungen verloren. Sie können ein Formular nur nach erfolgreicher Konvertierung im Review- und im Korrektur-Editor öffnen.
+Wenn Sie ein Formular erneut zur Konvertierung senden, nachdem Sie das Formular im Editor für adaptive Formulare aktualisiert haben, gehen alle im adaptiven Formular vorgenommenen Änderungen verloren. Sie können ein Formular im Editor „Überprüfen und Korrigieren“ erst nach einer erfolgreichen Konvertierung öffnen.
 
 <!--
 Comment Type: draft
