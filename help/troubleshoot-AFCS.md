@@ -6,7 +6,7 @@ seo-description: Häufige AFCS-Probleme und ihre Lösungen
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
+source-git-commit: 65dd07048b3cc7d9434568a8188dc08a1db66ada
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: aebfde420d02bd4184022ecb42496a379d66a3b5
 
 Der Artikel enthält Informationen zu Installations-, Konfigurations- und Verwaltungsproblemen, die in einer Umgebung des automatisierten Formularkonvertierungsdienstes auftreten können. Das Dokument enthält außerdem grundlegende Fehlerbehebungsschritte und Erläuterungen zu häufigen Fehlermeldungen.
 
-### Häufige Fehler {#commonerrors}
+## Häufige Fehler {#commonerrors}
 
 | Fehler | Beispiel |
 |--- |--- |
