@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: 12b4df8feb19fdc6e723c4d7301d299f26676716
+source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
 
 ---
 
@@ -20,7 +20,8 @@ Dieses Dokument enthält Vorgaben und Empfehlungen, von denen Forms-Administrato
 
 Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Die unten aufgeführten Best Practices helfen Ihnen, die Konvertierungsgeschwindigkeit und -genauigkeit zu verbessern. Darüber hinaus können Sie mit diesen Best Practices Zeit sparen, die Sie nach den Konversionsmaßnahmen verbringen.
 
-### Vor dem Hochladen von Quellformularen
+### Vor dem Hochladen der Quelle
+
 Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
 * Ein Ordner muss weniger als 15 Formulare und weniger als 50 Seiten enthalten.
