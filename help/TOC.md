@@ -1,19 +1,19 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: forms conversion service
+sub-product: Forms-Konvertierungsdienst
 audience: end-user
-user-guide-title: Adobe Experience Manager Forms Automated Conversion Service
+user-guide-title: Adobe Experience Manager Forms Automatischer Konvertierungsdienst
 translation-type: tm+mt
-source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
+source-git-commit: 4b9f3f4fe3b3901cb99c9374ff40e8f49855237f
 
 ---
 
 
 # Inhalt {#using}
 + [Versionshinweise](release-notes.md)
-+ [Einführung zum Dienst für die automatische Formularkonvertierung](introduction.md)
-+ [Dienst zur automatischen Formularkonvertierung konfigurieren](configure-service.md)
++ [Einführung](introduction.md)
++ [Konfigurieren des Dienstes](configure-service.md)
 + [Druckformulare in adaptive Formulare konvertieren](convert-existing-forms-to-adaptive-forms.md)
 + [Überprüfen und Korrigieren von konvertierten Formularen](review-correct-ui-edited.md)
 + [Erweitern des Standard-Metamodells](extending-the-default-meta-model.md)
@@ -23,4 +23,5 @@ source-git-commit: a6eed86bf4581a4c20aa8e2c3fddbf88d1ac7b97
 + [Häufig gestellte Fragen](frequently-asked-questions.md)
 + [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md)
 + [Bekannte Probleme](known-issues.md)
++ [Fehlerbehebung beim Dienst](troubleshoot-afcs.md)
 
