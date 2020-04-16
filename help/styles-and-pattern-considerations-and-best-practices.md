@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 translation-type: tm+mt
-source-git-commit: cab926fc408a1a680853ee557e36354938f7424a
+source-git-commit: a5d663c2a59895eb71eb5287586bc6b3862927fc
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie ein XDP-Formular zur Konvertierung verwenden, führen Sie die folgenden
 * [Hinzufügen Bindungen an das XDP-Formular](http://www.adobe.com/go/learn_aemforms_designer_65) vor Beginn der Konvertierung. Wenn Bindungen im Quell-XDP-Formular verfügbar sind, wendet der Dienst während der Konvertierung automatisch Bindungen auf entsprechende adaptive Formularfelder an. Dadurch sparen Sie Zeit, um die Bindungen manuell anzuwenden.
 * [Hinzufügen Sie Adobe Sign-Tags](https://helpx.adobe.com/sign/using/text-tag.html) zur XDP-Datei. Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe-Signaturfeldern. Eine vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://docs.adobe.com/content/help/en/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) .
 * Verwenden Sie Teilformulare in XDP-Dokumenten, um Bereiche in adaptiven Formularen zu erstellen. Dienst konvertiert jedes Teilformular während der Konvertierung in einen Bereich für adaptive Formulare.
-* Konvertieren Sie komplexe Tabellen in XDP-Dokumenten nach Möglichkeit in einfache Tabellen.
+* Konvertieren Sie komplexe Tabellen in XDP-Dokumenten nach Möglichkeit in einfache Tabellen. Eine Tabelle mit Formularfeldern in Tabellenzellen, ungleichmäßigen Zellen, Zeilen- oder Spaltenbereichen, zusammengeführten Zellen, partiellen Rändern oder ohne sichtbaren Rand gilt als komplexe Tabelle. Eine Tabelle mit einem der oben genannten Elemente gilt als komplexe Tabelle.
 
 ### Vor dem Beginn der Konvertierung
 
