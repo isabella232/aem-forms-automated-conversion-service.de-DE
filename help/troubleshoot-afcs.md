@@ -6,7 +6,7 @@ seo-description: Häufige AFCS-Probleme und ihre Lösungen
 contentOwner: khsingh
 topic-tags: forms
 translation-type: tm+mt
-source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
+source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 ---
 
@@ -20,7 +20,10 @@ source-git-commit: e905833e5b58c05aac612e3a8139eb7fb60ef4bf
 
 | Fehler | Beispiel |
 |--- |--- |
-| **Fehlermeldung** <br> Die Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br>**Grund **<br>: Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in der Adobe Cloud nicht erreichen.<br><br>**Lösung** Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und <br> erstellen Sie eine neue Konfiguration [](configure-service.md#obtainpubliccertificates). <br> Wenn eine einzelne Konfiguration vorhanden ist, verwenden Sie diese **[!UICONTROL Health Check]** zur [Prüfung der Verbindung](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configuration.png) |
+| **Fehlermeldung** <br> Die Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br> **Grund** <br> : Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in der Adobe Cloud nicht erreichen. <br><br>**Lösung **Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und<br>erstellen Sie eine neue Konfiguration[](configure-service.md#obtainpubliccertificates).<br>Wenn eine einzelne Konfiguration vorhanden ist, verwenden Sie** Health Check **, um die Verbindung zu[überprüfen](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configuration.png) |
+
+| Fehler | Beispiel |
+|--- |--- |
 | **Fehlermeldung** Keine Verbindung mit dem Dienst möglich <br> .  <br><br>**Grund **<br>: In den Cloud-Diensten für den automatisierten Forms-Konvertierungsdienst werden falsche Dienst-URL oder keine Dienst-URL angegeben.<br><br>**Auflösungs** - <br> Korrekte [Dienst-URL](configure-service.md#configure-the-cloud-service) in den Diensten des Konvertierungsdienstes für automatisierte Formulare. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/wrong-endpoint-configured.png) |
 | **Fehlermeldung** <br> Der Dienst konnte das Formular nicht konvertieren.  <br><br>**Da **<br>Probleme mit der Netzwerkverbindung am Ende auftreten, ist der Dienst aufgrund der geplanten Wartung oder des Ausfalls in der Adobe Cloud nicht verfügbar.<br><br>**Lösung** <br> Beheben Sie Probleme mit der Netzwerkverbindung am Ende und prüfen Sie den Status des Dienstes auf https://status.adobe.com/ auf einen geplanten oder ungeplanten Ausfall. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/service-failure.png) |
 | **Fehlermeldung** <br> Die Anzahl der Seiten ist größer als 15.  <br><br>**Grund **<br>: Das Quellformular ist mehr als 15 Seiten lang.<br><br>**Auflösung** <br> Verwenden Sie Adobe Acrobat, um Formulare mit mehr als 15 Seiten zu teilen. Bringen Sie die Anzahl der Seiten in einem Formular auf unter 15. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/number-of-pages.png) |
