@@ -20,7 +20,7 @@ source-git-commit: 3a82102feffa7fc618dc37c9a745c254a46a0700
 
 | Fehler | Beispiel |
 |--- |--- |
-| **Fehlermeldung** <br> Die Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br> **Grund** <br> : Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in der Adobe Cloud nicht erreichen. <br><br>**Lösung **Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und<br>erstellen Sie eine neue Konfiguration[](configure-service.md#obtainpubliccertificates).<br>Wenn eine einzelne Konfiguration vorhanden ist, verwenden Sie** Health Check **, um die Verbindung zu[überprüfen](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configurations.png) |
+| **Fehlermeldung** <br> Die Kopfzeile des Zugriffstokens ist nicht verfügbar. <br><br>**Grund **<br>: Ein Administrator hat mehrere IMS-Konfigurationen erstellt, oder die IMS-Konfiguration kann den AFCS-Dienst in der Adobe Cloud nicht erreichen.<br><br>**Lösung** Wenn mehrere Konfigurationen vorhanden sind, löschen Sie alle Konfigurationen und <br> erstellen Sie eine neue Konfiguration [](configure-service.md#obtainpubliccertificates). <br> Wenn eine einzelne Konfiguration vorhanden ist, verwenden Sie **Health Check** , um die Verbindung zu [überprüfen](configure-service.md#createintegrationoption). | ![Die Kopfzeile des Zugriffstokens steht nicht zur Verfügung](assets/invalid-ims-configuration.png) |
 
 | Fehler | Beispiel |
 |--- |--- |
