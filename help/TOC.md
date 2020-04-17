@@ -5,12 +5,13 @@ sub-product: Forms-Konvertierungsdienst
 audience: end-user
 user-guide-title: Adobe Experience Manager Forms Automatischer Konvertierungsdienst
 translation-type: tm+mt
-source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
+source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 ---
 
 
 # Inhalt {#using}
+
 + [Versionshinweise](release-notes.md)
 + [Einführung](introduction.md)
 + [Konfigurieren des Dienstes](configure-service.md)
@@ -24,4 +25,3 @@ source-git-commit: 90f577a3bc75afdb596ad1dea27cd833e1c996ce
 + [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md)
 + [Bekannte Probleme](known-issues.md)
 + [Fehlerbehebung](troubleshoot-afcs.md)
-
