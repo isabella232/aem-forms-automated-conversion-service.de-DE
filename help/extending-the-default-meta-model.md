@@ -6,7 +6,7 @@ seo-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
 
 ---
@@ -49,8 +49,8 @@ Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/do
 Führen Sie die folgenden Schritte aus, um das Standardmetamodell in das lokale Dateisystem herunterzuladen:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Instanz an.
-1. Navigate to the **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** **>** **[!UICONTROL Meta Model]** folder.
-1. Select the **[!UICONTROL global.schema.json]** file and tap **[!UICONTROL Download]**. Das Dialogfeld zum Herunterladen wird angezeigt. Select the **[!UICONTROL Download asset(s) as binary files]** option. Tippen Sie auf **[!UICONTROL Download]**. Ein Archiv wird heruntergeladen.
+1. Navigieren Sie zum Ordner **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** **>** **[!UICONTROL Metamodel]**.
+1. Wählen Sie die Datei **[!UICONTROL global.schema.json]** aus und tippen Sie auf **[!UICONTROL Herunterladen]**. Das Dialogfeld zum Herunterladen wird angezeigt. Wählen Sie die Option **[!UICONTROL Asset(s) als Binärdateien herunterladen]**. Tippen Sie auf **[!UICONTROL Herunterladen]**. Ein Archiv wird heruntergeladen.
 
    <!--
    Comment Type: draft
@@ -191,7 +191,7 @@ Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden
   <tr> 
    <td><p>multiLine</p></td> 
    <td> 
-    <p>Die multiLine-Eigenschaft konvertiert ein Quellformularfeld nach der Konvertierung in ein mehrzeiliges Feld im adaptiven Formular. Weitere Informationen finden Sie unter <strong>Konvertieren eines Zeichenfolgenfelds in ein mehrzeiliges Feld</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
+    <p>Die Eigenschaft „multiLine“ konvertiert ein Quellformularfeld nach der Konvertierung in ein mehrzeiliges Feld im adaptiven Formular. Weitere Informationen finden Sie unter <strong>Konvertieren eines Zeichenfolgenfelds in ein mehrzeiliges Feld</strong> in <a href="#custommetamodelexamples">Beispiele für benutzerdefinierte Metamodelle.</a></p> </td> 
   </tr>
   <td><p>mandatory</p></td> 
    <td> 
@@ -228,12 +228,12 @@ Sie können jedoch ein benutzerdefiniertes Metamodell in einem Ordner speichern 
 
 Führen Sie die folgenden Schritte aus, um während der Konvertierung ein benutzerdefiniertes Metamodell zu verwenden:
 
-1. Create a folder in **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]** and upload the custom meta-model JSON schema file to the folder.
+1. Erstellen Sie einen Ordner in **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** und laden Sie die benutzerdefinierte JSON-Schemadatei für das Metamodell in den Ordner hoch.
 1. Öffnen Sie die Eigenschaften des Konvertierungsdienstes mit:
 
-   **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]**> **&lt;** Eigenschaften der ausgewählten Konfiguration **>**
+   **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > **&lt;** Eigenschaften der ausgewählten Konfiguration **>**
 
-1. Geben Sie auf der **[!UICONTROL Basic]** Registerkarte die Position des benutzerdefinierten Meta-Modells im Feld ein und **[!UICONTROL Custom Meta-model]** tippen Sie auf **[!UICONTROL Save & Close]**.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Standard]** den Speicherort des benutzerdefinierten Metamodells im Feld **[!UICONTROL Benutzerdefiniertes Metamodell]** an und tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
 1. [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process), um das benutzerdefinierte Metamodell auf den Konvertierungsprozess anzuwenden.
 
 ### Benutzerdefinierte Metamodellbeispiele{#custommetamodelexamples}
@@ -449,7 +449,7 @@ Um eine zusätzliche Option hinzuzufügen, aktualisieren Sie die Eigenschaft **e
 
 **Beispiel:** Konvertieren Sie das Feld **Adresse** vom Typ „string“ nach der Konvertierung in ein mehrzeiliges Feld im Formular.
 
-In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. After retrieving the **Address** text in the form, the service converts the text field to a multi-line field using the **multiLine** property defined in the **aem:afProperties** section.
+In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Adresse** im Formular wandelt der Dienst das Textfeld mithilfe der Eigenschaft **multiline**, die im Abschnitt **aem:afProperties** definiert ist, in ein mehrzeiliges Feld um.
 
 ```
 {
