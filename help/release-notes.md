@@ -1,43 +1,43 @@
 ---
-title: Neuerungen? Versionshinweise - Automatisierter Forms-Konvertierungsdienst
-description: 'Erfahren Sie mehr über die neuesten Funktionen und den Fehler, der für den automatisierten Forms-Konvertierungsdienst behoben wurde '
-translation-type: tm+mt
+title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
+description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
+translation-type: ht
 source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
 
 
-# Automatisierter Forms-Konvertierungsdienst: Versionshinweise
+# Dienst für die automatische Formularkonvertierung
 
-Der automatisierte Forms-Konvertierungsdienst wird laufend verbessert. Um sich über die neuesten Entwicklungen auf dem Laufenden zu halten, besuchen Sie diese Seite regelmäßig. Auf dieser Seite finden Sie Informationen zu folgenden Themen:
+Dienst für die automatische Formularkonvertierung wird ständig verbessert. Besuchen Sie diese Seite regelmäßig, um über die neuesten Entwicklungen auf dem Laufenden zu bleiben. Diese Seite bietet Ihnen Informationen über:
 
-* Vorzeitiger Zugriff
-* Neueste Versionen
+* Früher Zugang
+* Letzte Veröffentlichungen
 * Neue Funktionen
-* verbessert
+* Verbesserungen
 * Fehlerbehebungen
 * Veraltete Funktionalität
-* Besondere Hinweise
-* Künftige Änderungspläne
+* Spezielle Anweisungen
+* Zukünftige Pläne für Änderungen
 
 ## 20. März 2020 (AFC-2020.03.1)
 
-### Vorzeitiger Zugriff
+### Früher Zugang
 
-**Automatische Erkennung von logischen Abschnitten in einem Formular**
+**Logische Abschnitte in einem Formular automatisch erkennen**
 
-Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars einen eigenen Bereich auf der obersten Ebene. Mit der **[!UICONTROL Auto-detect logical sections]** Option können Sie jetzt Bedienfelder auf Seitenebene (auf Seitenzahlen basierende Bedienfelder) ablegen und nur logische Bedienfelder erstellen. Außerdem werden die Felder, die nicht zu einem Abschnitt mit vorhergehender logischer Ausrichtung gehören, und die Felder eines logischen Abschnitts, die sich über zwei angrenzende Seiten erstrecken, in einen einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende der ersten Seite und einige am Anfang der zweiten Seite befinden, werden alle diese Felder in einen einzigen logischen Abschnitt unterteilt.
+Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars ein separates Bedienfeld der obersten Ebene. Jetzt können Sie die Option **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden, um Bereiche auf Seitenebene (Bereiche auf Seitenzahlbasis) zu löschen und nur logische Bereiche zu erstellen. Außerdem werden die Felder, die zu keinem Abschnitt mit dem vorhergehenden logischen Abschnitt gehören, und die Felder eines logischen Abschnitts, die auf zwei benachbarte Seiten verteilt sind, zu einem einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende von Seite eins und einige am Anfang von Seite zwei befinden, werden alle diese Felder in einem einzigen logischen Abschnitt zusammengefasst.
 
 ### Verbesserte Funktionen
 
-**Verbesserungen bei der Erkennung von Listen**
+**Verbesserungen bei der Listenerkennung**
 
-Der Dienst ist jetzt beim Erkennen von Listen mit Aufzählungszeichen und Nummerierungen effizienter.
+Der Dienst erkennt jetzt Listen mit Aufzählungszeichen und Nummern effizienter.
 
-### Besondere Hinweise
+### Spezielle Anweisungen
 
-**Automatisches Forms Conversion Service Connector-Paket installieren**
+**Connector-Paket für den Dienst für die automatische Formularkonvertierung installieren**
 
-Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen zu verwenden, die in Version AFC-2020.03.1 bereitgestellt wurden. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1)herunterladen.
+Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen der Version AFC-2020.03.1 nutzen zu können. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1) herunterladen.
 
-Wenn Sie bereits über eine Umgebung des automatisierten Forms-Konvertierungsdiensts verfügen, installieren Sie zur Verwendung der neuesten Funktionen des Konvertierungsdiensts das neueste Service Pack, das neueste Add-On-Paket für AEM Forms und das neueste Connector-Paket in der angegebenen Reihenfolge. For detailed instructions, see the [Configure the Automated Forms Conversion service](configure-service.md) article.
+Wenn Sie bereits über eine Umgebung des Dienstes für die automatische Formularkonvertierung verfügen, installieren Sie zur Verwendung der neuesten Funktionen des Konvertierungsdiensts das neueste Service Pack, das neueste Add-On-Paket für AEM Forms und das neueste Connector-Paket in der angegebenen Reihenfolge. Genaue Anweisungen finden Sie unter [Dienst zur automatischen Formularkonvertierung konfigurieren](configure-service.md).
