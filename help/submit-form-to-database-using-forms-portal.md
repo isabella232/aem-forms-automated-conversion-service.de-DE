@@ -4,7 +4,7 @@ description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: c0ca850a0a1e82e34364766601011d6367b218ac
 
 Mit dem Dienst zur automatischen Formularkonvertierung können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
 
-Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, verknüpft der Konvertierungsdienst die adaptiven Formulare automatisch mit einem JSON-Schema und erstellt eine Datenbindung zwischen den im adaptiven Formular verfügbaren Feldern und dem JSON-Schema. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden.
+Wenn Sie ein adaptives Formular ohne Datenbindungen generieren möchten, können Sie nach der Konvertierung das adaptive Formular in ein Formulardatenmodell, ein XML-Schema oder ein JSON-Schema integrieren. Wenn Sie jedoch ein adaptives Formular mit Datenbindungen generieren, ordnet der Konvertierungsdienst die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Anschließend können Sie das adaptive Formular in eine Datenbank Ihrer Wahl integrieren, Daten in das Formular eintragen und dieses über das Formularportal an die Datenbank senden.
 
 Die folgende Abbildung zeigt verschiedene Phasen der Integration eines konvertierten adaptiven Formulars in eine Datenbank mithilfe von Forms Portal:
 
@@ -26,11 +26,11 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 
 ## Voraussetzungen {#pre-requisites}
 
-* Einrichten einer AEM 6.4- oder 6.5-Autoreninstanz
+* Eine AEM 6.4 oder 6.5 Author-Instanz einrichten
 * Installieren Sie das [neueste Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) für Ihre AEM-Instanz
 * Neueste Version des AEM Forms-Add-On-Pakets
-* Configure [Automated Forms Conversion service](configure-service.md)
-* Einrichten einer Datenbank. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
+* Konfigurieren Sie den [Dienst für die automatische Formularkonvertierung](configure-service.md)
+* Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
 
 ## Verbindung zwischen der AEM-Instanz und der Datenbank einrichten{#set-up-connection-aem-instance-database}
 
@@ -50,9 +50,9 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 
 1. Navigieren Sie zu http://[server]:[port]/system/console/depfinder und suchen Sie nach dem com.mysql.jdbc-Paket.
 1. Überprüfen Sie in der Spalte „Exportiert von“, ob das Paket von einem Paket exportiert wird. Fahren Sie fort, wenn das Paket nicht von einem Paket exportiert wird.
-1. Navigate to http://[server]:[port]/system/console/bundles and click **[!UICONTROL Install/Update]**.
-1. Click **[!UICONTROL Choose File]** and browse to select the mysql-connector-java-5.1.39-bin.jar file. Aktivieren **[!UICONTROL Start Bundle]** und **[!UICONTROL Refresh Packages]** aktivieren Sie außerdem die Kontrollkästchen.
-1. Klicken Sie auf **[!UICONTROL Install]** oder **[!UICONTROL Update]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
+1. Navigieren Sie zu http://[server]:[port]/system/console/bundles und klicken Sie auf **[!UICONTROL Installieren/Aktualisieren]**.
+1. Klicken Sie auf **[!UICONTROL Datei auswählen]** und wählen Sie die Datei mysql-connector-java-5.1.39-bin.jar. Aktivieren Sie außerdem die Kontrollkästchen **[!UICONTROL Paket starten]** und **[!UICONTROL Paket aktualisieren]**.
+1. Klicken Sie auf **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
 1. (Nur Windows) Deaktivieren Sie die System-Firewall für Ihr Betriebssystem.
 
 ### Schema und Tabellen in der Datenbank erstellen{#create-schema-and-tables-in-database}
@@ -146,8 +146,8 @@ Führen Sie die folgenden Schritte aus, um ein Schema und Tabellen in der Datenb
 
 Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwischen der AEM-Instanz und der MYSQL-Datenbank herzustellen:
 
-1. Go to AEM Web Console Configuration page at *http://[host]:[port]/system/console/configMgr*.
-1. Klicken Sie auf , um **[!UICONTROL Forms Portal Draft and Submission Configuration]** im Bearbeitungsmodus zu öffnen.
+1. Gehen Sie unter *http://[host]:[port]/system/console/configMgr* zur AEM Web Console-Konfigurationsseite.
+1. Klicken Sie, um die **[!UICONTROL Konfiguration des Forms Portals für Entwurf und Übermittlung]** im Bearbeitungsmodus zu öffnen.
 1. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
    <table> 
@@ -189,8 +189,8 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tr>
     </tbody> 
     </table>
-1. Leave other configurations as is and click **[!UICONTROL Save]**.
-1. Find and click to open **[!UICONTROL Apache Sling Connection Pooled DataSource]** in edit mode in the Web Console Configuration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
+1. Belassen Sie die anderen Konfigurationen und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Klicken und öffnen Sie **[!UICONTROL Apache Sling Connection Pooled DataSource]** im Bearbeitungsmodus in der Web Console-Konfiguration. Geben Sie die Werte für die Eigenschaften an, wie in der folgenden Tabelle beschrieben:
 
    <table> 
     <tbody> 
@@ -270,9 +270,9 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
    [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Gehen Sie zu AEM Package Manager unter *http://[host]:[port]/crx/packmgr/*.
-1. Klicken Sie auf **[!UICONTROL Upload Package]**.
+1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
-1. Click **[!UICONTROL Install]** next to the package to install the package.
+1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
 
 ## Konfigurieren des konvertierten adaptiven Formulars für die Integration von Forms Portal {#configure-converted-adaptive-form-for-forms-portal-integration}
 
@@ -280,20 +280,20 @@ Führen Sie die folgenden Schritte aus, um die Übermittlung des adaptiven Formu
 1. [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process), um ein Quellformular in ein adaptives Formular zu konvertieren.
 1. Öffnen Sie Ihr adaptives Formular im Bearbeitungsmodus.
 1. Tippen Sie auf Formularcontainer und wählen Sie „Konfigurieren“ und dann ![Adaptives Formular konfigurieren](assets/configure-adaptive-form.png).
-1. Wählen Sie im **[!UICONTROL Submission]** Abschnitt **[!UICONTROL Forms Portal Submit Action]** aus der **[!UICONTROL Submit Action]** Dropdown-Liste.
+1. Wählen Sie im Abschnitt **[!UICONTROL Sendung]** **[!UICONTROL Forms Portal-Sendeaktion]** aus der Dropdown-Liste **[!UICONTROL Sendeaktion]**.
 1. Tippen Sie auf ![Vorlagenrichtlinie speichern](assets/edit_template_done.png), um die Einstellungen zu speichern.
 
 ## Erstellen und Konfigurieren der Forms Portal-Seite {#create-configure-forms-portal-page}
 
 Führen Sie die folgenden Schritte aus, um eine Forms Portal-Seite zu erstellen und zu konfigurieren, damit Sie über diese Seite adaptive Formulare senden können:
 
-1. Log on to the AEM author instance and tap **[!UICONTROL Adobe Experience Manager]** >  **[!UICONTROL Sites]**.
-1. Select the location where you want to save the new Forms Portal page and tap **[!UICONTROL Create]** > **[!UICONTROL Page]**.
-1. Select the template for the page, tap **[!UICONTROL Next]**, specify a title for the page and tap **[!UICONTROL Create]**.
-1. Tap **[!UICONTROL Edit]** to configure the page.
-1. In the page header, tap ![Edit template](assets/edit_template_sites.png)  > **[!UICONTROL Edit Template]** to open the template of the page.
-1. Tippen Sie auf Layout-Container und anschließend auf ![Vorlagenrichtlinie bearbeiten](assets/edit_template_policy.png). Aktivieren Sie auf der **[!UICONTROL Allowed Components]** Registerkarte die Optionen **[!UICONTROL Document Services]** und **[!UICONTROL Document Services Predicates]** und tippen Sie auf ![Vorlagenrichtlinie](assets/edit_template_done.png)speichern.
-1. Insert **[!UICONTROL Search & Lister]** component in the page. Daraufhin werden alle in Ihrer AEM-Instanz verfügbaren adaptiven Formulare auf der Seite aufgelistet.
-1. Insert **[!UICONTROL Drafts & Submissions]** component in the page. Auf der Forms Portal-Seite werden zwei Registerkarten **[!UICONTROL Draft Forms]** und **[!UICONTROL Submitted Forms]** angezeigt. The **[!UICONTROL Draft Forms]** tab also displays the converted adaptive form generated using the steps mentioned in [Configure the converted adaptive form for Forms Portal integration](#configure-converted-adaptive-form-for-forms-portal-integration)
+1. Melden Sie sich bei der AEM-Autoreninstanz an und tippen Sie auf **[!UICONTROL Adobe Experience Manager]** >  **[!UICONTROL Sites]**.
+1. Wählen Sie den Speicherort aus, an dem Sie die neue Forms Portal-Seite speichern möchten, und tippen Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Seite]**.
+1. Wählen Sie die Vorlage für die Seite aus, tippen Sie auf **[!UICONTROL Weiter]**, geben Sie einen Titel für die Seite an und tippen Sie auf **[!UICONTROL Erstellen]**.
+1. Tippen Sie auf **[!UICONTROL Bearbeiten]**, um die Seite zu konfigurieren.
+1. Tippen Sie im Seitenkopf auf ![Vorlage bearbeiten](assets/edit_template_sites.png)   > **[!UICONTROL Vorlage bearbeiten]**, um die Vorlage der Seite zu öffnen.
+1. Tippen Sie auf Layout-Container und anschließend auf ![Vorlagenrichtlinie bearbeiten](assets/edit_template_policy.png). Aktivieren Sie auf der Registerkarte **[!UICONTROL Zulässige Komponenten]** die Optionen **[!UICONTROL Document Services]** und **[!UICONTROL Document Services Predicates]** und tippen Sie auf ![Vorlagenrichtlinie speichern](assets/edit_template_done.png).
+1. Fügen Sie die Komponente **[!UICONTROL Search &amp; Lister]** in die Seite ein. Daraufhin werden alle in Ihrer AEM-Instanz verfügbaren adaptiven Formulare auf der Seite aufgelistet.
+1. Fügen Sie die Komponente **[!UICONTROL Entwürfe &amp; Sendungen]** in die Seite ein. Zwei Registerkarten **[!UICONTROL Entwurfsformulare]** und **[!UICONTROL Gesendete Formulare]** werden auf der Forms Portal-Seite angezeigt. Auf der Registerkarte **[!UICONTROL Entwurfsformulare]** wird auch das konvertierte adaptive Formular angezeigt, das mit den unter [Konfigurieren des konvertierten adaptiven Formulars für die Integration von Forms Portal](#configure-converted-adaptive-form-for-forms-portal-integration) genannten Schritten generiert wurde.
 
-1. Tap **[!UICONTROL Preview]**, tap the converted adaptive form, specify values for adaptive form fields and submit it. Die Werte, die Sie für adaptive Formularfelder angeben, werden an die integrierte Datenbank gesendet.
+1. Tippen Sie auf **[!UICONTROL Vorschau]**, tippen Sie auf das konvertierte adaptive Formular, geben Sie Werte für adaptive Formularfelder an und senden Sie es. Die Werte, die Sie für adaptive Formularfelder angeben, werden an die integrierte Datenbank gesendet.
