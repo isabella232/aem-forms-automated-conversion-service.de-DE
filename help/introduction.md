@@ -1,7 +1,7 @@
 ---
 title: Einführung
 description: 'Schnellere Konvertierung von Druckformularen in adaptive Formulare '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
 
 ---
@@ -29,7 +29,7 @@ Adobe ermöglicht den Zugriff für Ihre Organisation und stellt der in Ihrer Org
 
 Der Dienst unterstützt nicht-interaktive PDF-Formulare, Formulare, die mit Adobe Acrobat erstellt wurden (AcroForms), und XFA-basierte Formulare, die mit AEM Forms oder Adobe LiveCycle erstellt wurden.
 
-Der Dienst kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs ](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
+Der Dienst kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs ](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 
 ## Konvertierungsarbeitsablauf  {#conversion-workflow}
 
@@ -48,7 +48,7 @@ Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PD
 * Laden Sie nicht die gesicherten Formulare hoch. Der Dienst konvertiert keine kennwortgeschützten und verschlüsselten Formulare.
 * Laden Sie keine gescannten, farbigen, nicht englischen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine PDF-Formulare mit Leerzeichen im Dateinamen hoch.
-* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)hoch. Der Dienst konvertiert keine PDF-Portfolios in adaptive Formulare.
+* Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) hoch. Der Dienst konvertiert keine PDF-Portfolios in adaptive Formulare.
 * Nehmen Sie die vorgeschlagenen Änderungen in PDF-Formularen vor, wie sie im Artikel [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) beschrieben werden.
 * Lesen Sie den Artikel [Bekannte Probleme](known-issues.md), um Fallstricke zu vermeiden.
 
