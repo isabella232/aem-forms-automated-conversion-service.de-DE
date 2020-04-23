@@ -6,7 +6,7 @@ seo-description: häufig gestellte Fragen für den Dienst für die automatische 
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 # Häufig gestellte Fragen{#frequently-asked-questions}
 
 1. **Welche Version von AEM Forms unterstützt der Dienst für die automatische Formularkonvertierung?**
-   <p>Der Automatisierte Forms-Konvertierungsdienst unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM-Formularen unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
+   <p>Der Dienst für die automatische Formularkonvertierung unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM-Formularen unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
     <br>
 
 1. **Kann der Dienst vor Ort installiert werden?**
@@ -26,7 +26,7 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
    <p>Der Dienst kann nicht-interaktive PDF-Formulare, XFA-basierte XDP- und PDF-Formulare sowie AcroForms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.<br /> </p> 
     <p>Wir fügen regelmäßig Unterstützung für andere Quelltypen hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p>
 
-   Der Dienst kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> in andere Sprachen übersetzen. </br>
+   Der Dienst kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
 
 1. **Kann der Dienst ein XDP anstelle eines adaptiven Formulars erstellen?**
    <p>Der Dienst erzeugt keine XDP-Ausgabe. Wir fügen regelmäßig Funktionen zum Dienst hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p> <br>
@@ -40,8 +40,8 @@ source-git-commit: 022b86b77c4a524f320cbcbcd6bad4403ddf57d8
 1. **Kann der Dienst ein Microsoft Word-Formular in adaptive Formulare konvertieren?**
    <p>Nein, der Dienst konvertiert Microsoft Word-Formulare nicht in adaptive Formulare. Sie können ein Microsoft Word-Formular in ein PDF-Formular speichern und das PDF-Formular in ein adaptives Formular konvertieren. Der gesamte Prozess läuft wie folgt ab: </p> <br>
 
-   1. Konvertieren Sie mithilfe von Adobe Acrobat [das Word-Dokument in eine nicht-interaktive PDF](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html).
-   1. Konvertieren Sie in Adobe Acrobat [die so erstellten PDF-Formulare in ausfüllbare PDF-Formulare](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
+   1. Konvertieren Sie mithilfe von Adobe Acrobat [das Word-Dokument in eine nicht-interaktive PDF](https://helpx.adobe.com/de/acrobat/how-to/create-pdf-files-word-excel-website.html).
+   1. Konvertieren Sie in Adobe Acrobat [die so erstellten PDF-Formulare in ausfüllbare PDF-Formulare](https://helpx.adobe.com/de/acrobat/how-to/convert-word-excel-paper-pdf-forms.html).
    1. Korrigieren und aktualisieren Sie in Adobe Acrobat manuell die Formularfelder.
    1. Speichern Sie das PDF-Formular. Jetzt können Sie das Formular mit dem Konvertierungsdienst verwenden, um ein adaptives Formular zu generieren. Sie können das Formular auch als Datensatzdokument-Vorlage verwenden.
 
@@ -63,10 +63,10 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
    * Für die Konvertierung werden gesicherte PDF-Formulare bereitgestellt. Verwenden Sie für die Konvertierung keine kennwortgeschützten oder gesicherten PDF-Formulare.
    * Die Internetverbindung ist unterbrochen. Stellen Sie sicher, dass Sie während der Konvertierung mit dem Internet verbunden sind.
    * Die Quell-PDF enthält ein Bild des Formulars anstelle des eigentlichen Formulars.
-   * Der Dienst ist falsch konfiguriert, die Dienst-URL wird nicht bereitgestellt oder die bereitgestellte Dienst-URL ist falsch. Überprüfen Sie die [Dienstkonfiguration](configure-service.md#configure-the-cloud-service) unter **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
+   * Der Dienst ist falsch konfiguriert, die Dienst-URL wird nicht bereitgestellt oder die bereitgestellte Dienst-URL ist falsch. Überprüfen Sie die [Dienstkonfiguration](configure-service.md#configure-the-cloud-service) unter **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]**.
    * Die IMS-Konfiguration ist nicht richtig konfiguriert. Führen Sie eine Integritätsprüfung der IMS-Konfiguration durch, um sicherzustellen, dass sie ordnungsgemäß funktioniert. So überprüfen Sie, ob die IMS-Konfiguration korrekt ist oder nicht:
       1. Wechseln zu `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
-      2. Wählen Sie die Konfiguration aus. Klicken Sie auf die **[!UICONTROL Check Health]** Kopfzeile und dann auf **[!UICONTROL Check]**. Bei Erfolg erhalten Sie eine **[!UICONTROL Token retrieved successfully!]** Nachricht. <br> <br>
+      2. Wählen Sie die Konfiguration aus. Klicken Sie in der Kopfzeile auf **[!UICONTROL Systemdiagnose]** und dann auf **[!UICONTROL Prüfen]**. Bei Erfolg wird **[!UICONTROL Token erfolgreich abgerufen!]** angezeigt. <br> <br>
 
 1. **Beeinflusst die Verwendung benutzerdefinierter Schriftarten die Konvertierung?**
    <p>Wenn ein nicht-interaktives PDF-Formular in ein adaptives Formular konvertiert wird, werden die Schriftarten in das PDF-Formular eingebettet, um die Konvertierungsqualität zu verbessern. Die Unterstützung für das Einbetten von Schriftarten ist auf nicht-interaktive PDF-Formulare beschränkt. Um die Konvertierung von AcroForm- und XFA-basierten PDF-Formularen zu optimieren, werden Fallback-Schriftarten verwendet.</p> 
@@ -74,10 +74,10 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:</p>
     <p> </p> <br>
 
 1. **Identifiziert und verwendet der Dienst Schriftarten von Quell-PDF in den ausgegebenen adaptiven Formularen?**
-   <p>Stil und Layout eines Responsive-HTML-Formulars unterscheiden sich grundsätzlich von einem PDF- oder papierbasierten Formular. Um ein einheitliches Layout und Styling in allen Organisationen zu unterstützen, verwenden adaptive Formulare <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">Designs zum Gestalten eines Formulars</a>). Der Konvertierungsdienst verwendet die Schriftarten und Schriftstile, die im während der Konvertierung angewendeten Design angegeben sind. Sie können Schriftarten und Schriftstile des Designs ändern, um den Komponenten eines adaptiven Formulars ein eindeutiges Erscheinungsbild zu verleihen.</p> <br>
+   <p>Stil und Layout eines Responsive-HTML-Formulars unterscheiden sich grundsätzlich von einem PDF- oder papierbasierten Formular. Um ein einheitliches Layout und Styling in allen Organisationen zu unterstützen, verwenden adaptive Formulare <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html">Designs zum Gestalten eines Formulars</a>). Der Konvertierungsdienst verwendet die Schriftarten und Schriftstile, die im während der Konvertierung angewendeten Design angegeben sind. Sie können Schriftarten und Schriftstile des Designs ändern, um den Komponenten eines adaptiven Formulars ein eindeutiges Erscheinungsbild zu verleihen.</p> <br>
 
 1. **Extrahiert der Dienst automatisch JavaScript aus XDP-basierten Formularen und wendet er es dann auf entsprechende adaptive Formulare an?**
-   <p>Der Dienst konvertiert Skripte von XFA-basierten Formularen oder Acro Forms nicht automatisch in entsprechende adaptive Formularregeln. Sie (Formular-Autoren) können den <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">Regeleditor</a> verwenden, um Interaktivität zu einem adaptiven Formular hinzuzufügen.</p> <br>
+   <p>Der Dienst konvertiert Skripte von XFA-basierten Formularen oder Acro Forms nicht automatisch in entsprechende adaptive Formularregeln. Sie (Formular-Autoren) können den <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/rule-editor.html">Regeleditor</a> verwenden, um Interaktivität zu einem adaptiven Formular hinzuzufügen.</p> <br>
 
 1. **Einige Formularobjekte werden nicht korrekt in adaptive Formularkomponenten konvertiert. Wie kann das Problem gelöst werden?**
    <p>Der Dienst zur automatischen Formularkonvertierung wird für eine Vielzahl von Formularen geschult. AI/ML-basierte Anwendungen sind jedoch durch ihre Trainingsdaten und -muster begrenzt. Es kann mehrere Feldtypen, Layouts, Muster und Kontexte geben, die für die menschliche Wahrnehmung erkennbar sind, für die eine automatische Erkennung jedoch schwierig ist. Der Dienst kann solche Objekte möglicherweise nicht identifizieren oder falsch erkennen. Sie können den Editor <a href="review-correct-ui-edited.md" target="_blank">Überprüfen und Korrigieren</a> verwenden, um die erforderlichen Änderungen im vertrauten papierformularbasierten Layout des Eingabeformulars vorzunehmen.</p> <br/>
