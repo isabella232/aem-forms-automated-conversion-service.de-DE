@@ -1,10 +1,10 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: Forms-Konvertierungsdienst
+sub-product: Formularkonvertierungsservice
 audience: end-user
-user-guide-title: Adobe Experience Manager Forms Automatischer Konvertierungsdienst
-translation-type: tm+mt
+user-guide-title: Automatisierter Konvertierungsdienst für Adobe Experience Manager Forms
+translation-type: ht
 source-git-commit: 56e4696c0372223e0b27f1c313382a2a637b6db1
 
 ---
