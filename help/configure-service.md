@@ -2,10 +2,10 @@
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
 translation-type: tm+mt
-source-git-commit: e1ef5be14fd3f1ec7e6ccf569c8d76518dfc5c6b
+source-git-commit: 7e94acb29f30603d9b22fbee9dc8052fafa5704b
 workflow-type: tm+mt
-source-wordcount: '2648'
-ht-degree: 91%
+source-wordcount: '2657'
+ht-degree: 89%
 
 ---
 
@@ -123,7 +123,7 @@ Nachdem ein Administrator Ihnen Entwicklerzugriff gewährt hat, können Sie Ihre
 * [Konfigurieren der E-Mail-Benachrichtigungen](configure-service.md#configureemailnotification)
 * [ Benutzer zur Gruppe „forms-users“ hinzufügen](#adduserstousergroup)
 * [Öffentliche Zertifikate abrufen](#obtainpubliccertificates)
-* [Adobe I/O-Integration erstellen](#createintegration)
+* [Dienst-APIs in der Adobe Developer Console konfigurieren](#createintegration)
 * [Konfigurieren des Cloud-Dienstes](configure-service.md#configure-the-cloud-service)
 
 #### Konfigurieren der E-Mail-Benachrichtigungen{#configureemailnotification}
@@ -159,12 +159,12 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Neues Zertifikat erstellen]** und geben Sie einen Alias an. Der Alias dient als Name des Dialogfelds. Tippen Sie auf **[!UICONTROL Zertifikat erstellen]**. Ein Dialogfeld wird angezeigt. Klicken Sie auf **[!UICONTROL OK]**. Das Zertifikat wird erstellt.
 
-1. Tippen Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird verwendet, um die [Integration auf Adobe-E/A-Konsole zu erstellen](#createintegration). Tippen Sie auf **[!UICONTROL Weiter]**.
+1. Tippen Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird zum [Konfigurieren der Dienst-APIs in der Adobe Developer Console](#createintegration)verwendet. Tippen Sie auf **[!UICONTROL Weiter]**.
 
 1. Geben Sie Folgendes an:
 
    * Titel: Geben Sie einen Titel an.
-   * Autorisierungsserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
+   * Autorisierungsserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
    Lassen Sie die anderen Felder vorerst leer (Werte werden später bereitgestellt). Lassen Sie die Seite geöffnet.
 
    <!--
@@ -179,9 +179,9 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
    <li>Step text</li>
    -->
 
-#### Adobe I/O-Integration erstellen {#createintegration}
+#### Dienst-APIs in der Adobe Developer Console konfigurieren {#createintegration}
 
-Erstellen Sie eine Integration in Adobe I/O, um den Dienst für die automatische Formularkonvertierung zu verwenden. Die Integration generiert API-Schlüssel, Client Secret, Payload (JWT).
+Um den Dienst &quot;Automatisierte Formularkonvertierung&quot;zu verwenden, erstellen Sie ein Projekt und fügen Sie dem Projekt in der Adobe Developer Console die API für den automatischen Formularkonfigurationsdienst hinzu. Die Integration erzeugt API-Schlüssel, geheimer Clientschlüssel, Payload (JWT).
 
 1. Melden Sie sich bei https://console.adobe.io/ an. Melden Sie sich mit Ihrer Adobe ID und Ihrem vom Administrator zu diesem Zweck bereitgestellten Entwicklerkonto bei der I/O-Konsole an.
 1. Wählen Sie Ihr Unternehmen in der oberen rechten Ecke aus. Wenn Sie Ihre Organisation nicht kennen, wenden Sie sich an Ihren Administrator.
@@ -203,8 +203,6 @@ Erstellen Sie eine Integration in Adobe I/O, um den Dienst für die automatische
    >Verwenden Sie für die Nutzlast den Code, der auf der Seite &quot;Dienstkonto (JWT)&quot;der Adobe Developer Console auf der Registerkarte &quot;JWT generieren&quot;bereitgestellt wird.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die IMS-Konfiguration wird erstellt.
-
-   ![Verwenden der Werte des JWT-Felds für das Nutzlastfeld](assets/jwt.png)
 
    >[!CAUTION]
    >
