@@ -1,11 +1,11 @@
 ---
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2660'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -74,7 +74,7 @@ Eine AEM-Instanz enthält grundlegende Formularfunktionen. Der Konvertierungsdie
 
 ### (Optional) Laden Sie das neueste Connector-Paket herunter und installieren Sie es  {#installConnectorPackage}
 
-Das Connector-Paket bietet frühzeitigen Zugriff auf die Funktionen der [automatischen Erkennung logischer Abschnitte](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) und Verbesserungen, die in Version AFC-2020.03.1 bereitgestellt werden. Installieren Sie das Paket nicht, wenn Sie keine Funktionen und Verbesserungen benötigen, die in AFC-2020.03.1 bereitgestellt wurden.  Sie können das Connector-Paket von AEM Package Share [herunterladen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
+Das Connector-Paket bietet frühzeitigen Zugriff auf die Funktionen und Verbesserungen für [Automatische Erkennung logischer Abschnitte](convert-existing-forms-to-adaptive-forms.md#run-the-conversion) in Release AFC-2020.03.1. Installieren Sie das Paket nicht, wenn Sie keine in AFC-2020.03.1 bereitgestellten Funktionen und Verbesserungen benötigen.  Sie können [das Connector-Paket von AEM Package Share herunterladen](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1).
 
 
 ### Erstellen benutzerdefinierter Designs und Vorlagen{#referencepackage}
@@ -139,7 +139,7 @@ Der Dienst für die automatische Formularkonvertierung verwendet den Day CQ-Mail
 
 #### Benutzer zur Formularbenutzergruppe hinzufügen {#adduserstousergroup}
 
-Geben Sie im Profil des AEM-Benutzers, der den Dienst ausführen soll, eine E-Mail-Adresse an. Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe [forms-users](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) ist. E-Mails werden an die E-Mail-Adresse des Benutzers gesendet, der die Konvertierung ausführt. So geben Sie eine E-Mail-Adresse für den Benutzer an und fügen Benutzer zur Benutzergruppe &quot;Formulare&quot;hinzu:
+Geben Sie im Profil des AEM-Benutzers, der den Dienst ausführen soll, eine E-Mail-Adresse an. Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe [forms-users](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) ist. E-Mails werden an die E-Mail-Adresse des Benutzers gesendet, der die Konvertierung ausführt. So geben Sie eine E-Mail-Adresse für den Benutzer an und fügen den Benutzer der Formularbenutzergruppe hinzu:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz als AEM-Administrator an. Verwenden Sie Ihre lokalen AEM-Anmeldeinformationen, um sich anzumelden. Verwenden Sie keine Adobe ID, um sich anzumelden. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
@@ -159,7 +159,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Neues Zertifikat erstellen]** und geben Sie einen Alias an. Der Alias dient als Name des Dialogfelds. Tippen Sie auf **[!UICONTROL Zertifikat erstellen]**. Ein Dialogfeld wird angezeigt. Klicken Sie auf **[!UICONTROL OK]**. Das Zertifikat wird erstellt.
 
-1. Tippen Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird zum [Konfigurieren der Dienst-APIs in der Adobe Developer Console](#createintegration)verwendet. Tippen Sie auf **[!UICONTROL Weiter]**.
+1. Tippen Sie auf **[!UICONTROL Öffentlichen Schlüssel herunterladen]** und speichern Sie die Zertifikatdatei *AEM-Adobe-IMS.crt* auf Ihrem Computer. Die Zertifikatdatei wird zum [Konfigurieren der Dienst-APIs in der Adobe Developer Console](#createintegration) verwendet. Tippen Sie auf **[!UICONTROL Weiter]**.
 
 1. Geben Sie Folgendes an:
 
@@ -181,26 +181,26 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 #### Dienst-APIs in der Adobe Developer Console konfigurieren {#createintegration}
 
-Um den Dienst &quot;Automatisierte Formularkonvertierung&quot;zu verwenden, erstellen Sie ein Projekt und fügen Sie dem Projekt in der Adobe Developer Console die API für den automatischen Formularkonfigurationsdienst hinzu. Die Integration erzeugt API-Schlüssel, geheimer Clientschlüssel, Payload (JWT).
+Um den Dienst für die automatische Formularkonvertierung zu verwenden, erstellen Sie ein Projekt und fügen Sie dem Projekt in der Adobe Developer Console die API für den Dienst für die automatische Formularkonvertierung hinzu. Die Integration erzeugt API-Schlüssel, Client Secret, Payload (JWT).
 
 1. Melden Sie sich bei [https://console.adobe.io/](https://console.adobe.io/) an. Melden Sie sich mit Ihrer Adobe ID und Ihrem vom Administrator zu diesem Zweck bereitgestellten Entwicklerkonto bei der I/O-Konsole an.
 1. Wählen Sie Ihr Unternehmen in der oberen rechten Ecke aus. Wenn Sie Ihre Organisation nicht kennen, wenden Sie sich an Ihren Administrator.
-1. Tap **[!UICONTROL Create new project]**. Ein Bildschirm für die ersten Schritte mit Ihrem neuen Projekt wird angezeigt. Tippen Sie auf **[!UICONTROL Hinzufügen API]**. Ein Bildschirm mit einer Liste aller für Ihr Konto aktivierten APIs wird angezeigt.
-1. Wählen Sie den **[!UICONTROL Automatisierten Formularkonvertierungsdienst]** und klicken Sie auf **[!UICONTROL Weiter]**. Ein Bildschirm zum Konfigurieren der API wird angezeigt.
-1. Wählen Sie die Option zum [!UICONTROL Hochladen des öffentlichen Schlüssels] , laden Sie die Datei &quot;AEM-Adobe-IMS.crt&quot;hoch, die Sie im Abschnitt &quot;Öffentliche Zertifikate [abrufen](#obtainpubliccertificates) &quot;heruntergeladen haben, und klicken Sie auf **[!UICONTROL Weiter]**. Die Option &quot;Berechtigung für neues Dienstkonto erstellen&quot;(JWT) wird angezeigt. Tippen Sie auf **[!UICONTROL Weiter]**.
-1. Wählen Sie ein Produkt-Profil aus und tippen Sie auf **[!UICONTROL Konfigurierte API]** speichern. Wählen Sie das erstellte Profil aus, während Sie Entwicklern Ihres Unternehmens Zugriff [gewähren](#adduseranddevs). Wenn Sie das auszuwählende Profil nicht kennen, wenden Sie sich an Ihren Administrator.
-1. Tippen Sie auf **[!UICONTROL Dienstkonto (JWT)]** , um den API-Schlüssel, den geheimen Clientschlüssel und andere Informationen Ansicht, die erforderlich sind, um Ihre lokale AEM-Instanz mit dem automatisierten Forms-Konvertierungsdienst zu verbinden. Die Informationen auf der Seite werden verwendet, um eine IMS-Konfiguration auf Ihrem lokalen Computer zu erstellen.
+1. Tippen Sie auf **[!UICONTROL Neues Projekt erstellen]**. Ein Bildschirm zum Starten Ihres neuen Projekts wird angezeigt. Tippen Sie auf **[!UICONTROL API hinzufügen]**. Ein Bildschirm mit einer Liste aller für Ihr Konto aktivierten APIs wird angezeigt.
+1. Wählen Sie den **[!UICONTROL Dienst für die automatische Konvertierung von AEM Forms]** und klicken Sie auf **[!UICONTROL Weiter]**. Ein Bildschirm zum Konfigurieren der API wird angezeigt.
+1. Wählen Sie die Option zum [!UICONTROL Hochladen des öffentlichen Schlüssels], laden Sie die Datei „AEM-Adobe-IMS.crt“ hoch, die Sie im Abschnitt [Öffentliche Zertifikate abrufen](#obtainpubliccertificates) heruntergeladen haben, und klicken Sie auf **[!UICONTROL Weiter]**. Die Option „Neues Dienstkonto erstellen (JWT)“ wird angezeigt. Tippen Sie auf **[!UICONTROL Weiter]**.
+1. Wählen Sie ein Produktprofil und tippen Sie auf **[!UICONTROL Konfigurierte API speichern]**. Wählen Sie das Profil aus, das beim [Gewähren des Zugriffs für Entwickler in Ihrer Organisation](#adduseranddevs) erstellt wurde. Wenn Sie das auszuwählende Profil nicht kennen, wenden Sie sich an Ihren Administrator.
+1. Tippen Sie auf **[!UICONTROL Dienstkonto (JWT)]**, um den API-Schlüssel, den geheimen Clientschlüssel und andere Informationen anzuzeigen, die erforderlich sind, um Ihre lokale AEM-Instanz mit dem automatisierten Forms-Konvertierungsdienst zu verbinden. Die Informationen auf der Seite werden verwendet, um eine IMS-Konfiguration auf Ihrem lokalen Computer zu erstellen.
 
 1. Öffnen Sie die Seite IMS-Konfiguration auf Ihrer lokalen Instanz. Sie haben die Seite am Ende des Abschnitts [Öffentliche Zertifikate abrufen](#obtainpubliccertificates) geöffnet gelassen.
 
    ![Geben Sie Titel, API-Schlüssel, Client Secret und Nutzlast an.](assets/ims-configuration-details.png)
 
-1. Geben Sie auf der technischen Seite von Adobe IMS den API-Schlüssel und das Client Secret an. Verwenden Sie die Werte, die auf der Seite &quot;Adobe Developer Console&quot;im Dienst-Konto (JWT) angegeben sind.
+1. Geben Sie auf der technischen Seite von Adobe IMS den API-Schlüssel und das Client Secret an. Verwenden Sie die auf der Seite Dienstkonto (JWT) der Adobe Developer Console angegebenen Werte.
 
    >[!NOTE]
    >
    >
-   >Verwenden Sie für die Nutzlast den Code, der auf der Seite &quot;Dienstkonto (JWT)&quot;der Adobe Developer Console auf der Registerkarte &quot;JWT generieren&quot;bereitgestellt wird.
+   >Verwenden Sie für die Nutzlast den Code, der auf der Seite „Dienstkonto (JWT)“ der Adobe Developer Console auf der Registerkarte „JWT generieren“ bereitgestellt wird.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**. Die IMS-Konfiguration wird erstellt.
 
