@@ -6,8 +6,11 @@ seo-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: ht
-source-git-commit: ffab4d916cbd545078f4b72b8de5c9968f23b0da
+translation-type: tm+mt
+source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+workflow-type: tm+mt
+source-wordcount: '2401'
+ht-degree: 99%
 
 ---
 
@@ -22,9 +25,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter:
-
-http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json.
+Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. Sie können auch hier [klicken](assets/global.schema.json) , um auf das Standard-Schema zuzugreifen oder es herunterzuladen.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
