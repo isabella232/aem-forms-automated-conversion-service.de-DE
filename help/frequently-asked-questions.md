@@ -7,10 +7,10 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: b1df14a331dc4aef7ce6383dec0091fa6db1fd7b
+source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
 workflow-type: tm+mt
-source-wordcount: '1721'
-ht-degree: 98%
+source-wordcount: '1722'
+ht-degree: 97%
 
 ---
 
@@ -107,7 +107,7 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:
    Mithilfe des Metamodells können Sie die Formularobjekte Komponenten Ihrer Wahl in einem adaptiven Formular zuordnen und Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfen für die Komponenten vorkonfigurieren. Alle angegebenen Eigenschaften werden während der Konvertierung angewendet. Sie können das Metamodell verwenden, um allgemeine Eigenschaften auf Felder anzuwenden. Es kann Ihnen helfen, einige sich wiederholende Probleme in verschiedenen Formularen zu reduzieren.<br/><br/>
 
 1. **Welche Optionen gibt es für Formulare mit sensiblen Daten wie personenbezogenen Daten?**
-Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten hoch. Entfernen Sie außerdem vorab ausgefüllte Daten sowie personenbezogene, vertrauliche und geschützte White-Label-Informationen in Quellformularen. 
+Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten hoch. Entfernen Sie außerdem vorausgefüllte Daten, persönliche identifizierbare Informationen (PII), vertrauliche und proprietäre Informationen in Quellformularen. 
 <br/>
 
 1. **Wo sollen Kopf- und Fußzeilen platziert werden?**
