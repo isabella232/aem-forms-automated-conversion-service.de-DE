@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: ht
-source-git-commit: 5031050795a558795c151e9f3c26a16736566adf
-workflow-type: ht
-source-wordcount: '1571'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 019ae541117f037f11703a88162ec3ab4cb67947
+workflow-type: tm+mt
+source-wordcount: '1587'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * [**Konvertierungsdienst konfigurieren **](configure-service.md)
 
-* **Bereiten Sie die[Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatische Formularkonvertierung keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet.
+* **Bereiten Sie die[Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatische Formularkonvertierung keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet. Wenn Sie einen Ordner für die Vorlagen erstellen, wählen Sie für alle Benutzer die Option &quot;Konfiguration **[!UICzum Durchsuchen]** von Steuerelementen&quot;aus.
 
 * **Bereiten Sie die[Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mit einem Design können Sie einen einheitlichen Stil auf alle adaptiven Formulare Ihrer Organisation anwenden.
 
@@ -73,6 +73,7 @@ Führen Sie die folgenden Schritte aus, um die Konvertierung zu starten, nachdem
    * Verwenden Sie die Option **Adaptive Formular ohne Datenbindungen generieren**, um auszuwählen, ob Sie ein adaptives Formular mit oder ohne Datenmodellbindung(en) generieren möchten.
 Wenn Sie diese Option nicht auswählen, ordnet der Konvertierungsdienst das/die adaptiven Formulare automatisch einem JSON-Schema zu und erstellt eine Datenbindung zwischen den im adaptiven Formular und im JSON-Schema verfügbaren Feldern. Das Feld **[!UICONTROL Generiertes Datenmodellschema speichern unter]** zeigt den Standardspeicherort für das erzeugte JSON-Schema. Sie können den Speicherort auch anpassen, um das generierte Schema zu speichern.
 Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach einer erfolgreichen Konvertierung können Sie ein adaptives Formular einem Formulardatenmodell, einem XML-Schema oder einem JSON-Schema zuordnen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
+
    <!--
    Comment Type: draft
 
@@ -85,6 +86,7 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
 1. Auf der Registerkarte **[!UICONTROL Zusätzlich]** des Dialogfelds „Konvertierungseinstellungen“:
    * Wählen Sie die Option **[!UICONTROL Fragment aus adaptiven Formularen extrahieren]**, damit der Konvertierungsdienst Formularfragmente für konvertierte Formulare identifizieren, extrahieren und herunterladen kann. Wenn Sie die Option **[!UICONTROL Fragment aus adaptiven Formularen extrahieren]** auswählen, werden die Optionen zum Angeben von Pfaden zum Speichern extrahierter Formularfragmente und entsprechender Formularfragmentschemata aktiviert.
    * Geben Sie den Speicherort von **[!UICONTROL vorhandenen adaptiven Formularfragmenten]** an, wenn Sie über vorhandene adaptive Formularfragmente auf Basis eines JSON-Schemas oder ohne Schema verfügen und wenn Sie planen, diese Fragmente in automatisch generierten adaptiven Formularen zu verwenden. Der Konvertierungsdienst stimmt verfügbare JSON-Schema-basierte und schemalose adaptive Formularfragmente mit eingegebenen PDF-Formularen ab (nur nicht-interaktive PDF-Formulare). Wenn eine Übereinstimmung vorliegt, wird das übereinstimmende adaptive Formularfragment in entsprechenden adaptiven Formularen verwendet.
+
    >[!NOTE]
    >
    >
@@ -105,6 +107,7 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
 
    * Bei einer erfolgreichen Konvertierung werden das konvertierte adaptive Formular und das zugehörige Schema in den Pfad heruntergeladen, der auf der Registerkarte **[!UICONTROL Standard]** des Konvertierungsdialogs angegeben ist. Formularfragmente und das entsprechende Schema werden nur heruntergeladen, wenn vor dem Start der Konvertierung die Option „Fragment extrahieren“ ausgewählt ist.
    * Bei einer fehlgeschlagenen Konvertierung wird die Meldung **[!UICONTROL Konvertierung fehlgeschlagen]** angezeigt, wenn alle Eingabeformulare nicht konvertiert werden konnten. Wenn nur einige der Eingabeformulare nicht konvertiert werden konnten, wird die Meldung **[!UICONTROL Teilweise fehlgeschlagen]** angezeigt. Eine Status-E-Mail wird an die [konfigurierte E-Mail-Adresse ](configure-service.md#configureemailnotification) gesendet und ein Fehler in der Datei error.log protokolliert.
+
    Wenn Sie ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren, ordnet der Konvertierungsdienst das PDF-Formular automatisch dem konvertierten adaptiven Formular als Datensatzdokumentvorlage zu. Sie können die Eigenschaften des adaptiven Formulars nach der Konvertierung öffnen, um die Datensatzdokumentvorlage im Abschnitt **[!UICONTROL Konfiguration der Datensatzdokumentvorlage]** der Registerkarte **[!UICONTROL Formularmodell]** anzuzeigen. </br>
 
    Der Konvertierungsdienst lädt das PDF-Formular nur dann automatisch als Vorlage für das Datensatzdokument in das konvertierte adaptive Formular hoch, wenn Sie die Option **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > **[!UICONTROL Eigenschaften der ausgewählten Konfiguration]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Generieren von Datensatzdokument]** aktivieren.
