@@ -6,8 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: ht
-source-git-commit: 2fcceb45d9be4297fcd923f5a17c7b593294e855
+translation-type: tm+mt
+source-git-commit: 902131e27d458b88f7f5c5f85c90de89f77e4bd7
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 96%
 
 ---
 
@@ -25,6 +28,8 @@ source-git-commit: 2fcceb45d9be4297fcd923f5a17c7b593294e855
    * Unterstützt keine wiederholbaren Bedienfelder für XFA-basierte Formulare.
    * Wenn Sie mit dem Editor „Überprüfen und korrigieren“ eine Liste in einer Tabelle ändern, wird die Zeilenbreite nicht automatisch angepasst und der Text erstreckt sich möglicherweise in die nächste Zeile der Tabelle.
    * Die Funktion **[!UICONTROL Mehrspaltiges Layout aus Eingabeformularen automatisch erkennen]** funktioniert nicht mit dem Editor „Überprüfen und Korrigieren“ und Formularfragmenten.
+   * Scribble-Signatur, die mit dem Editor &quot;Review&quot;und &quot;Richtig&quot;erstellt wurde, kann in veröffentlichten adaptiven Formularen nicht geladen werden. Benutzer können adaptive Formulare nicht mit solchen Freihandsignaturkomponenten signieren.
+
 
 * Für XFA-basierte Formulare:
    * Das Extrahieren von Fragmenten aus einem XFA-basierten Formular wird nicht unterstützt.
