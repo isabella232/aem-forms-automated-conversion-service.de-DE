@@ -6,11 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '780'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 98%
    * Unterstützt keine wiederholbaren Bedienfelder für XFA-basierte Formulare.
    * Wenn Sie mit dem Editor „Überprüfen und korrigieren“ eine Liste in einer Tabelle ändern, wird die Zeilenbreite nicht automatisch angepasst und der Text erstreckt sich möglicherweise in die nächste Zeile der Tabelle.
    * Die Funktion **[!UICONTROL Mehrspaltiges Layout aus Eingabeformularen automatisch erkennen]** funktioniert nicht mit dem Editor „Überprüfen und Korrigieren“ und Formularfragmenten.
-   * Scribble-Signatur, die mit dem Review- und Korrektur-Editor erstellt wurde, kann für veröffentlichte adaptive Formulare nicht geladen werden.
+   * Scribble-Signatur, die mit Editor „Überprüfen und Korrigieren“ erstellt wurde, wird für veröffentlichte adaptive Formulare nicht geladen.
 
 
 * Für XFA-basierte Formulare:
