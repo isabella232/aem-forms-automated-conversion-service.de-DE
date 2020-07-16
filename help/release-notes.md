@@ -2,7 +2,7 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
 translation-type: tm+mt
-source-git-commit: 054b6cb03843c28cea19cdbc68e439f86cb1625f
+source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 94%
@@ -24,7 +24,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 * Zukünftige Pläne für Änderungen
 
 
-## 16. Juli 2020 (AFC-2020.07.1)
+## 16. Juli 2020 (AFC-2020.07.0)
 
 ### Verbesserte Funktionen
 
