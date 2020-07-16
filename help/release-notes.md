@@ -2,9 +2,9 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
 translation-type: tm+mt
-source-git-commit: 9fe3de9decbebc66c07d99b21424e3183599c64a
+source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '329'
 ht-degree: 94%
 
 ---
@@ -28,7 +28,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 ### Verbesserte Funktionen
 
-Verbesserung der automatisierten Konvertierung von Text-, Formular- und Auswahlgruppenfeldern in entsprechende adaptive Formularkomponenten.
+Verbesserte automatisierte Konvertierung von Text-, Formular- und Auswahlgruppenfeldern in entsprechende adaptive Formularkomponenten.
 
 ## 20. März 2020 (AFC-2020.03.1)
 
