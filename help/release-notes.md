@@ -2,10 +2,10 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
 translation-type: tm+mt
-source-git-commit: caa019d1a7dd1968a52df5ec5be4755e1c6c4ee6
+source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -46,7 +46,7 @@ Der Dienst erkennt jetzt Listen mit Aufzählungszeichen und Nummern effizienter.
 
 ### Spezielle Anweisungen
 
-**Connector-Paket für den Dienst für die automatische Formularkonvertierung installieren**
+**Installieren des Connector-Pakets für den automatischen Forms-Konvertierungsdienst**
 
 Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen der Version AFC-2020.03.1 nutzen zu können. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1) herunterladen.
 
