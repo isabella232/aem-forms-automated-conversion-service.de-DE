@@ -46,7 +46,7 @@ Der Dienst erkennt jetzt Listen mit Aufzählungszeichen und Nummern effizienter.
 
 ### Spezielle Anweisungen
 
-**Installieren des Connector-Pakets für den automatischen Forms-Konvertierungsdienst**
+**Automatisches Forms Conversion Service Connector-Paket installieren**
 
 Sie benötigen das Connector-Paket 1.1.38 oder höher, um die neuesten Funktionen und Verbesserungen der Version AFC-2020.03.1 nutzen zu können. Sie können das Connector-Paket von [AEM Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/featurepack/AFCS-Connector-2020.03.1) herunterladen.
 
