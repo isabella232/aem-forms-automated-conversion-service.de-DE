@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# {#extend-the-default-meta-model}Erweitern des Standardmetamodells 
+# Erweitern des Standardmetamodells {#extend-the-default-meta-model}
 
 Der Dienst zur automatischen Formularkonvertierung identifiziert und extrahiert Formularobjekte aus Quellformularen. Semantic Mapper hilft dem Dienst zu entscheiden, wie die extrahierten Objekte in einem adaptiven Formular dargestellt werden. Beispielsweise kann ein Quellformular viele verschiedene Arten von Darstellungen eines Datums enthalten. Der Semantic Mapper hilft dabei, alle Darstellungen von Datumsformularobjekten des Quellformulars der Datumskomponente der adaptiven Formulare zuzuordnen. Mit Semantic Mapper kann der Dienst auch Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfeeigenschaften während der Konvertierung vorkonfigurieren und auf adaptive Formularkomponenten anwenden.
 
