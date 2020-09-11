@@ -2,10 +2,10 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
 translation-type: tm+mt
-source-git-commit: 1c6bdd03d5a3ac37a11a31e5c7948c28412b67aa
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 92%
+source-wordcount: '346'
+ht-degree: 88%
 
 ---
 
@@ -26,9 +26,14 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 ## 16. Juli 2020 (AFC-2020.07.0)
 
+### Neue Funktionen
+
+Mit dem Dienst können Sie jetzt auch farbige PDF-Formulare in adaptive Formulare konvertieren.
+
 ### Verbesserte Funktionen
 
 Verbesserte automatisierte Konvertierung von Text-, Formular- und Auswahlgruppenfeldern in entsprechende adaptive Formularkomponenten.
+
 
 ## 20. März 2020 (AFC-2020.03.1)
 
