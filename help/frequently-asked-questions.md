@@ -6,11 +6,11 @@ seo-description: häufig gestellte Fragen für den Dienst für die automatische 
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: ht
-source-git-commit: 3b3bb98352e23544d32c39f0bfb5f0d9b7ae99cf
-workflow-type: ht
-source-wordcount: '1700'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+workflow-type: tm+mt
+source-wordcount: '1723'
+ht-degree: 99%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 1. **Kann der Dienst gescannte Papierformulare und farbige in adaptive Formulare konvertieren?**
 
-   <p>Der Dienst kann PDF-Formulare in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.</p> <br>
+   <p>Der Dienst kann PDF forms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.</p> <br>
 
 1. **Kann der Dienst ein gescanntes Formular oder nur ein Bild eines Formulars in ein adaptives Formular konvertieren?**
 
@@ -107,27 +107,29 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:
    Mithilfe des Metamodells können Sie die Formularobjekte Komponenten Ihrer Wahl in einem adaptiven Formular zuordnen und Validierungen, Regeln, Datenmuster, Hilfetexte und Eingabehilfen für die Komponenten vorkonfigurieren. Alle angegebenen Eigenschaften werden während der Konvertierung angewendet. Sie können das Metamodell verwenden, um allgemeine Eigenschaften auf Felder anzuwenden. Es kann Ihnen helfen, einige sich wiederholende Probleme in verschiedenen Formularen zu reduzieren.<br/><br/>
 
 1. **Welche Optionen gibt es für Formulare mit sensiblen Daten wie personenbezogenen Daten?**
-Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten hoch. Entfernen Sie auch vorausgefüllte Daten, persönlich identifizierbare Informationen (PII), vertrauliche und geschützte Informationen in den Quellformularen. <br/>
-**Wo sollen Kopf- und Fußzeilen platziert werden?**
+Der Dienst unterstützt nur leere oder nicht ausgefüllte Formulare. Laden Sie keine ausgefüllten Formulare oder Formulare mit personenbezogenen Daten hoch. Entfernen Sie auch vorausgefüllte Daten, persönlich identifizierbare Informationen (PII), vertrauliche und geschützte Informationen in den Quellformularen. 
+<br/>
 
-1. 
+1. **Wo sollen Kopf- und Fußzeilen platziert werden?**
 
-   </p>
+   <p>Platzieren Sie Kopf- und Fußzeile in einer adaptiven Formularvorlage. Wenn das Quell-PDF-Formular Kopf- und Fußzeilen enthält, erkennt der Dienst Kopf- und Fußzeilen und ersetzt sie während der Konvertierung durch Kopf- und Fußzeilen, die in der adaptiven Formularvorlage verfügbar sind. Wenn das adaptive Formular eine zusätzliche Kopf- oder Fußzeile enthält, können Sie diese im Editor <a href="review-correct-ui-edited.md">Überprüfen und Korrigieren</a> korrigieren oder entfernen.</p> <br />
 
-1. 
+1. **Wie viel Zeit spart der Dienst im Vergleich zum manuellen Planen, Erstellen von Assets (Designs, Vorlagen), Erstellen und Veröffentlichen eines adaptiven Formulars?**
 
-   </p>
+   <p>Die Zeitdauer hängt von der Größe und Komplexität der Eingabeformulare und der Anzahl der Anforderungen ab. Der Dienst beabsichtigt, die Wertschöpfungszeit erheblich zu verkürzen, indem PDF-Formulare im Vergleich zum manuellen Konvertieren von Formularen viel schneller in adaptive Formulare konvertiert werden. </p> <br />
 
-1. `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:<br/>   
-   </p>
+1. **Was tun, wenn ein Fehler in Verbindung mit RSA-Bibliotheken auftritt ? Die Fehlermeldung ähnelt der unten genannten Meldung:** <br/>
 
-   1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:<br/>`[AEM installation directory]\crx-quickstart\bin\start.bat``[AEM_root]\crx-quickstart\`
-   1. `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br /> `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br />  `sling.bootdelegation.xerces=org.apache.xerces.*` Speichern und schließen Sie die Datei. <br/>
+Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/BouncyCastle-Bibliotheken konfiguriert ist. Führen Sie zur Behebung dieses Problems folgende Schritte durch:
+   <p> </p>
+
+   1. Halten Sie die AEM-Instanz an. Navigieren Sie zum Ordner `[AEM installation directory]\crx-quickstart\conf\`. Öffnen Sie die Datei „sling.properties“ zur Bearbeitung. Wenn Sie `[AEM installation directory]\crx-quickstart\bin\start.bat`zum Starten einer AEM-Instanz verwenden, bearbeiten Sie die sling.properties-Datei unter `[AEM_root]\crx-quickstart\`.
+   1. Fügen Sie die folgenden Eigenschaften der sling.properties-Datei hinzu:<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
+   1. Speichern und schließen Sie die Datei. <br/>
    1. Starten Sie die AEM-Instanz.<br/>
-   1. 
 
-   
+   <br/>
 
-1. 
-   <p>You can use adaptive from themes or style editor to change casing of a field of adaptive form. For example, you can open the theme editor and set value of Case property of all the text of form to uppercase, lowercase, or camelCase. You can also use the CSS Override option in theme editor to create different types of styles.</p>
+1. **Wie kann die Groß-/Kleinschreibung eines adaptiven Formulartextes automatisch geändert werden?**
+   <p>Sie können den adaptiven Design- oder Stileditor für adaptive Formulare verwenden, um die Groß-/Kleinschreibung eines Felds in einem adaptiven Formular zu ändern. Sie können beispielsweise den Design-Editor öffnen und den Wert der Groß-/Kleinschreibungs-Eigenschaft des gesamten Formulartextes auf Groß-, Klein- oder Höckerschreibweise setzen. Sie können auch die Option CSS-Überschreibung im Design-Editor verwenden, um verschiedene Arten von Stilen zu erstellen.</p>
