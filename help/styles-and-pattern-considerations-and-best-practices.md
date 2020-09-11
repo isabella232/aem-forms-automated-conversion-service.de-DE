@@ -6,8 +6,11 @@ seo-description: Liste der Stile und Muster in PDF-Quellformularen, die der Dien
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
-translation-type: ht
-source-git-commit: fa3b365b9762a044fddb3820ad3c091d211e0ae6
+translation-type: tm+mt
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+workflow-type: tm+mt
+source-wordcount: '1259'
+ht-degree: 99%
 
 ---
 
@@ -30,7 +33,7 @@ Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hoc
 * Organisieren Sie Quelldokumente in einem Batch von 8-15 Dokumenten. Bewahren Sie Quellformulare mit gängigen adaptiven Formularfragmenten in einem einzigen Batch auf.
 * Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
 * Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert keine PDF-Portfolios in ein adaptives Formular.
-* Laden Sie keine gescannten, farbig, nicht englischen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
+* Laden Sie keine gescannten, nicht englischsprachigen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
 
 Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XPD-Quellformulare hochladen:
@@ -64,13 +67,12 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 
 | Muster | Beispiel |
 |--- |--- |
-| **Muster** <br> Der Dienst konvertiert keine farbigen PDF-Formulare in adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie Schwarzweiß- oder Graustufen-PDF-Formulare. | ![Farbige Form](assets/best-practice-coloured-forms.png) |
-| **Muster** <br>Der Dienst konvertiert keine ausgefüllten PDF-Formulare in adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie leere adaptive Formulare. | ![Ausgefülltes Formular](assets/best-practice-filled-forms.png) |
-| **Muster** <br>Der Dienst kann Text und Felder möglicherweise nicht erkennen, wenn sie im Formular zu dicht beieinander stehen. <br><br>**Lösung **<br>Erhöhen Sie die Breite zwischen Text und Feldern eines dichten Formulars, bevor Sie mit der Konvertierung beginnen. |  |
-| **Muster** <br>Der Dienst unterstützt keine gescannten Formulare. <br><br>**Lösung **<br>Verwenden Sie keine gescannten Formulare. | ![Gescanntes Formular](assets/scanned-forms.png) |
-| **Muster** <br>Der Dienst extrahiert keine Bilder und Texte in Bildern. <br><br>**Lösung **<br>Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
-| **Muster** <br>Tabellen mit gepunkteten oder unklaren Begrenzungen und Rahmen werden nicht konvertiert. <br><br>**Lösung **<br>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen. unterstützt. | ![Nicht eindeutiges Tabellenformular](assets/best-practice-table-dotted-non-clear.png) |
-| **Muster** <br> Das adaptive Formular unterstützt keinen sofort einsatzbereiten vertikalen Text. Der Dienst konvertiert daher keinen vertikalen Text in den entsprechenden Text für adaptive Formulare. <br><br>**Lösung **<br>Verwenden Sie bei Bedarf den adaptiven Formulareditor, um vertikalen Text hinzuzufügen. | ![Nicht eindeutiges Tabellenformular](assets/vertical-text.png) |
+| **Muster** <br>Der Dienst konvertiert keine ausgefüllten PDF-Formulare in adaptive Formulare. <br><br>**Lösung** <br>Verwenden Sie leere adaptive Formulare. | ![Ausgefülltes Formular](assets/best-practice-filled-forms.png) |
+| **Muster** <br>Der Dienst kann Text und Felder möglicherweise nicht erkennen, wenn sie im Formular zu dicht beieinander stehen. <br><br>**Lösung** <br> Erhöhen Sie die Breite zwischen Text und Feldern eines dichten Formulars, bevor Sie mit der Konvertierung beginnen. |  |
+| **Muster** <br>Der Dienst unterstützt keine gescannten Formulare. <br><br>**Lösung** <br>Verwenden Sie keine gescannten Formulare. | ![Gescanntes Formular](assets/scanned-forms.png) |
+| **Muster** <br>Der Dienst extrahiert keine Bilder und Texte in Bildern. <br><br>**Lösung**<br> Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
+| **Muster** <br>Tabellen mit gepunkteten oder unklaren Begrenzungen und Rahmen werden nicht konvertiert. <br><br>**Lösung** <br>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen. unterstützt. | ![Nicht eindeutiges Tabellenformular](assets/best-practice-table-dotted-non-clear.png) |
+| **Muster** <br> Das adaptive Formular unterstützt keinen sofort einsatzbereiten vertikalen Text. Der Dienst konvertiert daher keinen vertikalen Text in den entsprechenden Text für adaptive Formulare. <br><br>**Lösung** <br> Verwenden Sie bei Bedarf den adaptiven Formulareditor, um vertikalen Text hinzuzufügen. | ![Nicht eindeutiges Tabellenformular](assets/vertical-text.png) |
 
 
 
@@ -78,24 +80,24 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung **<br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
+| **Muster** <br> Auswahlgruppen mit anderen Formen als „Kästchen“ oder „Kreis“ werden nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Ändern Sie die Formen der Auswahloptionen in ein Kästchen oder einen Kreis, oder verwenden Sie den Editor „Überprüfen und Korrigieren“, um die Formen zu identifizieren. | ![Auswahlfelder ](assets/best-practice-choice-group-options.png) |
 
 ### Formularfelder {#form-fields}
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** <br>Der Dienst erkennt keine Felder ohne klare Rahmen. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Felder mit unklaren Begrenzungen](assets/best-practice-fields-without-clear-borders.png) |
-| **Muster** <br> Der Dienst erkennt möglicherweise keine Auswahlgruppenformularfelder mit Beschriftungen am unteren oder rechten Rand eines Formulars. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-caption-bottom-right.png) |
-| **Muster** <br> Der Dienst führt einige Formularfelder zusammen oder weist ihnen einen falschen Typ zu, wenn sie sehr nahe beieinander liegen oder keine klaren Grenzen haben. <br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-placed-very-near.png) |
-| **Muster** <br>Der Dienst kann Felder mit weit entfernten Beschriftungen oder einer gepunkteten Linie zwischen Beschriftung und Eingabefeld möglicherweise nicht erkennen. <br><br>**Lösung **<br>Verwenden Sie Formularfelder mit klaren Begrenzungen oder den Editor „Überprüfen und Korrigieren“, um diese Probleme zu beheben. | ![Weit entfernte Felder oder gepunktete Linie zwischen dem Beschriftungsfeld](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
+| **Muster** <br>Der Dienst erkennt keine Felder ohne klare Rahmen. <br><br>**Lösung** <br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Felder mit unklaren Begrenzungen](assets/best-practice-fields-without-clear-borders.png) |
+| **Muster** <br> Der Dienst erkennt möglicherweise keine Auswahlgruppenformularfelder mit Beschriftungen am unteren oder rechten Rand eines Formulars. <br><br>**Lösung** <br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-caption-bottom-right.png) |
+| **Muster** <br> Der Dienst führt einige Formularfelder zusammen oder weist ihnen einen falschen Typ zu, wenn sie sehr nahe beieinander liegen oder keine klaren Grenzen haben. <br><br>**Lösung** <br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Felder zu identifizieren. | ![Auswahlfelder](assets/best-practice-placed-very-near.png) |
+| **Muster** <br>Der Dienst kann Felder mit weit entfernten Beschriftungen oder einer gepunkteten Linie zwischen Beschriftung und Eingabefeld möglicherweise nicht erkennen. <br><br>**Lösung** <br>Verwenden Sie Formularfelder mit klaren Begrenzungen oder den Editor „Überprüfen und Korrigieren“, um diese Probleme zu beheben. | ![Weit entfernte Felder oder gepunktete Linie zwischen dem Beschriftungsfeld](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### Listen {#lists}
 
 | Muster | Lösung |
 |--- |--- |
-| **Muster** <br>Listen, die Formularfelder enthalten, werden zusammengeführt oder nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung **<br>Verwenden Sie Formularfelder mit klaren Grenzen oder den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-lists-containing-form-fields.png) |
-| **Muster** <br>Der Dienst kann einige verschachtelte Listen nicht identifizieren.<br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-nested-lists.png) |
-| **Muster** <br>Der Dienst führt einige Listen mit Auswahlgruppen zusammen.<br><br>**Lösung **<br>Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-check-box-in-table-cells.png) |
+| **Muster** <br>Listen, die Formularfelder enthalten, werden zusammengeführt oder nicht in entsprechende adaptive Formularkomponenten konvertiert. <br><br>**Lösung** <br>Verwenden Sie Formularfelder mit klaren Grenzen oder den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-lists-containing-form-fields.png) |
+| **Muster** <br>Der Dienst kann einige verschachtelte Listen nicht identifizieren.<br><br>**Lösung** <br> Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-nested-lists.png) |
+| **Muster** <br>Der Dienst führt einige Listen mit Auswahlgruppen zusammen.<br><br>**Lösung** <br> Verwenden Sie den Editor „Überprüfen und Korrigieren“, um solche Probleme zu beheben. | ![Listen mit Auswahlgruppen](assets/best-practice-check-box-in-table-cells.png) |
 
 <!--
 Comment Type: draft
