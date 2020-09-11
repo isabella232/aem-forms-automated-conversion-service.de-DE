@@ -6,11 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: ht
-source-git-commit: 1c48cc1b271bfea19ac2394eaf40be21060a349e
-workflow-type: ht
-source-wordcount: '780'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 95%
 
 ---
 
@@ -69,12 +69,12 @@ ht-degree: 100%
 
 ## Beschränkungen {#limitations}
 
-* PDF-Formulare mit komplexem dynamischem Layout, Felder mit gepunkteten Umrissen, gefüllte Felder oder farbige Felder werden nicht unterstützt.
+* PDF forms mit komplexem dynamischem Layout, Felder mit gepunkteter Kontur oder ausgefüllten Feldern werden nicht unterstützt.
 * Bilder und Text in den Bildern werden nicht identifiziert. Fügen Sie konvertierten Formularen manuell Bilder hinzu.
 * Artwork XDP-Dokumente werden nicht unterstützt.
 * PDF-Formulare mit mehr als 15 Seiten werden nicht unterstützt.
 * Verschlüsselte, kennwortgeschützte und gesicherte Dokumente werden nicht konvertiert. Entfernen Sie die Verschlüsselung oder Kennwörter, bevor Sie die Konvertierung durchführen.
-* Komplexe Tabellen wie randlose Tabellen, verschachtelte Tabellen, Tabellen mit farbigen Zeilen und Tabellen mit Platzhalterwerten werden nicht unterstützt. Verwenden Sie den adaptiven Formulareditor, um nach der Konvertierung komplexe Tabellen hinzuzufügen oder zu ändern. Es werden nur einfache Tabellen mit leeren Feldern, richtigen Überschriften und klaren Grenzen unterstützt.
+* Komplexe Tabellen wie randlose Tabellen, verschachtelte Tabellen und Tabellen mit Platzhalterwerten werden nicht unterstützt. Verwenden Sie den adaptiven Formulareditor, um nach der Konvertierung komplexe Tabellen hinzuzufügen oder zu ändern. Es werden nur einfache Tabellen mit leeren Feldern, richtigen Überschriften und klaren Grenzen unterstützt.
 * Der Dienst konvertiert nur englischsprachige Formulare in adaptive Formulare. Sie können konvertierte adaptive Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 * AEM 6.4 Forms unterstützt keine automatische Erkennung des mehrspaltigen Layouts von Eingabeformularen.
 
