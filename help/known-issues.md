@@ -6,11 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '774'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ ht-degree: 95%
 
 ## Beschränkungen {#limitations}
 
-* PDF forms mit komplexem dynamischem Layout, Felder mit gepunkteter Kontur oder ausgefüllten Feldern werden nicht unterstützt.
+* PDF-Formulare mit komplexem dynamischen Layout, Felder mit gepunktetem Umriss oder ausgefüllte Felder werden nicht unterstützt.
 * Bilder und Text in den Bildern werden nicht identifiziert. Fügen Sie konvertierten Formularen manuell Bilder hinzu.
 * Artwork XDP-Dokumente werden nicht unterstützt.
 * PDF-Formulare mit mehr als 15 Seiten werden nicht unterstützt.
