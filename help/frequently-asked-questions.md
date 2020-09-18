@@ -6,11 +6,11 @@ seo-description: häufig gestellte Fragen für den Dienst für die automatische 
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1723'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 99%
 
 1. **Kann der Dienst gescannte Papierformulare und farbige in adaptive Formulare konvertieren?**
 
-   <p>Der Dienst kann PDF forms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.</p> <br>
+   <p>Der Dienst kann farbige PDF Formulare in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.</p> <br>
 
 1. **Kann der Dienst ein gescanntes Formular oder nur ein Bild eines Formulars in ein adaptives Formular konvertieren?**
 
