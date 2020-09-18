@@ -1,11 +1,11 @@
 ---
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 9b904622fcf421d82a183569d915926a2761d3f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 ### Neue Funktionen
 
-Zusätzliche Unterstützung für die Konvertierung farbiger PDF forms in adaptive Formulare.
+Zusätzliche Unterstützung für die Konvertierung farbiger PDF-Formulare in adaptive Formulare.
 
 ### Verbesserte Funktionen
 
