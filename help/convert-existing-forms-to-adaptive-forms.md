@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: ht
-source-git-commit: 5fdf997fdde07cc4546accebddb85a248f36e057
-workflow-type: ht
-source-wordcount: '1586'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+workflow-type: tm+mt
+source-wordcount: '1688'
+ht-degree: 94%
 
 ---
 
@@ -22,11 +22,16 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 ## Voraussetzungen {#pre-requisites}
 
-* [**Konvertierungsdienst konfigurieren **](configure-service.md)
+* [**Konvertierungsdienst konfigurieren**](configure-service.md)
 
 * **Bereiten Sie die[Vorlagen](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/template-editor.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mithilfe einer Vorlage können Sie ein einheitliches Branding auf alle adaptiven Formulare anwenden. Darüber hinaus extrahiert und verwendet der Dienst für die automatische Formularkonvertierung keine Kopf- und Fußzeilen von Quell-PDF-Dokumenten. Sie können adaptive Formularvorlagen verwenden, um Kopf- und Fußzeilen anzugeben. In der Vorlage angegebene Kopf- und Fußzeilen werden während der Konvertierung auf die adaptiven Formulare angewendet. Wenn Sie einen Ordner für die Vorlagen erstellen, wählen Sie für alle die Option **[!UICONTROL Konfigurationen durchsuchen]**.
 
 * **Bereiten Sie die[Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html)vor, die auf konvertierte Formulare angewendet werden sollen:** Mit einem Design können Sie einen einheitlichen Stil auf alle adaptiven Formulare Ihrer Organisation anwenden.
+
+* **hinzufügen von Adobe Sign-Text-Tags zu Quell-PDF-Dokumenten:** Wenn das Quell-PDF-Formular [Adobe Sign-Text-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de)enthält, werden diese Tags vom Dienst automatisch in entsprechende adaptive Formularfelder konvertiert und die Unterschriftsdetails werden automatisch ausgefüllt. Die Funktion ist nur für AcroForms verfügbar und adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.
+
+
+   Um eine vollständige Liste der unterstützten Tags zu erhalten, öffnen Sie ein Formular im Editor für adaptive Formulare und fügen Sie einen Adobe Sign-Block hinzu. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdownliste, in der alle unterstützten Felder ausgewählt werden können.
 
 ## Konvertierungsprozess starten{#start-the-conversion-process}
 
