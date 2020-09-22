@@ -1,6 +1,6 @@
 ---
-title: '[NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells'
-seo-title: '[NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells'
+title: Erweitern des Standardmetamodells
+seo-title: Erweitern des Standardmetamodells
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -9,10 +9,17 @@ topic-tags: forms
 discoiquuid: 9fce5d31-0a3e-4401-b9d7-bb63799121bf
 privatebeta: true
 index: false
-translation-type: ht
-source-git-commit: afe461baa5bcfc1106c16aae2d6a9c839ea675e8
+translation-type: tm+mt
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
+workflow-type: tm+mt
+source-wordcount: '14'
+ht-degree: 100%
 
 ---
 
 
-# [NICHT VERÖFFENTLICHEN] Erweitern des Standard-Metamodells{#do-not-publish-extend-the-default-meta-model}
+# {#do-not-publish-extend-the-default-meta-model}Erweitern des Standardmetamodells
+
+<!--
+[DO NOT PUBLISH] 
+-->
