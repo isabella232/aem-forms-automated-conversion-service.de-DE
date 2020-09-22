@@ -1,6 +1,5 @@
 ---
-title: '[NICHT VERÖFFENTLICHEN] Best Practices und Überlegungen '
-seo-title: '[NICHT VERÖFFENTLICHEN] Best Practices und Überlegungen '
+title: 'Best Practices und Hinweise '
 description: 'null'
 seo-description: 'null'
 page-status-flag: never-activated
@@ -9,16 +8,20 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-translation-type: ht
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: ht
-source-wordcount: '555'
+translation-type: tm+mt
+source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
+workflow-type: tm+mt
+source-wordcount: '542'
 ht-degree: 100%
 
 ---
 
 
-# [NICHT VERÖFFENTLICHEN] Best Practices und Überlegungen {#do-not-publish-best-practices-and-considerations}
+# Best Practices und Überlegungen {#do-not-publish-best-practices-and-considerations}
+
+<!--
+[DO NOT PUBLISH]
+-->
 
 Der Dienst für die automatische Konvertierung von AEM Forms konvertiert ein PDF-Formular in ein adaptives Formular. Der Dienst verwendet künstliche Intelligenz und Algorithmen für maschinelles Lernen, um das Layout und die Felder des Quellformulars zu verstehen. Jeder auf maschinellem Lernen basierende Dienst lernt kontinuierlich aus den Quelldaten und liefert eine verbesserte Ausgabe. Diese Dienste lernen aus Erfahrung, genau wie Menschen.
 
