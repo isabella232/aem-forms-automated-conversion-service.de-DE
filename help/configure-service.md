@@ -1,11 +1,11 @@
 ---
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
-translation-type: ht
-source-git-commit: 117280695bfddad627e5f7bcb54ff019bbf2026a
-workflow-type: ht
-source-wordcount: '2660'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 741ff89370a5215b70d90c49eea220171efe9339
+workflow-type: tm+mt
+source-wordcount: '2676'
+ht-degree: 99%
 
 ---
 
@@ -97,7 +97,7 @@ Bevor Sie mit der Konfiguration des Dienstes fortfahren und Ihre lokale Instanz 
 
 Nachdem Adobe den Zugriff für Ihr Unternehmen aktiviert und dem Administrator die erforderlichen Berechtigungen erteilt hat, kann sich der Administrator bei der Admin-Konsole anmelden (detaillierte Anweisungen unten), ein Profil erstellen und Entwickler zum Profil hinzufügen. Entwickler können eine lokale Instanz von AEM Forms mit dem Dienst für die automatische Formularkonvertierung in Adobe Cloud verbinden.
 
-Entwickler sind Mitglieder Ihrer Organisation, die den Konvertierungsdienst ausführen. Nur Entwickler, die dem Dienstprofil für die automatische Formularkonvertierung von Adobe hinzugefügt wurden, sind berechtigt, den Dienst für die automatische Formularkonvertierung zu verwenden. Führen Sie die folgenden Schritte aus, um ein Profil zu erstellen und ihm Entwickler hinzuzufügen:
+Entwickler sind Mitglieder Ihrer Organisation, die den Konvertierungsdienst ausführen. Nur Entwickler, die dem Dienstprofil für die automatische Formularkonvertierung von Adobe hinzugefügt wurden, sind berechtigt, den Dienst für die automatische Formularkonvertierung zu verwenden. Führen Sie die folgenden Schritte aus, um ein Profil zu erstellen und ihm Entwickler hinzuzufügen. Es ist mindestens ein Profil erforderlich, um Entwicklern Ihres Unternehmens den erforderlichen Zugriff zu gewähren:
 
 1. Melden Sie sich bei [Admin Console](https://adminconsole.adobe.com/) an. Melden Sie sich mit der **Adobe ID** des für die Verwendung des Dienstes für die automatische Formularkonvertierung bereitgestellten Administrators an. Verwenden Sie keine andere ID oder Federated ID, um sich anzumelden.
 1. Klicken Sie auf die Option **[!UICONTROL Automatische Formularkonvertierung]**.
@@ -165,6 +165,7 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
    * Titel: Geben Sie einen Titel an.
    * Autorisierungsserver: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)\
+
    Lassen Sie die anderen Felder vorerst leer (Werte werden später bereitgestellt). Lassen Sie die Seite geöffnet.
 
    <!--
