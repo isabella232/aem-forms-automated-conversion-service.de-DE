@@ -8,10 +8,10 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
+source-git-commit: fa8a27021fbccdd1c6c0721a6e5c032db486e262
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 94%
+source-wordcount: '1694'
+ht-degree: 93%
 
 ---
 
@@ -30,8 +30,8 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * **hinzufügen von Adobe Sign-Text-Tags zu Quell-PDF-Dokumenten:** Wenn das Quell-PDF-Formular [Adobe Sign-Text-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de)enthält, werden diese Tags vom Dienst automatisch in entsprechende adaptive Formularfelder konvertiert und die Unterschriftsdetails werden automatisch ausgefüllt. Die Funktion ist nur für AcroForms verfügbar und adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.
 
-
-   Um eine vollständige Liste der unterstützten Tags zu erhalten, öffnen Sie ein Formular im Editor für adaptive Formulare und fügen Sie einen Adobe Sign-Block hinzu. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdownliste, in der alle unterstützten Felder ausgewählt werden können.
+   </br>
+    Das adaptive Formular unterstützt nur die Felder "Unterschrift", "Text", "Nummer", "Datum", "Dropdown", "Optionsfeld", "Kontrollkästchen", "Initial", "Unterschriftsblock", "Digitalsignatur", "Name des Unterzeichners", "E-Mail des Unterzeichners", "Firma des Unterzeichners", "Unterschriftsdatum"und "Adobe Sign". Der Dienst konvertiert also Text-Tags nur der oben genannten Felder in entsprechende adaptive Formularfelder.
 
 ## Konvertierungsprozess starten{#start-the-conversion-process}
 
