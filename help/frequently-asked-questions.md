@@ -6,11 +6,11 @@ seo-description: häufig gestellte Fragen für den Dienst für die automatische 
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 14e6d1fba9f27fde4fe24de83cb00c9847ea4e90
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1836'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -135,8 +135,8 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
 
    <p>Sie können den adaptiven Design- oder Stileditor für adaptive Formulare verwenden, um die Groß-/Kleinschreibung eines Felds in einem adaptiven Formular zu ändern. Sie können beispielsweise den Design-Editor öffnen und den Wert der Groß-/Kleinschreibungs-Eigenschaft des gesamten Formulartextes auf Groß-, Klein- oder Höckerschreibweise setzen. Sie können auch die Option CSS-Überschreibung im Design-Editor verwenden, um verschiedene Arten von Stilen zu erstellen.</p>
 
-1. **Kann ich mit dem Dienst &quot;Automatisierte Forms-Konvertierung&quot;Adobe Sign-Text-Tags verwenden?**
+1. **Kann ich mit dem Dienst Adobe Sign-Text-Tags mit automatischer Formularkonvertierung verwenden?**
 
-   <p> Wenn Sie den automatisierten Forms-Konvertierungsdienst verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterschriftsdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
+   <p> Wenn Sie den automatisierten Forms-Konvertierungsdienst verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterschriftdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
 
-   <p> Um eine vollständige Liste der unterstützten Tags zu erhalten, öffnen Sie ein Formular im Editor für adaptive Formulare und fügen Sie einen Adobe Sign-Block hinzu. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdownliste, in der alle unterstützten Felder ausgewählt werden können.</p>
+   <p> Die vollständige Liste der unterstützten Tags erhalten Sie, wenn Sie ein Formular im adaptiven Formular-Editor öffnen und einen Adobe Sign-Block hinzufügen. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdown-Liste zur Auswahl aller unterstützten Felder.</p>
