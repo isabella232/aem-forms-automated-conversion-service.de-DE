@@ -9,16 +9,16 @@ topic-tags: forms
 discoiquuid: 9fce5d31-0a3e-4401-b9d7-bb63799121bf
 privatebeta: true
 index: false
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: bc7a0a86a211214d6e43e7c95809f6f40fe267f8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '14'
 ht-degree: 100%
 
 ---
 
 
-# Erweitern des Standardmetamodells{#do-not-publish-extend-the-default-meta-model}
+# {#do-not-publish-extend-the-default-meta-model}Erweitern des Standardmetamodells
 
 <!--
 [DO NOT PUBLISH] 
