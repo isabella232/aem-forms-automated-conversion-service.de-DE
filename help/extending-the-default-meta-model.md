@@ -6,9 +6,9 @@ seo-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2401'
 ht-degree: 100%
 
