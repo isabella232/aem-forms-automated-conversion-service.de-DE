@@ -65,7 +65,7 @@ Führen Sie die folgenden Schritte aus, um das Standardmetamodell in das lokale 
    <li>Step text</li>
    -->
 
-## Grundlagen des Metamodells{#understanding-the-meta-model}
+## Grundlagen des Metamodells {#understanding-the-meta-model}
 
 Ein Metamodell bezieht sich auf eine JSON-Schemadatei, die Entitäten enthält. Alle Entitäten in der JSON-Schemadatei enthalten einen Namen und eine ID. Jede Entität kann mehrere Eigenschaften enthalten. Die Entitäten und ihre Eigenschaften können je nach Domäne variieren. Sie können eine Schemadatei mit Schlüsselwörtern und Feldkonfigurationen erweitern, um Schemaeigenschaften adaptiven Formularkomponenten zuzuordnen.
 
