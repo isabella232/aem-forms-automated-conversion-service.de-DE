@@ -8,7 +8,7 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 translation-type: tm+mt
-source-git-commit: 19c688ae925774c008683be8b92afcbfb9f2bcdb
+source-git-commit: 0bff37d64df233dc52310266e306edb734887727
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 93%
@@ -30,7 +30,7 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * **hinzufügen von Adobe Sign-Text-Tags zu Quell-PDF-Dokumenten:** Wenn ein Quell-PDF-Formular [Adobe Sign-Text-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de)enthält, behält der Dienst alle Informationen zum Unterzeichner während der Konvertierung bei. Das erstellte adaptive Formular füllt alle Unterschriftsdetails, während das adaptive Formular zum Unterschreiben an den Adobe Sign-Dienst gesendet wird. Die Funktion ist nur für AcroForms verfügbar, und die Eigenschaften des adaptiven Formulars richten sich exakt mit den AcroForm-Eigenschaften aus.
 
-Um Ihren PDF-Dokumenten Adobe Sign-Text-Tags hinzuzufügen, ersetzen Sie den Feldnamen im PDF-Quelldokument durch ein [Text-Tag](https://helpx.adobe.com/sign/using/text-tag.html_de) oder verwenden Sie die Option &quot;In Adobe Sign-Formular konvertieren&quot;, wie im Artikel Formulare mit Acrobat DC [erstellen](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) beschrieben.
+   Um Ihren PDF-Dokumenten Adobe Sign-Text-Tags hinzuzufügen, ersetzen Sie den Feldnamen im PDF-Quelldokument durch ein [Text-Tag](https://helpx.adobe.com/sign/using/text-tag.html_de) oder verwenden Sie die Option &quot;In Adobe Sign-Formular konvertieren&quot;, wie im Artikel Formulare mit Acrobat DC [erstellen](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html#) beschrieben.
 
 
 
