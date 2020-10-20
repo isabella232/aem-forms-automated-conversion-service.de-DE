@@ -1,9 +1,16 @@
 ---
-source-git-commit: 5f945d77db476387159d342511b82691cf7708ee
+source-git-commit: 55bee52ffe5dce8f6fd43f6212a8b6d5772d2a31
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '520'
+ht-degree: 85%
 
 ---
 # Artikel beitragen
+
+| EXL-PR | EXL | Vorschau | Aktivieren | Veröffentlichte  | Hilfe |
+|--- |--- |--- |--- |--- |--- |
+| [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_pr-exl/lastBuild/) | [![Build-Status](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/aem-forms-automated-conversion-service.en_exl/lastBuild/lastBuild) | [Vorschauen-URL](https://experienceleague.corp.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/home.html?lang=en) | [Autorenanleitung](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/introduction.html?lang=en) |
 
 Wir freuen uns über Inhaltsbeiträge von unserer Community und Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
 
@@ -35,7 +42,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Größere Änderungen von Adobe-Mitarbeitern
 
-Wenn es zu Ihren Aufgaben als technischer Redakteur, Programm-Manager oder Entwickler im Produkt-Team einer [!UICONTROL Adobe Experience Cloud]-Lösung gehört, technische Artikel zu verfassen oder sich daran zu beteiligen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden. Siehe [Handbuch zur internen Zusammenarbeit](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
+Wenn es zu Ihren Aufgaben als technischer Redakteur, Programmmanager oder Entwickler im Produktteam einer [!UICONTROL Adobe Experience Cloud]-Lösung gehört, technische Artikel zu verfassen oder sich daran zu beteiligen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden. Siehe [Handbuch zur internen Zusammenarbeit](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
