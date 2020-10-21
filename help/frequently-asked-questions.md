@@ -7,7 +7,7 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+source-git-commit: ac110cc2e8b29603fb7ff8b86c5d323f13bc204e
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 97%
@@ -142,4 +142,7 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
    <p> Die vollständige Liste der unterstützten Tags erhalten Sie, wenn Sie ein Formular im adaptiven Formular-Editor öffnen und einen Adobe Sign-Block hinzufügen. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdown-Liste zur Auswahl aller unterstützten Felder.</p>
 
 1. **Erstellen eines für Adobe Sign aktivierten PDF-Formulars**
-Um ein für Adobe Sign aktiviertes PDF-Formular zu erstellen, fügen Sie den Feldnamen [Adobe Sign-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de) hinzu oder verwenden Sie die Option &quot;In Adobe Sign-Formular [konvertieren](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) &quot;. </br>
+
+   </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>
+
+   hinzufügen Sie [Adobe Sign-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de) in Feldnamen oder verwenden Sie die Option &quot;In Adobe Sign-Formular [](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) konvertieren&quot;.
