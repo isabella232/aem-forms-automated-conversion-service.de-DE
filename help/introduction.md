@@ -1,8 +1,11 @@
 ---
 title: Einführung
 description: 'Schnellere Konvertierung von Druckformularen in adaptive Formulare '
-translation-type: ht
-source-git-commit: ceff5cb56aa9896a28004628c5e26c262b7918bd
+translation-type: tm+mt
+source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
+workflow-type: tm+mt
+source-wordcount: '674'
+ht-degree: 92%
 
 ---
 
@@ -28,6 +31,8 @@ Adobe ermöglicht den Zugriff für Ihre Organisation und stellt der in Ihrer Org
 ## Unterstützte PDF-Formulare und Sprachen{#supported-languages-and-pdf-forms}
 
 Der Dienst unterstützt nicht-interaktive PDF-Formulare, Formulare, die mit Adobe Acrobat erstellt wurden (AcroForms), und XFA-basierte Formulare, die mit AEM Forms oder Adobe LiveCycle erstellt wurden.
+
+Der Dienst unterstützt auch Adobe Sign-aktivierte PDF forms. Wenn das Quell-PDF-Formular über Adobe Sign-Text-Tags verfügt, behält der Dienst alle Adobe Sign-bezogenen Informationen während der Konvertierung bei und verknüpft die in der Quell-PDF vorhandenen Signiererinformationen mit den entsprechenden Feldern des adaptiven Formulars. Die Funktion ist nur für AcroForms verfügbar.
 
 Der Dienst kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs ](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 
