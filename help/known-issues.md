@@ -6,11 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: ht
-source-git-commit: e2298422e0af9b1c678e7604be3efb6da377d7dd
-workflow-type: ht
-source-wordcount: '774'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
+workflow-type: tm+mt
+source-wordcount: '814'
+ht-degree: 95%
 
 ---
 
@@ -77,4 +77,7 @@ ht-degree: 100%
 * Komplexe Tabellen wie randlose Tabellen, verschachtelte Tabellen und Tabellen mit Platzhalterwerten werden nicht unterstützt. Verwenden Sie den adaptiven Formulareditor, um nach der Konvertierung komplexe Tabellen hinzuzufügen oder zu ändern. Es werden nur einfache Tabellen mit leeren Feldern, richtigen Überschriften und klaren Grenzen unterstützt.
 * Der Dienst konvertiert nur englischsprachige Formulare in adaptive Formulare. Sie können konvertierte adaptive Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 * AEM 6.4 Forms unterstützt keine automatische Erkennung des mehrspaltigen Layouts von Eingabeformularen.
+* Informationen, die mit Farben im PDF-Quellformular kodiert wurden, werden nicht in das adaptive Formular übernommen.
+* Die Farben des PDF-Quellformulars werden in Themen für adaptive Formulare übertragen.
+* Farbige PDF forms werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
 
