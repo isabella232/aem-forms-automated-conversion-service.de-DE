@@ -7,10 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 translation-type: tm+mt
-source-git-commit: 589eacfd6200f4336b7a4a7708e10f3dfe08406d
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 95%
+source-wordcount: '815'
+ht-degree: 94%
 
 ---
 
@@ -78,6 +78,6 @@ ht-degree: 95%
 * Der Dienst konvertiert nur englischsprachige Formulare in adaptive Formulare. Sie können konvertierte adaptive Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 * AEM 6.4 Forms unterstützt keine automatische Erkennung des mehrspaltigen Layouts von Eingabeformularen.
 * Informationen, die mit Farben im PDF-Quellformular kodiert wurden, werden nicht in das adaptive Formular übernommen.
-* Die Farben des PDF-Quellformulars werden in Themen für adaptive Formulare übertragen.
+* Die Farben des PDF-Quellformulars werden nicht in Themen für adaptive Formulare übertragen.
 * Farbige PDF forms werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
 
