@@ -7,9 +7,9 @@ uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 translation-type: tm+mt
-source-git-commit: 7b8e013af91430e86c0014c7a1695abb05c3c0f2
+source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
 workflow-type: tm+mt
-source-wordcount: '1880'
+source-wordcount: '1839'
 ht-degree: 97%
 
 ---
@@ -138,8 +138,6 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
 1. **Kann ich mit dem Dienst Adobe Sign-Text-Tags mit automatischer Formularkonvertierung verwenden?**
 
    <p> Wenn Sie den automatisierten Forms-Konvertierungsdienst verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterschriftdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
-
-   <p> Die vollständige Liste der unterstützten Tags erhalten Sie, wenn Sie ein Formular im adaptiven Formular-Editor öffnen und einen Adobe Sign-Block hinzufügen. Verwenden Sie den Adobe Sign-Block, um alle unterstützten Adobe Sign-Felder zu finden. Es bietet eine Dropdown-Liste zur Auswahl aller unterstützten Felder.</p>
 
 1. **Erstellen eines für Adobe Sign aktivierten PDF-Formulars**
 
