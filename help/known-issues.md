@@ -6,11 +6,11 @@ seo-description: Informieren Sie sich über die bekannten Probleme und Einschrä
 uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '815'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -79,5 +79,5 @@ ht-degree: 94%
 * AEM 6.4 Forms unterstützt keine automatische Erkennung des mehrspaltigen Layouts von Eingabeformularen.
 * Informationen, die mit Farben im PDF-Quellformular kodiert wurden, werden nicht in das adaptive Formular übernommen.
 * Die Farben des PDF-Quellformulars werden nicht in Themen für adaptive Formulare übertragen.
-* Farbige PDF forms werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
+* Farbige PDF-Formulare werden wie Graustufenformulare behandelt und Felder werden entsprechend erkannt.
 
