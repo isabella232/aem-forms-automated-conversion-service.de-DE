@@ -1,9 +1,9 @@
 ---
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8808e2d9c762617ba67e2f1ab4e103f828e11c58
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
 ht-degree: 100%
 
