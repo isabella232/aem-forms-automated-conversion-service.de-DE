@@ -6,11 +6,11 @@ seo-description: häufig gestellte Fragen für den Dienst für die automatische 
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 92cd241915ef5818fb004a8982674b4f6753c171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1839'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -139,8 +139,8 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
 
    <p> Wenn Sie den automatisierten Forms-Konvertierungsdienst verwenden, um ein PDF-Formular in ein adaptives Formular zu konvertieren, und das PDF-Formular Adobe Sign-Tags enthält, werden diese Tags in entsprechende adaptive Formularfelder konvertiert und die Unterschriftdetails werden automatisch ausgefüllt.  Die Funktion ist nur für Acro Forms verfügbar. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern.</p>  </br>
 
-1. **Erstellen eines für Adobe Sign aktivierten PDF-Formulars**
+1. **Wie erstellt man ein für Adobe Sign aktivierten PDF-Formular?**
 
    </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>
 
-   hinzufügen Sie [Adobe Sign-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de) in Feldnamen oder verwenden Sie die Option &quot;In Adobe Sign-Formular [](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) konvertieren&quot;.
+   Fügen Sie [Adobe Sign-Text-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de) zu den Feldnamen hinzu oder verwenden Sie die Option [Convert to Adobe Sign Form (In Adobe Sign-Formular konvertieren)](https://helpx.adobe.com/de/sign/using/create-forms-with-acrobat.html).
