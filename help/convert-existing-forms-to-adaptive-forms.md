@@ -7,11 +7,11 @@ uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c4f0d07b38cdb6aa162a0b61abe12fe9d1677a8c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1596'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * **Bereiten Sie die [Designs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html) vor, die auf konvertierte Formulare angewendet werden sollen:** Mit einem Design können Sie einen einheitlichen Stil auf alle adaptiven Formulare Ihrer Organisation anwenden.
 
-* **(Optional)** Quellformular [**für PDF forms in Adobe Sign konvertieren**](frequently-asked-questions.md)
+* **(Optional)** [**Quellformular für PDF-Formulare in Adobe Sign konvertieren**](frequently-asked-questions.md)
 
 
 ## Konvertierungsprozess starten{#start-the-conversion-process}
