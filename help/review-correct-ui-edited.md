@@ -6,9 +6,9 @@ seo-description: Überprüfen und korrigieren Sie die vom Dienst für die automa
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 3c12751cad2b3c04ad66a98ac17f20f648530d0f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 100%
 
@@ -187,7 +187,7 @@ Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen 
 
 Nachdem Sie alle erforderlichen Änderungen im Editor „Überprüfen und Korrigieren“ vorgenommen haben, können Sie das Formular erneut zur Konvertierung senden. Um das Formular zur Konvertierung zu senden, tippen Sie auf **[!UICONTROL Speichern &amp; Konvertieren]**. Der Ordner, der das Quelldokument enthält, erhält die **[!UICONTROL Bezeichnung „Zur Konvertierung gesendet“]** und das aktualisierte Quellformular wird zum Konvertierungsdienst hochgeladen, der auf Adobe I/O läuft.
 
-Je nach Komplexität des Formulars benötigt der Konvertierungsdienst einige Zeit, um das Formular zu konvertieren. Nach Abschluss der Konvertierung werden das konvertierte adaptive Formular und die zugehörigen Assets auf Ihren Computer heruntergeladen. Sie können das Formular nach Abschluss der Konvertierung im Editor überprüfen und das adaptive Formular im [Editor für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/introduction-forms-authoring.html) öffnen, um bei Bedarf die endgültigen Korrekturen durchzuführen.
+Je nach Komplexität des Formulars benötigt der Konvertierungsdienst einige Zeit, um das Formular zu konvertieren. Nach Abschluss der Konvertierung werden das konvertierte adaptive Formular und die zugehörigen Assets auf Ihren Computer heruntergeladen. Sie können das Formular nach Abschluss der Konvertierung im Editor überprüfen und das adaptive Formular im [Editor für adaptive Formulare](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html) öffnen, um bei Bedarf die endgültigen Korrekturen durchzuführen.
 
 Wenn Sie ein Formular erneut zur Konvertierung senden, nachdem Sie das Formular im Editor für adaptive Formulare aktualisiert haben, gehen alle im adaptiven Formular vorgenommenen Änderungen verloren. Sie können ein Formular im Editor „Überprüfen und Korrigieren“ erst nach einer erfolgreichen Konvertierung öffnen.
 
