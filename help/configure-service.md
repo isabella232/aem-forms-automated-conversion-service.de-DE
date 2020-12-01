@@ -1,9 +1,9 @@
 ---
 title: Dienst zur automatischen Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 741ff89370a5215b70d90c49eea220171efe9339
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2676'
 ht-degree: 100%
 
