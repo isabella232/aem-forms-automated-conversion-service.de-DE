@@ -8,8 +8,11 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+workflow-type: tm+mt
+source-wordcount: '2596'
+ht-degree: 100%
 
 ---
 
@@ -76,7 +79,7 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
   <tr>
   <td><p>XSD-Schema</p></td> 
    <td> 
-    <p>Sie wählen XSD-Schema als Datenquelle aus. Basierend auf der ausgewählten Datenquelle <a href="#generate-adaptive-forms-with-no-data-binding">erstellen Sie mit dem Dienst für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung</a> und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
+    <p>Sie wählen XSD-Schema als Datenquelle aus. Basierend auf der ausgewählten Datenquelle <a href="#generate-adaptive-forms-with-no-data-binding">erstellen Sie mit dem Dienst für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung</a> und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">verwenden eines der unterstützten Protokolle</a>, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.</p>
     </td> 
   </tr>
   <tr>
@@ -273,6 +276,7 @@ Führen Sie die folgenden Schritte aus:
 1. Tippen Sie auf das Textfeld „Name des Antragstellers“ und wählen Sie das ![Symbol zum Konfigurieren](assets/configure_icon.svg) (Konfigurieren).
 
    1. Wählen Sie im Feld „Bindungsverweis“ die Option **Antragsteller** > **Name** aus und tippen Sie auf das ![Symbol „Fertig“](assets/save_icon.svg), um die Eigenschaften zu speichern. Erstellen Sie auf ähnliche Weise eine Datenbindung für **Adresse**, **Telefonnummer**, **E-Mail**, **Beruf**, **Jahresgehalt (in Dollar)** und **Anzahl. von abhängigen Familienmitgliedern** mit den Entitäten des Formulardatenmodells.
+
    ![Bindungsverweise](assets/bind_references.png)
 
 1. Tippen Sie auf **[!UICONTROL Vorschau]**, um die vorausgefüllten Feldwerte des adaptiven Formulars anzuzeigen.
@@ -305,6 +309,7 @@ Führen Sie die folgenden Schritte aus, um mit dem [Regeleditor](https://helpx.a
    1. Erstellen Sie im Abschnitt „Ausgabe“ eine Bindung für die Felder des adaptiven Formulars mit den Entitäten des Formulardatenmodells. Binden Sie beispielsweise das adaptive Formularfeld **[!UICONTROL Antragstellername]** mit der Entität **Name**.
 
    1. Tippen Sie auf **[!UICONTROL Fertig]**. Tippen Sie auf der Seite „Regeleditor“ auf **[!UICONTROL Fertig]**.
+
    ![Regeleditor zum Binden von Verweisen](assets/rule_editor_bind_references.png)
 
 1. Tippen Sie auf **[!UICONTROL Vorschau]**, um die vorausgefüllten Feldwerte des adaptiven Formulars anzuzeigen.
@@ -335,7 +340,7 @@ Führen Sie die folgenden Schritte aus:
 
    Wählen Sie im Feld „Bindungsverweis“ die Option **Antragsteller** > **Name** aus und tippen Sie auf das ![Symbol „Fertig“](assets/save_icon.svg), um die Eigenschaften zu speichern. Erstellen Sie auf ähnliche Weise eine Datenbindung für **Adresse**, **Telefonnummer**, **E-Mail**, **Beruf**, **Jahresgehalt (in Dollar)** und **Anzahl. von abhängigen Familienmitgliedern** mit den JSON-Schemaentitäten.
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag ]**, das im Ordner**[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 
@@ -387,7 +392,7 @@ Stellen Sie vor dem Ausführen des Anwendungsfalls sicher, dass Sie über ein [a
 
 Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag ]**, das im Ordner**[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
+1. Wählen Sie das konvertierte **Beispielformular für den Kreditantrag]**, das im Ordner **[!UICONTROL Ausgabe** verfügbar ist, erneut aus, und wählen Sie **[!UICONTROL Vorschau]** > **[!UICONTROL Vorschau mit Daten]**.</br>
 
    Beispieldatendatei herunterladen</br>
 
