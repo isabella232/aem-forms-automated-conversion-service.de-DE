@@ -390,10 +390,10 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
-* India
+* Indien
 * England
-* Australia
-* New Zealand
+* Australien
+* Neuseeland
 
 Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
