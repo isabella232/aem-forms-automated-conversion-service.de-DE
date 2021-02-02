@@ -2,9 +2,9 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
 translation-type: tm+mt
-source-git-commit: 176dfbf12d1147d0348957e2cc8ce9390529fe72
+source-git-commit: 3fa3f484268c7cbe655408f90d53ae8d28b3a7ee
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '366'
 ht-degree: 93%
 
 ---
@@ -25,6 +25,8 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 
 ## 01. Februar 2021 (AFC-2021.01.2)
+
+### Verbesserte Funktionen
 
 Verbesserungen beim Organisieren von Formularinhalten in Bereiche und Generieren von Bezeichnungen für Bereiche beim Konvertieren eines Quellformulars in ein adaptives Formular.
 
