@@ -8,11 +8,11 @@ topic-tags: introduction
 discoiquuid: b786e40a-202e-4e17-a2f5-1f77c46538c2
 privatebeta: true
 index: false
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b2d29c22a275f2dc6a82593cf5e441c8da0bba13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
    <td><img src="assets/image-in-adaptive-form.png" /></td> 
   </tr>
   <tr>
-   <td><p><strong>Muster</strong></p> <p>Tabellen mit gepunkteten oder unklaren Grenzen und Rahmen werden nicht konvertiert.</p> <p><strong>Lösung</strong></p> <p>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen. unterstützt.</p> </td> 
+   <td><p><strong>Muster</strong></p> <p>Tabellen mit gepunkteten oder unklaren Grenzen und Rahmen werden nicht konvertiert.</p> <p><strong>Lösung</strong></p> <p>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen.  </p> </td> 
    <td><img src="assets/border-less-tables.png" /></td> 
   </tr>
  </tbody>
