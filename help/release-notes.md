@@ -1,11 +1,11 @@
 ---
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: 'Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 70dc18347e072ccd7c1625f6831554ecfc13f2fb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '389'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 * Spezielle Anweisungen
 * Zukünftige Pläne für Änderungen
 
-## 03 März 2021 (AFC-2021.02.2) {#mar-2021}
+## 03. März 2021 (AFC-2021.02.2) {#mar-2021}
 
 ### Verbesserte Funktionen {#march-2021-improvements}
 
@@ -31,17 +31,17 @@ Verbesserungen beim Organisieren von Formularinhalten in Auswahlgruppen und Feld
 
 ## 02. Februar 2021 (AFC-2021.01.2) {#feb-2021}
 
-### Verbesserte Funktionen  {#feb-2021-improvements}
+### Verbesserte Funktionen {#feb-2021-improvements}
 
 Verbesserungen beim Organisieren von Formularinhalten in Bereichen und Erstellen von Bezeichnungen für Bereiche beim Konvertieren eines Quellformulars in ein adaptives Formular.
 
-## 16. Juli 2020 (AFC-2020.07.2)  {#jul-2020}
+## 16. Juli 2020 (AFC-2020.07.2) {#jul-2020}
 
 ### Neue Funktionen {#whats-new-jul-2020-}
 
 Zusätzliche Unterstützung für die Konvertierung farbiger PDF-Formulare in adaptive Formulare.
 
-### Verbesserte Funktionen  {#jul-2020-improvements}
+### Verbesserte Funktionen {#jul-2020-improvements}
 
 Verbesserungen bei der automatischen Konvertierung von Text-, Formular- und Auswahlgruppenfeldern in entsprechende adaptive Formularkomponenten.
 
@@ -54,13 +54,13 @@ Verbesserungen bei der automatischen Konvertierung von Text-, Formular- und Ausw
 
 Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars ein separates Bedienfeld der obersten Ebene. Jetzt können Sie die Option **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden, um Bereiche auf Seitenebene (Bereiche auf Seitenzahlbasis) zu löschen und nur logische Bereiche zu erstellen. Außerdem werden die Felder, die zu keinem Abschnitt mit dem vorhergehenden logischen Abschnitt gehören, und die Felder eines logischen Abschnitts, die auf zwei benachbarte Seiten verteilt sind, zu einem einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende von Seite eins und einige am Anfang von Seite zwei befinden, werden alle diese Felder in einem einzigen logischen Abschnitt zusammengefasst.
 
-### Verbesserte Funktionen  {#mar-2020-improvements}
+### Verbesserte Funktionen {#mar-2020-improvements}
 
 **Verbesserungen bei der Listenerkennung**
 
 Der Dienst erkennt jetzt Listen mit Aufzählungszeichen und Nummern effizienter.
 
-### Spezielle Anweisungen  {#special-instructions}
+### Spezielle Anweisungen {#special-instructions}
 
 **Connector-Paket für den Dienst für die automatische Formularkonvertierung installieren**
 
