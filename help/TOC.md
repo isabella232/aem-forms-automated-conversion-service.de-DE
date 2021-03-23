@@ -1,31 +1,31 @@
 ---
 cloud: experience-cloud
 product: experience manager
-sub-product: Formularkonvertierungsservice
+sub-product: Formularkonvertierungs-Service
 solution: Experience Manager, Experience Manager Forms
 type: Dokumentation
 audience: end-user
-user-guide-title: Automatisierter Konvertierungsdienst für Adobe Experience Manager Forms
-user-guide-description: Konvertieren Sie PDF forms in reaktionsfähiges und mobiles HTML-Forms.
-breadcrumb-title: Anleitung zur automatischen Forms-Konversion
+user-guide-title: Service für die automatisierte Konvertierung für Adobe Experience Manager Forms
+user-guide-description: Konvertieren Sie PDF-Formulare in reaktionsfähige und für Mobilgeräte optimierte HTML-Formulare.
+breadcrumb-title: Anleitung zur automatisierten Formularkonvertierung
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 feature: Adaptive Formulare
 role: Geschäftspraktiker
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b3946630c5180a600fe7acc25f1084601dec04ef
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Automatisierter Konvertierungsdienst für Adobe Experience Manager Forms {#using}
+# Service für die automatisierte Konvertierung für Adobe Experience Manager Forms {#using}
 
 + [Einführung](introduction.md)
 + [Versionshinweise](release-notes.md)
 + [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md)
-+ [Konfigurieren des Dienstes](configure-service.md)
++ [Konfigurieren des Service](configure-service.md)
 + [Druckformulare in adaptive Formulare konvertieren](convert-existing-forms-to-adaptive-forms.md)
 + [Überprüfen und Korrigieren von konvertierten Formularen](review-correct-ui-edited.md)
 + [Erweitern des Standard-Metamodells](extending-the-default-meta-model.md)
