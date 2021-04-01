@@ -11,9 +11,9 @@ breadcrumb-title: Anleitung zur automatisierten Formularkonvertierung
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 feature: Adaptive Formulare
 role: Geschäftspraktiker
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '95'
 ht-degree: 100%
 
