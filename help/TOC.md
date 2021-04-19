@@ -1,20 +1,20 @@
 ---
 cloud: Experience Cloud
 product: experience manager
-sub-product: Formularkonvertierungs-Service
+sub-product: Formularkonvertierungsservice
 solution: Experience Manager, Experience Manager Forms
-type: Dokumentation
+type: Documentation
 audience: end-user
 user-guide-title: Service für die automatisierte Konvertierung für Adobe Experience Manager Forms
-user-guide-description: Konvertieren Sie PDF-Formulare in reaktionsfähige und für Mobilgeräte optimierte HTML-Formulare.
+user-guide-description: Konvertieren Sie PDF-Formulare in responsive und für Mobilgeräte geeignete HTML-Formulare
 breadcrumb-title: Anleitung zur automatisierten Formularkonvertierung
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
 feature: Adaptive Formulare
-role: Geschäftspraktiker
-translation-type: ht
+role: Business Practitioner
+translation-type: tm+mt
 source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7
-workflow-type: ht
-source-wordcount: '95'
+workflow-type: tm+mt
+source-wordcount: '92'
 ht-degree: 100%
 
 ---
