@@ -9,7 +9,7 @@ user-guide-title: Service für die automatisierte Konvertierung für Adobe Exper
 user-guide-description: Konvertieren Sie PDF-Formulare in responsive und für Mobilgeräte geeignete HTML-Formulare
 breadcrumb-title: Anleitung zur automatisierten Formularkonvertierung
 breadcrumb-url: /docs/aem-forms-automated-conversion-service/using/introduction.html
-feature: Adaptive Formulare
+feature: Adaptive Forms
 role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 8c4cf4ff72e9ca7e8daa76f495abd75a865cd2f7

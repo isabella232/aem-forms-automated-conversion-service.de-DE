@@ -1,7 +1,7 @@
 ---
 title: Service für die automatisierte Formularkonvertierung konfigurieren
 description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Service für die automatisierte Formularkonvertierung vor
-role: Geschäftspraktiker, Administrator
+role: Business Practitioner, Administrator
 translation-type: ht
 source-git-commit: a9bab62fbe5ecc4b233e9bc55b9e461a5967b471
 workflow-type: ht
