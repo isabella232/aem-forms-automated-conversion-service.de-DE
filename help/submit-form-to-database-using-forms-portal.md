@@ -4,7 +4,6 @@ description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
 source-git-commit: ead1b4ee177029c60f095dc596b1f3db5878760e
 workflow-type: tm+mt
 source-wordcount: '1215'
@@ -270,7 +269,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 
 1. Laden Sie das folgende **aem-fp-db-integration-sample-pkg-6.1.2.zip**-Paket auf Ihr Dateisystem herunter.
 
-   [Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+[Datei laden](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. Gehen Sie zu AEM Package Manager unter *http://[host]:[port]/crx/packmgr/*.
 1. Klicken Sie auf **[!UICONTROL Paket hochladen]**.
