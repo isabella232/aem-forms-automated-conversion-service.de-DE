@@ -6,14 +6,13 @@ seo-description: Überprüfen und korrigieren Sie die vom Dienst für die automa
 uuid: 5a0a6d24-dff6-4732-b607-24848b07b26d
 topic-tags: forms
 discoiquuid: f45ab2d7-5234-42d6-aeb6-b2cb1a7ce3c2
-translation-type: tm+mt
-source-git-commit: 3c12751cad2b3c04ad66a98ac17f20f648530d0f
+exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '2587'
 ht-degree: 100%
 
 ---
-
 
 # Überprüfen und Korrigieren konvertierter Formulare{#review-and-correct-converted-forms}
 
@@ -130,7 +129,7 @@ Um dem Formular eine Komponente hinzuzufügen, tippen Sie auf **[!UICONTROL +]**
 
 Tippen Sie auf die Schaltfläche **[!UICONTROL Speichern]**, um die Änderungen zu speichern, oder verwenden Sie die Schaltfläche **[!UICONTROL Speichern &amp; Konvertieren]**, um die PDF-Formulare erneut an den Konvertierungsdienst zu senden.
 
-### Hinzufügen oder Bearbeiten einer Tabelle{#addedittable}
+### Hinzufügen oder Bearbeiten einer Tabelle {#addedittable}
 
 Bei der Konvertierung werden einige Zellen, Grenzen oder Inhalte einer Tabellenzelle eventuell nicht identifiziert. Beispielsweise wird eine Zeile einer Tabelle nicht identifiziert. Sie können den Editor „Überprüfen und Korrigieren“ verwenden, um solche Elemente zu identifizieren. Sie können für eine Tabelle die folgenden Aktionen ausführen:
 
