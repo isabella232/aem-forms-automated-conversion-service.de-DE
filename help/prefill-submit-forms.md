@@ -8,14 +8,13 @@ contentOwner: khsingh
 topic-tags: forms
 discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
-translation-type: tm+mt
-source-git-commit: caccb547a5741eb0e70ddf75630a661f8fe75cb3
+exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '2596'
 ht-degree: 100%
 
 ---
-
 
 # Empfohlene datenquellenbasierte Vorfüll- und Übermittlungsarbeitsabläufe für adaptive Formulare {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
@@ -95,9 +94,9 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
 Weitere Informationen zum Dienst für die automatische Formularkonvertierung finden Sie in den folgenden Artikeln:
 
 * [Einführung zum Dienst für die automatische Formularkonvertierung](introduction.md)
-* [Dienst zur automatischen Formularkonvertierung konfigurieren](configure-service.md)
+* [Service für die automatisierte Formularkonvertierung konfigurieren](configure-service.md)
 * [Druckformulare in adaptive Formulare konvertieren](convert-existing-forms-to-adaptive-forms.md)
-* [Überprüfen und Korrigieren von konvertierten Formularen](review-correct-ui-edited.md)
+* [Überprüfen und Korrigieren konvertierter Formulare](review-correct-ui-edited.md)
 
 Den Informationen in diesem Artikel liegt die Annahme zugrunde dass jeder, der sie liest, über Grundkenntnisse der Konzepte für adaptive Formulare verfügt.
 
