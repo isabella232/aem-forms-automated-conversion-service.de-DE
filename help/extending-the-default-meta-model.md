@@ -6,14 +6,13 @@ seo-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-translation-type: tm+mt
-source-git-commit: 77bdb4e88194bd634dea125852ff2a897bc24678
+exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
+source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
 workflow-type: tm+mt
 source-wordcount: '2401'
 ht-degree: 100%
 
 ---
-
 
 # Erweitern des Standardmetamodells {#extend-the-default-meta-model}
 
@@ -109,7 +108,7 @@ Das Konstrukt **allOf** im Metamodell ermöglicht die Vererbung zwischen Entitä
 Jede Eigenschaft kann ferner Folgendes umfassen:
 
 * [JSON-Schema-Eigenschaften](#jsonschemaproperties)
-* [Schlüsselwortbasierte Suche zum Anwenden von Eigenschaften auf generierte adaptive Formularfelder](#keywordsearch)
+* [Schlüsselwortbasierte Suche zum Anwenden von Eigenschaften auf Felder im generierten adaptiven Formular](#keywordsearch)
 * [Zusätzliche Eigenschaften](#additionalproperties)
 
 ![Eigenschaften des Metamodells](assets/meta_model_elements.gif)
@@ -162,7 +161,7 @@ Das Metamodell unterstützt die folgenden allgemeinen Eigenschaften des JSON-Sch
  </tbody> 
 </table>
 
-### Schlüsselwortbasierte Suche zum Anwenden von Eigenschaften auf Felder im generierten adaptiven Formular{#keywordsearch}
+### Schlüsselwortbasierte Suche zum Anwenden von Eigenschaften auf Felder im generierten adaptiven Formular {#keywordsearch}
 
 Der Dienst zur automatischen Formularkonvertierung führt während der Konvertierung eine Schlüsselwortsuche im Quellformular durch. Nach dem Filtern der Felder, die die Suchkriterien erfüllen, wendet der Konvertierungsdienst die für diese Felder im Metamodell definierten Eigenschaften auf die Felder im generierten adaptiven Formular an.
 
@@ -179,7 +178,7 @@ Auf Schlüsselwörter wird mit der Eigenschaft **aem:affKeyword** verwiesen.
 
 In diesem Beispiel verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach dem Abrufen des Textes **Bankkontonummer** im Formular konvertiert der Konvertierungsdienst das Feld mithilfe der Eigenschaft **type** in den Typ **number**.
 
-### Zusätzliche Eigenschaften für Felder im generierten adaptiven Formular{#additionalproperties}
+### Zusätzliche Eigenschaften für Felder im generierten adaptiven Formular {#additionalproperties}
 
 Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden zusätzlichen Eigenschaften für adaptive Formularfelder definieren, die mit dem Dienst für die automatische Formularkonvertierung generiert wurden:
 
@@ -237,7 +236,7 @@ Führen Sie die folgenden Schritte aus, um während der Konvertierung ein benutz
 1. Geben Sie auf der Registerkarte **[!UICONTROL Standard]** den Speicherort des benutzerdefinierten Metamodells im Feld **[!UICONTROL Benutzerdefiniertes Metamodell]** an und tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
 1. [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process), um das benutzerdefinierte Metamodell auf den Konvertierungsprozess anzuwenden.
 
-### Benutzerdefinierte Metamodellbeispiele{#custommetamodelexamples}
+### Benutzerdefinierte Metamodellbeispiele {#custommetamodelexamples}
 
 Einige gängige Beispiele für die Verwendung eines benutzerdefinierten Metamodells zum Ändern der Eigenschaften von adaptiven Formularfeldern sind:
 
