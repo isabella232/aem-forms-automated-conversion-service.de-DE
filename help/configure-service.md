@@ -1,16 +1,16 @@
 ---
 title: Service für die automatisierte Formularkonvertierung konfigurieren
-description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Dienstes zur automatischen Formularkonvertierung vor
+description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Service für die automatisierte Formularkonvertierung vor
 role: Business Practitioner, Administrator
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
 source-wordcount: '2799'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
-# Dienst zur automatischen Formularkonvertierung konfigurieren{#about-this-help}
+# Service für die automatisierte Formularkonvertierung konfigurieren {#about-this-help}
 
 In dieser Hilfe wird beschrieben, wie ein AEM-Administrator den Service für die automatisierte Formularkonvertierung konfigurieren kann, um die Konvertierung von PDF-Formularen in adaptive Formulare zu automatisieren. Diese Hilfe richtet sich an IT- und AEM-Administratoren in Ihrem Unternehmen. Benutzer dieser Hilfe sollten mit den folgenden Technologien vertraut sein:
 
@@ -147,7 +147,7 @@ Der Service für die automatisierte Formularkonvertierung verwendet den Day CQ-M
 
 #### Benutzer zur Gruppe „forms-users“ hinzufügen {#adduserstousergroup}
 
-Geben Sie im Profil des AEM-Benutzers, der den Service ausführen soll, eine E-Mail-Adresse an. Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe [forms-users](https://helpx.adobe.com/de/experience-manager/6-4/forms/using/forms-groups-privileges-tasks.html) ist. E-Mails werden an die E-Mail-Adresse des Benutzers gesendet, der die Konvertierung ausführt. So geben Sie eine E-Mail-Adresse für den Benutzer an und fügen den Benutzer der Formularbenutzergruppe hinzu:
+Geben Sie im Profil des AEM-Benutzers, der den Service ausführen soll, eine E-Mail-Adresse an. Stellen Sie sicher, dass der Benutzer Mitglied der Gruppe [forms-users](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html) ist. E-Mails werden an die E-Mail-Adresse des Benutzers gesendet, der die Konvertierung ausführt. So geben Sie eine E-Mail-Adresse für den Benutzer an und fügen den Benutzer der Formularbenutzergruppe hinzu:
 
 1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz als AEM-Administrator an. Verwenden Sie Ihre lokalen AEM-Anmeldeinformationen, um sich anzumelden. Verwenden Sie keine Adobe ID, um sich anzumelden. Tippen Sie auf **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
