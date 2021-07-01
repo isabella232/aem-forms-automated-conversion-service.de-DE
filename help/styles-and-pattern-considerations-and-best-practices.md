@@ -7,10 +7,10 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -39,7 +39,7 @@ Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folg
 
 * Analysieren Sie das XDP-Formular und beheben Sie visuelle Probleme. Stellen Sie sicher, dass das Quelldokument die vorgesehenen Steuerelemente und Strukturen verwendet. Beispielsweise kann das Quellformular Kontrollkästchen anstelle von Optionsfeldern für eine einzelne Auswahl enthalten. Ändern Sie die Kontrollkästchen in Optionsfelder, um ein adaptives Formular mit den beabsichtigten Komponenten zu erstellen.
 * [Fügen Sie dem XDP-Formular Bindungen hinzu](http://www.adobe.com/go/learn_aemforms_designer_65_de), bevor Sie mit der Konvertierung beginnen. Wenn Bindungen im XDP-Quellformular verfügbar sind, wendet der Dienst während der Konvertierung automatisch Bindungen auf entsprechende adaptive Formularfelder an. Sie sparen Zeit, die zum manuellen Anwenden der Bindungen erforderlich ist.
-* [Fügen Sie der XDP-Datei Adobe Sign-Tags hinzu](https://helpx.adobe.com/sign/using/text-tag.html_de). Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern. Die vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://docs.adobe.com/content/help/de/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html).
+* [Fügen Sie der XDP-Datei Adobe Sign-Tags hinzu](https://helpx.adobe.com/sign/using/text-tag.html_de). Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern. Die vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en).
 * Konvertieren Sie komplexe Tabellen in XDP-Dokumenten nach Möglichkeit in einfache Tabellen. Eine Tabelle mit Formularfeldern in Tabellenzellen, Zellen ungleicher Größe, zeilen- oder spaltenübergreifenden Zellen, zusammengeführten Zellen, Teilrändern oder keinem sichtbaren Rand wird als komplexe Tabelle betrachtet. Eine Tabelle mit einem der oben genannten Elemente wird als komplexe Tabelle betrachtet.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
