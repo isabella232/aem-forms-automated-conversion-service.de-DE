@@ -3,9 +3,9 @@ title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonve
 description: Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 ### Verbesserte Funktionen {#june-2021-improvements}
 
-Verbesserte Genauigkeit beim automatischen Erkennen logischer Abschnitte in den Quellformularen und Konvertieren dieser Abschnitte in entsprechende adaptive Formularbedienfelder.
+Verbesserte Genauigkeit bei der automatischen Erkennung logischer Abschnitte in den Quellformularen und Konvertieren dieser Abschnitte in entsprechende Bedienfelder adaptiver Formulare.
 
 ## 03. März 2021 (AFC-2021.02.2) {#mar-2021}
 
