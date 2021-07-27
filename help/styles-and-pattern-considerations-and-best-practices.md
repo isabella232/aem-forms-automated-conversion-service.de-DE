@@ -8,9 +8,9 @@ topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
 source-git-commit: 17d1c447d8aa68341214270932fb076b512422af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -35,20 +35,20 @@ Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hoc
 * Laden Sie keine gescannten, nicht englischen und ausgefüllten Formulare hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
 
-Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XPD-Quellformulare hochladen:
+Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XDP-Quellformulare hochladen:
 
 * Analysieren Sie das XDP-Formular und beheben Sie visuelle Probleme. Stellen Sie sicher, dass das Quelldokument die vorgesehenen Steuerelemente und Strukturen verwendet. Beispielsweise kann das Quellformular Kontrollkästchen anstelle von Optionsfeldern für eine einzelne Auswahl enthalten. Ändern Sie die Kontrollkästchen in Optionsfelder, um ein adaptives Formular mit den beabsichtigten Komponenten zu erstellen.
 * [Fügen Sie dem XDP-Formular Bindungen hinzu](http://www.adobe.com/go/learn_aemforms_designer_65_de), bevor Sie mit der Konvertierung beginnen. Wenn Bindungen im XDP-Quellformular verfügbar sind, wendet der Dienst während der Konvertierung automatisch Bindungen auf entsprechende adaptive Formularfelder an. Sie sparen Zeit, die zum manuellen Anwenden der Bindungen erforderlich ist.
-* [Fügen Sie der XDP-Datei Adobe Sign-Tags hinzu](https://helpx.adobe.com/sign/using/text-tag.html_de). Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern. Die vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=en).
+* [Fügen Sie der XDP-Datei Adobe Sign-Tags hinzu](https://helpx.adobe.com/de/sign/using/text-tag.html). Der Dienst konvertiert Adobe Sign-Tags automatisch in entsprechende adaptive Formularfelder. Adaptive Formulare unterstützen eine begrenzte Anzahl von Adobe Sign-Feldern. Die vollständige Liste der unterstützten Felder finden Sie in der Dokumentation [Verwenden von Adobe Sign in einem adaptiven Formular](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=de).
 * Konvertieren Sie komplexe Tabellen in XDP-Dokumenten nach Möglichkeit in einfache Tabellen. Eine Tabelle mit Formularfeldern in Tabellenzellen, Zellen ungleicher Größe, zeilen- oder spaltenübergreifenden Zellen, zusammengeführten Zellen, Teilrändern oder keinem sichtbaren Rand wird als komplexe Tabelle betrachtet. Eine Tabelle mit einem der oben genannten Elemente wird als komplexe Tabelle betrachtet.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
 ### Vor dem Beginn der Konvertierung
 
-* Adaptive Formularvorlagen erstellen Mithilfe von Vorlagen können Sie eine einheitliche Struktur für Formulare Ihrer Organisation oder Abteilung festlegen.
+* Adaptive Formularvorlagen erstellen. Mithilfe von Vorlagen können Sie eine einheitliche Struktur für Formulare Ihrer Organisation oder Abteilung festlegen.
 * Geben Sie die Kopf- und Fußzeile in den adaptiven Formularvorlagen an. Der Dienst ignoriert die Kopf- und Fußzeile von PDF-Quelldokumenten und verwendet die in der adaptiven Formularvorlage angegebene Kopfzeile.
 * Themen für adaptive Formulare erstellen. Mithilfe von Themen können Formen Ihrer Organisation oder Abteilung einheitlich gestaltet werden.
-* Konfigurieren Sie das Formulardatenmodell zum Speichern und Abrufen aus einer Datenquelle. Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte
+* Konfigurieren Sie das Formulardatenmodell zum Speichern und Abrufen aus einer Datenquelle. Konfigurieren der Lese- und Schreibdienste für Datenmodellobjekte.
 * Erstellen Sie adaptive Formularfragmente und konfigurieren Sie den Dienst für die Verwendung Ihrer adaptiven Formularfragmente.
 * Bereiten Sie allgemeine Workflow-Modelle für die Formulare vor, die eine Automatisierung von Geschäftsprozessen erfordern.
 * Konfigurieren Sie bei Bedarf Adobe Analytics
@@ -69,7 +69,7 @@ Der Dienst beginnt, diese Muster zu erkennen und ihnen die richtigen Felder oder
 | **Muster** <br>Der Dienst konvertiert keine ausgefüllten PDF-Formulare in adaptive Formulare. <br><br>**Lösung** <br>Verwenden Sie leere adaptive Formulare. | ![Ausgefülltes Formular](assets/best-practice-filled-forms.png) |
 | **Muster** <br>Der Dienst kann Text und Felder möglicherweise nicht erkennen, wenn sie im Formular zu dicht beieinander stehen. <br><br>**Lösung** <br> Erhöhen Sie die Breite zwischen Text und Feldern eines dichten Formulars, bevor Sie mit der Konvertierung beginnen. |  |
 | **Muster** <br>Der Dienst unterstützt keine gescannten Formulare. <br><br>**Lösung** <br>Verwenden Sie keine gescannten Formulare. | ![Gescanntes Formular](assets/scanned-forms.png) |
-| **Muster** <br>Der Dienst extrahiert keine Bilder und Texte in Bildern. <br><br>**Lösung**<br> Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
+| **Muster** <br>Der Dienst extrahiert keine Bilder und Texte in Bildern. <br><br>**Lösung** <br> Fügen Sie den konvertierten Formularen manuell Bilder oder Text hinzu. | ![Bild mit Textformular](assets/best-practice-image-with-text.png) |
 | **Muster** <br>Tabellen mit gepunkteten oder unklaren Begrenzungen und Rahmen werden nicht konvertiert. <br><br>**Lösung** <br>Verwenden Sie Tabellen mit klaren expliziten Grenzen und Rahmen. unterstützt. | ![Nicht eindeutiges Tabellenformular](assets/best-practice-table-dotted-non-clear.png) |
 | **Muster** <br> Das adaptive Formular unterstützt keinen sofort einsatzbereiten vertikalen Text. Der Dienst konvertiert daher keinen vertikalen Text in den entsprechenden Text für adaptive Formulare. <br><br>**Lösung** <br> Verwenden Sie bei Bedarf den adaptiven Formulareditor, um vertikalen Text hinzuzufügen. | ![Nicht eindeutiges Tabellenformular](assets/vertical-text.png) |
 
