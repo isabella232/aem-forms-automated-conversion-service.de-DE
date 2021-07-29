@@ -7,10 +7,10 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 100%
+source-wordcount: '2598'
+ht-degree: 92%
 
 ---
 
@@ -24,7 +24,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json. Sie können auch hier [klicken](assets/global.schema.json), um auf das Standard-Schema zuzugreifen oder es herunterzuladen.
+Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch [hier](assets/en.globalschema.json) klicken, um auf das englischsprachige Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) und [Spanisch](assets/es.globalschema.json) kann ebenfalls heruntergeladen werden.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
@@ -214,6 +214,45 @@ Mit der Eigenschaft **aem:afProperties** im Metamodell können Sie die folgenden
  </tbody> 
 </table>
 
+## Benutzerdefiniertes Metamodell in Ihrer eigenen Sprache erstellen{#language-specific-meta-model}
+
+Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metamodell können Sie Zuordnungsregeln in der Sprache Ihrer Wahl erstellen. Mit dem automated forms conversion-Dienst können Sie Metamodelle in den folgenden Sprachen erstellen:
+
+* Englisch(en)
+* Französisch (fr)
+* Deutsch (de)
+* Spanisch()
+
+Fügen Sie das Metatag-Tag *aem:Language* oben in einem Metamodell hinzu, um die Sprache anzugeben. Beispiel:
+
+```JSON
+"metaTags": {
+        "aem:Language": "de"
+    }
+```
+
+Englisch ist die Standardsprache von Metamodellen.
+
+### Überlegungen zum Erstellen eines sprachspezifischen Metamodells
+
+* Stellen Sie sicher, dass der Name jedes Schlüssels in englischer Sprache lautet. Beispiel: e-mailAdresse.
+* Stellen Sie sicher, dass alle Entitätsverweise und vordefinierten Werte des Schlüssels *id* in englischer Sprache vorliegen. Beispiel: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;Entität&quot;.
+* Stellen Sie sicher, dass Beschreibung oder Meldungen, die in einem Metamodell enthalten sind, für die folgenden Schlüssel der Sprache des Metamodells entsprechen:
+   * aem:affKeyword
+   * title
+   * description
+   * enumNames
+   * shortDescription
+   * validatePictureClauseMessage
+
+   Wenn beispielsweise die Sprache des Metamodells Französisch ist (&quot;aem:Language&quot;): &quot;fr&quot;), stellen Sie sicher, dass alle Beschreibungen und Nachrichten in französischer Sprache vorliegen.
+
+* Stellen Sie sicher, dass alle [JSON-Schemaeigenschaften](#jsonschemaproperties) nur unterstützte Werte verwenden.
+
+Die folgende Abbildung zeigt Beispiele für das Metamodell der englischen Sprache und das entsprechende Metamodell der französischen Sprache:
+
+![](assets/language-specific-meta-model-comparison.png)
+
 ## Ändern von Feldern in adaptiven Formularen mit benutzerdefiniertem Metamodell {#modify-adaptive-form-fields-using-custom-meta-model}
 
 Ihre Organisation kann Muster und Überprüfungen zusätzlich zu den im Standardmetamodell aufgeführten aufweisen. Sie können das Standardmetamodell erweitern, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind. Der Dienst für die automatische Formularkonvertierung wendet das benutzerdefinierte Metamodell während der Konvertierung auf die Formularfelder an. Sie können das Metamodell ständig aktualisieren, wenn neue Muster, Validierungen und Entitäten entdeckt werden, die für Ihre Organisation spezifisch sind.
@@ -224,7 +263,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 Sie können jedoch ein benutzerdefiniertes Metamodell in einem Ordner speichern und die Eigenschaften des Konvertierungsdienstes ändern, sodass das benutzerdefinierte Metamodell während der Konvertierung verwendet wird.
 
-### Verwenden eines benutzerdefinierten Metamodells während der Konvertierung{#use-custom-meta-model-during-conversion}
+### Verwenden eines benutzerdefinierten Metamodells während der Konvertierung {#use-custom-meta-model-during-conversion}
 
 Führen Sie die folgenden Schritte aus, um während der Konvertierung ein benutzerdefiniertes Metamodell zu verwenden:
 
@@ -349,7 +388,7 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 }
 ```
 
-#### Hinzufügen von Validierungen zu adaptiven Formularfeldern{#add-validations-to-adaptive-form-fields}
+#### Hinzufügen von Validierungen zu adaptiven Formularfeldern {#add-validations-to-adaptive-form-fields}
 
 **Beispiel 1:** Fügen Sie dem Feld **Postleitzahl** des adaptiven Formulars eine Validierung hinzu.
 
