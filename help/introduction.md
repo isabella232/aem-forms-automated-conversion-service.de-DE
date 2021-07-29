@@ -2,10 +2,10 @@
 title: Einführung
 description: Schnellere Konvertierung von Druckformularen in adaptive Formulare
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: fed54ea64e19c77868e8e58e29e909cf4447f696
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 100%
+source-wordcount: '690'
+ht-degree: 95%
 
 ---
 
@@ -33,9 +33,9 @@ Der Service unterstützt nicht-interaktive PDF-Formulare, Formulare, die mit Ado
 
 Der Service unterstützt auch Adobe Sign-aktivierte PDF-Formulare. Wenn das Ausgangs-PDF-Formular mit Adobe Sign-Text-Tags versehen ist, bewahrt der Service alle Adobe Sign-Informationen während der Konvertierung auf und verknüpft die im Ausgangs-PDF vorhandenen Unterzeichnerinformationen mit den entsprechenden anpassbaren Formularfeldern. Die Funktion ist nur für AcroForms verfügbar.
 
-Der Service kann nur englischsprachige Formulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
+Der Dienst kann englische, französische, deutsche und spanische Sprachformulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare auch mit [AEM Übersetzungs-Workflow](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in eine andere Sprache übersetzen.
 
-## Konvertierungsarbeitsablauf {#conversion-workflow}
+## Konvertierungsarbeitsablauf   {#conversion-workflow}
 
 Der Service für die automatische Formularkonvertierung läuft auf Adobe Cloud. Sie verbinden Ihre AEM-Instanz mit dem Service, laden Formulare in Ihre AEM-Instanz hoch und starten die Konvertierung. Der vollständige Konvertierungsprozess läuft ab wie folgt:
 
