@@ -2,10 +2,10 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: fd568dca4ac552a1d9695d13ece1d03b2c1457b1
-workflow-type: ht
-source-wordcount: '412'
-ht-degree: 100%
+source-git-commit: 3f91fc0541f8fe8dbc997ae0b401c8a0a49347dd
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 96%
 
 ---
 
@@ -21,6 +21,10 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 * Veraltete Funktionalität
 * Spezielle Anweisungen
 * Zukünftige Pläne für Änderungen
+
+## 29. Juli 2021 (AFC-2021.07.2) {#july-2021}
+
+* Es wurde eine Funktion hinzugefügt, mit der PDF forms in französischer, deutscher und spanischer Sprache in adaptive Formulare konvertiert werden kann.
 
 ## 24. Juni 2021 (AFC-2021.06.2) {#june-2021}
 
