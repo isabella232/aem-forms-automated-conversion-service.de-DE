@@ -6,10 +6,10 @@ seo-description: Häufige AFCS-Probleme und ihre Lösungen
 contentOwner: khsingh
 topic-tags: forms
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 5353a071f8633b36fc73c34c5d7629228659e2ba
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '663'
+ht-degree: 89%
 
 ---
 
@@ -32,6 +32,7 @@ Das Dokument enthält grundlegende Schritte zur Fehlerbehebung bei häufigen Feh
 | **Fehlermeldung**<br> Gescannte Formulare werden nicht unterstützt.  <br><br>**Grund** <br> Das PDF-Formular enthält nur gescannte Bilder des Formulars und keine Inhaltsstruktur. <br><br>**Lösung** <br> Der Dienst unterstützt nicht standardmäßig das Konvertieren gescannter Formulare oder eines Bilds eines Formulars in ein adaptives Formular. Sie können jedoch in Adobe Acrobat das Bild eines Formulars in ein PDF-Formular konvertieren. Verwenden Sie dann den Dienst, um das PDF-Formular in ein adaptives Formular zu konvertieren. Verwenden Sie für die Konvertierung in Acrobat immer ein qualitativ hochwertiges Bild des Formulars. Es verbessert die Qualität der Konvertierung. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/scanned-forms-error.png) |
 | **Fehlermeldung** <br> Verschlüsseltes PDF-Formular wird nicht unterstützt.  <br><br>**Grund** <br>Der Ordner enthält verschlüsseltes PDF Formulare. <br><br>**Lösung** <br> Der Dienst unterstützt nicht die Konvertierung eines verschlüsselten PDF-Formulars in ein adaptives Formular. Entfernen Sie die Verschlüsselung, laden Sie das unverschlüsselte Formular hoch und führen Sie die Konvertierung aus. | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/secured-pdf-form.png) |
 | **Fehlermeldung** <br> Metamodell-JSON-Schema kann nicht analysiert werden.  <br><br>**Grund** <br> Das für den Dienst bereitgestellte JSON-Schema ist nicht korrekt formatiert, enthält ungültige Zeichen oder verwendet eine ungültige Syntax, um Komponenten zuzuordnen.  <br><br>**Lösung** <br> Überprüfen Sie die Formatierung der JSON-Datei. Sie können einen beliebigen Online-JSON-Validator verwenden, um die Formatierung und Struktur des Schemas zu überprüfen. Informationen zur Metamodellsyntax finden Sie im Artikel [Erweitern des Standard-Metamodells](extending-the-default-meta-model.md). | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/invalid-meta-model-schema.png) |
+| **Fehler (nur On-Premise-Umgebungen)** <br> Die Option  **[!UICONTROL Quellsprache]** listet nicht die richtige Sprache eines adaptiven Formulars auf. <br><br>**** <br> GrundDie Eigenschaft jcr:language des adaptiven Formulars wird nicht korrekt festgelegt.  <br><br>**** <br> ResolutionÖffnen Sie die CRX-DE-Liste, navigieren Sie zu  `/content/forms/af/`, öffnen Sie den  `jcr:content` Knoten und legen Sie den Wert des Knotens auf die richtige Sprache fest. Eine Liste der unterstützten Sprachen finden Sie unter [Lokalisierungsunterstützung für nicht unterstützte Gebietsschemata hinzufügen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/supporting-new-language-localization.html#add-localization-support-for-non-supported-locales). | ![Verbindung zum Dienst kann nicht hergestellt werden.](assets/aem-forms-translation-project-language-unavailable.png) |
 
 <!--
 
