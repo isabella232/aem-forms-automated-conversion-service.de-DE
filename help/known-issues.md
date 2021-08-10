@@ -7,10 +7,10 @@ uuid: b1dc661b-ccd3-457f-acbb-4bd25db86e1e
 topic-tags: introduction
 discoiquuid: 9cd2363c-47a0-46e9-98cd-1fe088b9cd6e
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ ht-degree: 100%
 * PDF-Formulare mit mehr als 15 Seiten werden nicht unterstützt.
 * Verschlüsselte, kennwortgeschützte und gesicherte Dokumente werden nicht konvertiert. Entfernen Sie die Verschlüsselung oder Kennwörter, bevor Sie die Konvertierung durchführen.
 * Komplexe Tabellen wie randlose Tabellen, verschachtelte Tabellen und Tabellen mit Platzhalterwerten werden nicht unterstützt. Verwenden Sie den adaptiven Formulareditor, um nach der Konvertierung komplexe Tabellen hinzuzufügen oder zu ändern. Es werden nur einfache Tabellen mit leeren Feldern, richtigen Überschriften und klaren Grenzen unterstützt.
-* Der Dienst konvertiert nur englischsprachige Formulare in adaptive Formulare. Sie können konvertierte adaptive Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
+* Der Dienst konvertiert nur englische, französische, deutsche und spanische Formulare in adaptive Formulare. Sie können konvertierte adaptive Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 * AEM 6.4 Forms unterstützt keine automatische Erkennung des mehrspaltigen Layouts von Eingabeformularen.
 * Informationen, die mit Farben im PDF-Quellformular kodiert wurden, werden nicht in das adaptive Formular übernommen.
 * Die Farben des PDF-Quellformulars werden nicht in Themen für adaptive Formulare übertragen.
