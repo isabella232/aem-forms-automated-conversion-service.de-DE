@@ -7,7 +7,7 @@ uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 730910935e8c9e8a3ab2b670b022989afc403b5a
+source-git-commit: 65b0d6f6568ce7915b1a8bd85981bead967d869c
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 98%
@@ -33,7 +33,6 @@ Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hoc
 * Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
 * Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert keine PDF-Portfolios in ein adaptives Formular.
 * Laden Sie keine gescannten, ausgefüllten und in keiner anderen Sprache als Englisch, Französisch, Deutsch und Spanisch hochgeladenen Formulare hoch. Solche Formulare werden nicht unterstützt.
-
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
 
 Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XDP-Quellformulare hochladen:
