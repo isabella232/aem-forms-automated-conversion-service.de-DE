@@ -3,9 +3,9 @@ title: Einführung
 description: Schnellere Konvertierung von Druckformularen in adaptive Formulare
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
 source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '699'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Der Service für die automatische Formularkonvertierung läuft auf Adobe Cloud. 
 Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PDF-Formulare in adaptive Formulare, indem Sie [PDF-Formulare in Ihre AEM-Instanz hochladen](convert-existing-forms-to-adaptive-forms.md) und die [Konvertierung starten](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
 * Laden Sie nicht die gesicherten Formulare hoch. Der Service konvertiert keine kennwortgeschützten und verschlüsselten Formulare.
-* Laden Sie keine gescannten, farbigen, ausgefüllten Formulare und Formulare in einer anderen Sprache als Englisch, Französisch, Deutsch und Spanisch hoch. Solche Formulare werden nicht unterstützt.
+* Laden Sie keine gescannten, farbigen, ausgefüllten Formulare oder Formulare in einer anderen Sprache als Deutsch, Englisch, Französisch und Spanisch hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine PDF-Formulare mit Leerzeichen im Dateinamen hoch.
 * Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) hoch. Der Service konvertiert keine PDF-Portfolios in ein adaptives Formular.
 * Nehmen Sie die vorgeschlagenen Änderungen in PDF-Formularen vor, wie sie im Artikel [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) beschrieben werden.
