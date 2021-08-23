@@ -8,17 +8,17 @@ topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
 source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1844'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Häufig gestellte Fragen{#frequently-asked-questions}
+# Häufig gestellte Fragen {#frequently-asked-questions}
 
-1. **Welche Version von AEM Forms unterstützt der Dienst für die automatische Formularkonvertierung?**
+1. **Welche Version von AEM Forms unterstützt der Service für die automatische Formularkonvertierung?**
 
-   <p>Der Dienst für die automatische Formularkonvertierung unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM-Formularen unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
+   <p>Der Dienst für die automatische Formularkonvertierung unterstützt AEM 6.4 Forms und AEM 6.5 Forms. Es funktioniert sowohl mit AEM Forms unter OSGi als auch mit AEM-Formularen unter JEE. Sie benötigen das neueste AEM Forms-Add-On-Paket zusätzlich zur AEM-Autoreninstanz, um den Dienst nutzen zu können. Genaue Anweisungen finden Sie unter <a href="configure-service.md">Dienst zur automatischen Formularkonvertierung konfigurieren</a>.</p> 
     <br>
 
 1. **Kann der Dienst vor Ort installiert werden?**
@@ -31,7 +31,7 @@ ht-degree: 99%
    <p>Der Dienst kann nicht-interaktive PDF-Formulare, XFA-basierte XDP- und PDF-Formulare sowie AcroForms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.<br /> </p> 
     <p>Wir fügen regelmäßig Unterstützung für andere Quelltypen hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p>
 
-   Der Dienst kann nur englische, französische, deutsche und spanische Sprachformulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
+   Der Service kann ausschließlich Formulare auf Deutsch, Englisch, Französisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
 
 1. **Kann der Dienst ein XDP anstelle eines adaptiven Formulars erstellen?**
 
@@ -42,7 +42,7 @@ ht-degree: 99%
    <p>Mit dem Dienst können Sie Folgendes generieren: </p>
 
    * ein adaptives Formular, das an ein JSON-Schema gebunden ist und
-   * ein adaptives Formular, das an kein Schema gebunden ist<br><br>
+   * ein adaptives Formular, das an kein Schema gebunden ist <br><br>
 
 1. **Kann der Dienst ein Microsoft Word-Formular in adaptive Formulare konvertieren?**
 
@@ -89,7 +89,7 @@ Die häufigsten Gründe für das Fehlschlagen der Konvertierung sind:
 
 1. **Identifiziert und verwendet der Dienst Schriftarten von Quell-PDF in den ausgegebenen adaptiven Formularen?**
 
-   <p>Stil und Layout eines Responsive-HTML-Formulars unterscheiden sich grundsätzlich von einem PDF- oder papierbasierten Formular. Um ein einheitliches Layout und Styling in allen Organisationen zu unterstützen, verwenden adaptive Formulare <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html">Designs zum Gestalten eines Formulars</a>). Der Konvertierungsdienst verwendet die Schriftarten und Schriftstile, die im während der Konvertierung angewendeten Design angegeben sind. Sie können Schriftarten und Schriftstile des Designs ändern, um den Komponenten eines adaptiven Formulars ein eindeutiges Erscheinungsbild zu verleihen.</p> <br>
+   <p>Stil und Layout eines Responsive-HTML-Formulars unterscheiden sich grundsätzlich von einem PDF- oder papierbasierten Formular. Um ein einheitliches Layout und Styling in allen Organisationen zu unterstützen, verwenden adaptive Formulare <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/using/themes.html">Designs zum Gestalten eines Formulars</a>. Der Konvertierungsdienst verwendet die Schriftarten und Schriftstile, die im während der Konvertierung angewendeten Design angegeben sind. Sie können Schriftarten und Schriftstile des Designs ändern, um den Komponenten eines adaptiven Formulars ein eindeutiges Erscheinungsbild zu verleihen.</p> <br>
 
 1. **Extrahiert der Dienst automatisch JavaScript aus XDP-basierten Formularen und wendet er es dann auf entsprechende adaptive Formulare an?**
 
@@ -142,4 +142,4 @@ Der oben genannte Fehler tritt auf, wenn die Startdelegierung nicht für RSA/Bou
 
    </p>So erstellen Sie ein für Adobe Sign aktiviertes PDF-Formular:</p>
 
-   Fügen Sie [Adobe Sign-Text-Tags](https://helpx.adobe.com/sign/using/text-tag.html_de) zu den Feldnamen hinzu oder verwenden Sie die Option [Convert to Adobe Sign Form (In Adobe Sign-Formular konvertieren)](https://helpx.adobe.com/de/sign/using/create-forms-with-acrobat.html).
+   Fügen Sie [Adobe Sign-Text-Tags](https://helpx.adobe.com/de/sign/using/text-tag.html) zu den Feldnamen hinzu oder verwenden Sie die Option [Convert to Adobe Sign Form (In Adobe Sign-Formular konvertieren)](https://helpx.adobe.com/de/sign/using/create-forms-with-acrobat.html).
