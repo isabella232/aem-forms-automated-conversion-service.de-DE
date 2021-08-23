@@ -8,9 +8,9 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2620'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -231,13 +231,13 @@ Fügen Sie das Metatag-Tag *aem:Language* oben in einem Metamodell hinzu, um die
     }
 ```
 
-Wenn keine Sprache angegeben ist, geht der Dienst davon aus, dass das Metamodell in englischer Sprache vorliegt.
+Wenn keine Sprache festgelegt ist, geht der Service davon aus, dass das Metamodell in englischer Sprache vorliegt.
 
 ### Überlegungen zum Erstellen eines sprachspezifischen Metamodells
 
 * Stellen Sie sicher, dass der Name jedes Schlüssels englisch ist. Beispiel: e-mailAddress.
-* Stellen Sie sicher, dass alle Entitätsverweise und vordefinierten Werte des gesamten ID-Schlüssels nur ASCII-Zeichen enthalten. Beispiel: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
-* Stellen Sie sicher, dass sich alle Werte, die den folgenden Schlüsseln entsprechen, in der angegebenen Metamodellsprache befinden:
+* Stellen Sie sicher, dass alle Entitätsverweise und vordefinierten Werte des ID-Schlüssels ausschließlich aus ASCII-Zeichen bestehen. Beispiel: &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;.
+* Stellen Sie sicher, dass alle Werte, die den folgenden Schlüsseln entsprechen, in der für das Metamodell festgelegten Sprache vorliegen.
    * aem:affKeyword
    * title
    * description
@@ -245,9 +245,9 @@ Wenn keine Sprache angegeben ist, geht der Dienst davon aus, dass das Metamodell
    * shortDescription
    * validatePictureClauseMessage
 
-   Wenn beispielsweise die Sprache des Metamodells Französisch ist (&quot;aem:Language&quot;): &quot;fr&quot;), stellen Sie sicher, dass alle Beschreibungen und Nachrichten in französischer Sprache verfasst sind.
+   Wenn beispielsweise die Sprache des Metamodells Französisch ist (&quot;aem:Language&quot;: &quot;fr&quot;), stellen Sie sicher, dass alle Beschreibungen und Meldungen in französischer Sprache vorliegen.
 
-* Stellen Sie sicher, dass alle [JSON-Schemaeigenschaften](#jsonschemaproperties) nur unterstützte Werte verwenden. Beispielsweise kann die Eigenschaft type nur die ausgewählten Werte String, Number, Integer und Boolean umfassen.
+* Stellen Sie sicher, dass alle [JSON-Schemaeigenschaften](#jsonschemaproperties) nur unterstützte Werte verwenden. Der Typ „property“ kann beispielsweise nur ausgewählte Werte der Kategorien „Zeichenfolge“, „Zahl“, „Ganzzahl“ und „Boolesch“ umfassen.
 
 Die folgende Abbildung zeigt Beispiele für das englische Metamodell und das entsprechende französische Metamodell:
 
@@ -428,10 +428,10 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
-* Indien
+* India
 * England
-* Australien
-* Neuseeland
+* Australia
+* New Zealand
 
 Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
