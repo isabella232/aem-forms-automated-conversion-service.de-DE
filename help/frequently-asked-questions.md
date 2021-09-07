@@ -1,16 +1,16 @@
 ---
 title: Häufig gestellte Fragen
-seo-title: Häufig gestellte Fragen
+seo-title: Frequently asked questions
 description: Häufige Fragen oder häufig gestellte Fragen
-seo-description: häufig gestellte Fragen für den Dienst für die automatische Formularkonvertierung
+seo-description: frequently asked questions for Automated Forms Conversion Service
 uuid: 0f6dc39c-99b7-49a4-8e9e-ecc4a35110c0
 topic-tags: introduction
 discoiquuid: e17c2d2c-8300-4467-aa01-57365697939f
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: ht
-source-wordcount: '1844'
-ht-degree: 100%
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
+workflow-type: tm+mt
+source-wordcount: '1835'
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 100%
    <p>Der Dienst kann nicht-interaktive PDF-Formulare, XFA-basierte XDP- und PDF-Formulare sowie AcroForms in adaptive Formulare konvertieren. Der Dienst unterstützt keine gescannten oder ausgefüllten Formulare. Weitere Einschränkungen finden Sie im Artikel <a href="known-issues.md">Bekannte Probleme</a>.<br /> </p> 
     <p>Wir fügen regelmäßig Unterstützung für andere Quelltypen hinzu. Behalten Sie den Abschnitt <a href="introduction.md">unterstützte PDF-Formulare</a> auf Ihrer Beobachtungsliste, um regelmäßig über neu hinzugefügte Funktionen und Features informiert zu werden.</p>
 
-   Der Service kann ausschließlich Formulare auf Deutsch, Englisch, Französisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
+   Der Dienst kann nur englische, französische, deutsche, spanische, italienische und portugiesische Sprachformulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare mithilfe des [AEM Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.</br> </br>
 
 1. **Kann der Dienst ein XDP anstelle eines adaptiven Formulars erstellen?**
 

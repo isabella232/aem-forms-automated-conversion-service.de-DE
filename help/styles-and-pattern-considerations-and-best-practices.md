@@ -1,15 +1,15 @@
 ---
 title: 'Best Practices und Hinweise '
-seo-title: 'Best Practices und Hinweise '
+seo-title: Best practices and considerations
 description: Best Practices und Hinweise zum Dienst für die automatisierte Formularkonvertierung
-seo-description: Liste der Stile und Muster in PDF-Quellformularen, die der Dienst für die automatische Formularkonvertierung nur schwer erkennen kann
+seo-description: List of styles and patterns in source PDF forms which Automated Forms Conversion service finds difficult to identify
 uuid: e24773a2-be14-4184-a168-48aa976d459a
 topic-tags: introduction
 discoiquuid: 79f2026e-73a5-4bd1-b041-d1399b4ad23e
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: 9d107d2dfc64fd84d4f734ded5898612ce9a3295
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1247'
 ht-degree: 98%
 
 ---
@@ -33,7 +33,7 @@ Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hoc
 * Laden Sie die geschützten Formulare nicht hoch. Der Dienst konvertiert keine kennwortgeschützten und gesicherten Formulare.
 * Laden Sie die [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) nicht hoch. Der Dienst konvertiert keine PDF-Portfolios in ein adaptives Formular.
 * Laden Sie keine Quellformulare mit Leerzeichen im Dateinamen hoch. Entfernen Sie das Leerzeichen aus dem Namen der Datei, bevor Sie die Formulare hochladen.
-* Laden Sie keine gescannten, ausgefüllten und in keiner anderen Sprache als Englisch, Französisch, Deutsch und Spanisch hochgeladenen Formulare hoch. Solche Formulare werden nicht unterstützt.
+* Laden Sie keine gescannten, ausgefüllten und in keiner anderen Sprache als Englisch, Französisch, Deutsch, Spanisch, Italienisch und Portugiesisch hochladen. Solche Formulare werden nicht unterstützt.
 
 Wenn Sie ein XDP-Formular für die Konvertierung verwenden, führen Sie die folgenden Schritte aus, bevor Sie die XDP-Quellformulare hochladen:
 

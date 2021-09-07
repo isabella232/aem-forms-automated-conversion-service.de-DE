@@ -2,10 +2,10 @@
 title: Einführung
 description: Schnellere Konvertierung von Druckformularen in adaptive Formulare
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: af05922f9eb76b7b0a30601824c6006fe555ea80
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 94%
 
 ---
 
@@ -33,7 +33,7 @@ Der Service unterstützt nicht-interaktive PDF-Formulare, Formulare, die mit Ado
 
 Der Service unterstützt auch Adobe Sign-aktivierte PDF-Formulare. Wenn das Ausgangs-PDF-Formular mit Adobe Sign-Text-Tags versehen ist, bewahrt der Service alle Adobe Sign-Informationen während der Konvertierung auf und verknüpft die im Ausgangs-PDF vorhandenen Unterzeichnerinformationen mit den entsprechenden anpassbaren Formularfeldern. Die Funktion ist nur für AcroForms verfügbar.
 
-Der Service kann Formulare auf Deutsch, Englisch, Französisch und Spanisch in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare auch mithilfe des [AEM-Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
+Der Dienst kann englische, französische, deutsche, spanische, italienische und portugiesische Sprachformulare in adaptive Formulare konvertieren. Sie können die generierten adaptiven Formulare auch mithilfe des [AEM-Übersetzungs-Arbeitsablaufs](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html) in andere Sprachen übersetzen.
 
 ## Konvertierungsarbeitsablauf  {#conversion-workflow}
 
@@ -50,7 +50,7 @@ Der Service für die automatische Formularkonvertierung läuft auf Adobe Cloud. 
 Nachdem Sie Ihre AEM Forms-Umgebung konfiguriert haben, konvertieren Sie Ihre PDF-Formulare in adaptive Formulare, indem Sie [PDF-Formulare in Ihre AEM-Instanz hochladen](convert-existing-forms-to-adaptive-forms.md) und die [Konvertierung starten](convert-existing-forms-to-adaptive-forms.md#run-the-conversion). Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
 * Laden Sie nicht die gesicherten Formulare hoch. Der Service konvertiert keine kennwortgeschützten und verschlüsselten Formulare.
-* Laden Sie keine gescannten, farbigen, ausgefüllten Formulare oder Formulare in einer anderen Sprache als Deutsch, Englisch, Französisch und Spanisch hoch. Solche Formulare werden nicht unterstützt.
+* Laden Sie keine gescannten, farbigen, ausgefüllten Formulare und Formulare in einer anderen Sprache als Englisch, Französisch, Deutsch, Spanisch, Italienisch und Portugiesisch hoch. Solche Formulare werden nicht unterstützt.
 * Laden Sie keine PDF-Formulare mit Leerzeichen im Dateinamen hoch.
 * Laden Sie keine [PDF-Portfolios](https://helpx.adobe.com/de/acrobat/using/overview-pdf-portfolios.html) hoch. Der Service konvertiert keine PDF-Portfolios in ein adaptives Formular.
 * Nehmen Sie die vorgeschlagenen Änderungen in PDF-Formularen vor, wie sie im Artikel [Best Practices und Überlegungen](styles-and-pattern-considerations-and-best-practices.md) beschrieben werden.

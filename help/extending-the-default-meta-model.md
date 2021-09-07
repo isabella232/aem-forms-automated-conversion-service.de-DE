@@ -1,16 +1,16 @@
 ---
 title: Erweitern des Standardmetamodells
-seo-title: Erweitern des Standardmetamodells
+seo-title: Extend the default meta-model
 description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind, und Konfigurationen auf adaptive Formularfelder anzuwenden, während Sie den Dienst für die automatische Formularkonvertierung ausführen.
-seo-description: Erweitern Sie das Standard-Metamodell, um Muster, Validierungen und Entitäten hinzuzufügen, die für Ihre Organisation spezifisch sind, und Konfigurationen auf adaptive Formularfelder anzuwenden, während Sie den Dienst für die automatische Formularkonvertierung ausführen.
+seo-description: Extend the default meta-model to add pattern, validations, and entities specific to your organization and apply configurations to adaptive form fields while running the Automated Forms Conversion service.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: 28e07a0264edaaeef22d211f411f7908ca0abaed
-workflow-type: ht
-source-wordcount: '2620'
-ht-degree: 100%
+source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
+workflow-type: tm+mt
+source-wordcount: '2594'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;Server>:&lt;Port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Deutsch](assets/fr.globalschema.json), [Französisch](assets/de.globalschema.json) und [Spanisch](assets/es.globalschema.json) kann ebenfalls heruntergeladen werden.
+Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;Server>:&lt;Port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) steht ebenfalls zum Download bereit.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
@@ -222,6 +222,8 @@ Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metam
 * Französisch (fr)
 * Deutsch (de)
 * Spanisch (es)
+* Italienisch (it)
+* Portuguese(pt-br)
 
 Fügen Sie das Metatag-Tag *aem:Language* oben in einem Metamodell hinzu, um die Sprache anzugeben. Beispiel:
 
@@ -428,10 +430,10 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
-* India
+* Indien
 * England
-* Australia
-* New Zealand
+* Australien
+* Neuseeland
 
 Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
