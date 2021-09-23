@@ -8,9 +8,9 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2594'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Das Metamodell ist ein JSON-Schema. Bevor Sie mit dem Metamodell beginnen, stell
 
 ## Standardmetamodell {#default-meta-model}
 
-Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter: http://&lt;Server>:&lt;Port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) steht ebenfalls zum Download bereit.
+Im Dienst für die automatische Formularkonvertierung ist ein Standardmetamodell verfügbar. Dies ist ein JSON-Schema und befindet sich zusammen mit anderen Komponenten des Dienstes für die automatische Formularkonvertierung in Adobe Cloud. Eine Kopie des Metamodells finden Sie auf Ihrem lokalen AEM-Server unter:  http://&lt;Server>:&lt;Port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. Sie können auch hier [klicken](assets/en.globalschema.json), um auf das englische Schema zuzugreifen oder es herunterzuladen. Das Metamodell für die Sprachen [Französisch](assets/fr.globalschema.json), [Deutsch](assets/de.globalschema.json) [Spanisch](assets/es.globalschema.json), [Italienisch](assets/it.globalschema.json) und [Portugiesisch](assets/pt_br.globalschema.json) kann ebenfalls heruntergeladen werden.
 
 Das Schema des Metamodells wird von Schemaentitäten unter https://schema.org/docs/schemas.html abgeleitet. Es enthält Person, PostalAddress, LocalBusiness und weitere Entitäten, wie auf https://schema.org definiert. Jede Entität des Metamodells entspricht dem JSON-Schemaobjekttyp. Der folgende Code zeigt eine Beispiel-Metamodellstruktur:
 
@@ -223,7 +223,7 @@ Sie können ein sprachspezifisches Metamodell erstellen. Mit einem solchen Metam
 * Deutsch (de)
 * Spanisch (es)
 * Italienisch (it)
-* Portuguese(pt-br)
+* Portugiesisch (pt-br)
 
 Fügen Sie das Metatag-Tag *aem:Language* oben in einem Metamodell hinzu, um die Sprache anzugeben. Beispiel:
 
@@ -430,10 +430,10 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
-* Indien
+* India
 * England
-* Australien
-* Neuseeland
+* Australia
+* New Zealand
 
 Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
