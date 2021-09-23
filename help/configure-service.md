@@ -4,9 +4,9 @@ description: Bereiten Sie Ihre AEM-Instanz für die Verwendung des Service für 
 role: User, Admin
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 source-git-commit: 47261710e6616c27c210ac53bffcc2387a06ea7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2813'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -240,7 +240,7 @@ Erstellen Sie eine Cloud Service-Konfiguration, um Ihre AEM-Instanz mit dem Konv
    | Vorlage | Standardvorlage für konvertierte Formulare. Sie können jederzeit eine andere Vorlage angeben, bevor Sie mit der Konvertierung beginnen. Eine Vorlage enthält die Grundstruktur und den Anfangsinhalt für ein adaptives Formular. Sie können eine Vorlage aus den standardmäßig bereitgestellten Vorlagen auswählen. Sie können auch eine benutzerdefinierte Vorlage erstellen. |
    | Design | Standarddesign für konvertierte Formulare. Sie können jederzeit ein anderes Design angeben, bevor Sie mit der Konvertierung beginnen.  Sie können auf das Symbol klicken, um ein standardmäßig bereitgestelltes Design auszuwählen. Sie können auch ein benutzerdefiniertes Design erstellen. |
    | Vorhandene Fragmente | Position vorhandener Fragmente, falls vorhanden. |
-   | Benutzerdefiniertes Metamodell | Pfad der .schema.json-Datei des benutzerdefinierten Metamodells. Sie können separate Metamodelle für die Sprachen Englisch, Französisch, Deutsch, Spanisch, Italienisch und Portugiesisch erstellen. |
+   | Benutzerdefiniertes Metamodell | Pfad der .schema.json-Datei des benutzerdefinierten Metamodells. Sie können separate Metamodelle für die Sprachen Deutsch, Englisch, Französisch, Italienisch, Portugiesisch und Spanisch erstellen. |
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Erweitert]** der Seite **[!UICONTROL Konfiguration für die automatisierte Formularkonvertierung erstellen]** Werte für die folgenden Felder ein:
 
