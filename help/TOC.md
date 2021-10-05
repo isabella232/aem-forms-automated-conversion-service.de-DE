@@ -11,7 +11,7 @@ breadcrumb-title: Anleitung zur automatisierten Formularkonvertierung
 feature: Adaptive Forms
 role: User
 source-git-commit: 5e1b1c1aa0ac51e23d009e7a85b0e071ff842b04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '87'
 ht-degree: 100%
 
