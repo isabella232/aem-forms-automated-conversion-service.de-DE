@@ -1,63 +1,16 @@
 ---
-source-git-commit: c8489a521f35c60ee28227f499e9a0a7541960b9
+source-git-commit: a8f380668e59bfc5470d142bd82a3245cf74913d
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '438'
-ht-degree: 100%
+source-wordcount: '75'
+ht-degree: 77%
 
 ---
-# Artikel beitragen
+# AEM Forms Automated Conversion Service Documentation
 
-Wir freuen uns über Inhaltsbeiträge von unserer Community und Adobe-Mitarbeitern außerhalb der Dokumentationsteams.
+This is the repository for AEM Forms Automated Conversion Service documentation.
 
-## Adobe Open Source-Verhaltenskodex
+Ihre Beiträge zur Dokumentation sind willkommen. Sehen Sie sich die folgenden Ressourcen an:
 
-Für dieses Projekt gilt der [Adobe Open Source-Verhaltenskodex](code-of-conduct.md) bzw. der [.NET Foundation-Verhaltenskodex](https://dotnetfoundation.org/code-of-conduct). Weitere Informationen finden Sie im Artikel zum Thema [Beitragen](contributing.md).
-
-## Wissenswertes über Beiträge zu Adobe-Inhalten
-
-Weitere Informationen finden Sie im [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
-
-Wie Sie Beiträge einbringen, hängt davon ab, wer Sie sind und welche Art von Änderungen Sie beitragen möchten:
-
-### Geringfügige Änderungen  oder Anforderungen
-
-Um eine Anforderung einzureichen, klicken Sie auf den Link **Ein Problem protokollieren** in einem Artikel, um ein Problem in GitHub zu öffnen. Geben Sie einen Titel und eine Beschreibung an und klicken Sie dann auf **Neues Problem melden**.
-
-Um kleinere Aktualisierungen anzufordern, klicken Sie in einem Artikel auf den Link **Diese Seite bearbeiten**, wodurch der Quellartikel in GitHub geöffnet wird. Verwenden Sie die GitHub-Benutzeroberfläche, um Ihre Aktualisierungen vorzunehmen. Weitere Informationen finden Sie im allgemeinen [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)
-
-Kleinere Korrekturen oder Erläuterungen, die Sie für Dokumentation und Codebeispiele in diesem Repo einreichen, werden von den Adobe-Nutzungsbedingungen abgedeckt.
-
-### Größere Änderungen oder neue Artikel von Communitymitgliedern
-
-Wenn Sie Mitglied der Adobe-Community sind und einen Artikel erstellen oder größere Änderungen einreichen möchten, klicken Sie hierzu im GitHub-Repository auf die Registerkarte **Issues**. Ausgangspunkt für Ihren Beitrag ist der Austausch mit dem Dokumentationsteam. Sie müssen mit dem Autor (oder anderen Adobe-Mitarbeitern) zusammenarbeiten, um neue Inhalte zu veröffentlichen.
-
-<!--
-If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). You must complete the online form before we can review your pull request.
--->
-
-### Größere Änderungen von Adobe-Mitarbeitern
-
-Wenn es zu Ihren Aufgaben als technischer Redakteur, Programmmanager oder Entwickler im Produktteam einer [!UICONTROL Adobe Experience Cloud]-Lösung gehört, technische Artikel zu verfassen oder sich daran zu beteiligen, sollten Sie das private Repository unter `https://git.corp.adobe.com/AdobeDocs` verwenden. Siehe [Handbuch zur internen Zusammenarbeit](https://docs.adobe.com/content/help/en/collaborative-doc-instructions/collaboration-guide/home.html).
-
-<!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
-
-## Tools und Einrichtung
-
-Communitymitwirkende können die GitHub-UI zur grundlegenden Bearbeitung verwenden oder das Repo zum Beisteuern größerer Beiträge forken.
-
-Weitere Informationen finden Sie im [Adobe Docs Contributor Guide](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html).
-
-## Verwendung von Markdowns zum Formatieren Ihres Themas
-
-Alle Artikel in diesem Repository verwenden GitHub Flavored Markdown. Wenn Sie mit Markdowns nicht vertraut sind, lesen Sie:
-
-* [Grundlagen zu Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
-* [Druckbares Infoblatt zu Markdown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Beschriftungen
-
-Im öffentlichen Repository werden automatisierte Beschriftungen Abruf-Anfragen zugewiesen, die uns helfen, den Arbeitsablauf für Abruf-Anfragen zu verwalten und Ihnen mitzuteilen, was mit Ihrer Abruf-Anfrage passiert:
-
-* **Change sent to author**: Der Autor wurde über die ausstehende Abruf-Anfrage informiert.
-* **ready-to-merge**: Bereit für die Überprüfung durch unser Überprüfungsteam für Abruf-Anfragen.
+* [contributing.md](contributing.md) Ein Überblick darüber, wie Sie zur Dokumentation beitragen.
+* [guidelines.md](guidelines.md) Ein Überblick darüber, was in Beiträgen erwartet wird und wie Sie Ihre Beiträge zur Dokumentation zusammenstellen können.
+* [code-of-conduct.md](code-of-conduct.md) Ein Überblick über die Verhaltensstandards, die wir erwarten, wenn Sie zu diesem Dokumentationsprojekt beitragen.
