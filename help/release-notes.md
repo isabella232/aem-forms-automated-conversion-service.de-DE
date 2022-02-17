@@ -2,10 +2,10 @@
 title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonvertierung
 description: Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: 833cada8efcc3f0a0e5788c1ab99a95d814e0153
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,11 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 * Spezielle Anweisungen
 * Zukünftige Pläne für Änderungen
 
-## 29. Juli 2021 (AFC-2021.08.0) {#aug-2021}
+## 24. Februar 2022 (AFC-2022.02.0) {#feb-2022}
+
+* Funktion hinzugefügt zu [Automatische Konvertierung von Abschnitten in Fragmente](convert-existing-forms-to-adaptive-forms.md) um die Rendering-Geschwindigkeit konvertierter Formulare zu verbessern und das Laden großer Formulare im adaptiven Formulareditor zu erleichtern.
+
+## 29. August 2021 (AFC-2021.08.0) {#aug-2021}
 
 * Eine Funktion wurde hinzugefügt, mit der PDF-Formulare auf Italienisch und Portugiesisch in adaptive Formulare konvertiert werden können.
 
@@ -57,7 +61,6 @@ Zusätzliche Unterstützung für die Konvertierung farbiger PDF-Formulare in ada
 ### Verbesserte Funktionen {#jul-2020-improvements}
 
 Verbesserungen bei der automatischen Konvertierung von Text-, Formular- und Auswahlgruppenfeldern in entsprechende adaptive Formularkomponenten.
-
 
 ## 20. März 2020 (AFC-2020.03.1) {#mar-2020}
 

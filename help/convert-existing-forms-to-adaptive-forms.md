@@ -1,21 +1,21 @@
 ---
 title: 'Konvertieren von PDF-Formularen in adaptive Formulare '
-seo-title: 'Konvertieren von PDF-Formularen in adaptive Formulare '
+seo-title: Convert PDF forms to adaptive forms
 description: Ausführen des Dienstes zur automatischen Formularkonvertierung, um PDF-Formulare in adaptive Formulare zu konvertieren
-seo-description: Ausführen des Dienstes zur automatischen Formularkonvertierung, um PDF-Formulare in adaptive Formulare zu konvertieren
+seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
 uuid: 49fcd5c0-0e72-496d-9831-00f79d582f57
 contentOwner: khsingh
 topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 1a3f79925f25dcc7dbe007f6e634f6e3a742bf72
+source-git-commit: 5f07f5df6369007a491cf0873839f84a61827cb5
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 100%
+source-wordcount: '1740'
+ht-degree: 90%
 
 ---
 
-# Konvertieren von PDF-Formularen in adaptive Formulare{#convert-print-forms-to-adaptive-forms}
+# Konvertieren von PDF-Formularen in adaptive Formulare {#convert-print-forms-to-adaptive-forms}
 
 Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonvertierung von AEM Forms konvertiert Ihre PDF-Formulare automatisch in gerätefreundliche und responsive adaptive Formulare. Unabhängig davon, ob Sie nicht-interaktive PDF-Formulare, Acro Forms oder XFA-basierte PDF-Formulare verwenden, kann der Dienst für die automatische Formularkonvertierung diese Formulare problemlos in adaptive Formulare konvertieren. Informationen zu den Funktionen, zum Konvertierungsablauf und zu Onboarding-Informationen finden Sie unter [Dienst für die automatische Formularkonvertierung](introduction.md).
 
@@ -29,8 +29,7 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 * **(Optional)** [**Quellformular für PDF-Formulare in Adobe Sign konvertieren**](frequently-asked-questions.md)
 
-
-## Konvertierungsprozess starten{#start-the-conversion-process}
+## Konvertierungsprozess starten {#start-the-conversion-process}
 
 Nachdem Sie Ihre AEM-Instanz mit dem Dienst für die automatische Formularkonvertierung von AEM Forms verbunden haben, können Sie Ihre PDF-Formulare in adaptive Formulare konvertieren. Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Formulare zu konvertieren:
 
@@ -38,7 +37,7 @@ Nachdem Sie Ihre AEM-Instanz mit dem Dienst für die automatische Formularkonver
 * [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Überprüfen und korrigieren Sie die konvertierten Formulare](review-correct-ui-edited.md)
 
-### Laden Sie PDF-Formulare auf Ihren AEM Forms-Server hoch{#upload-pdf-forms-to-your-aem-forms-server}
+### Laden Sie PDF-Formulare auf Ihren AEM Forms-Server hoch {#upload-pdf-forms-to-your-aem-forms-server}
 
 Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
@@ -77,6 +76,7 @@ Wenn Sie diese Option nicht auswählen, ordnet der Konvertierungsdienst das/die 
 Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptives Formular ohne Datenmodellbindungen. Nach einer erfolgreichen Konvertierung können Sie ein adaptives Formular einem Formulardatenmodell, einem XML-Schema oder einem JSON-Schema zuordnen. Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/creating-adaptive-form.html).
 
    <!--
+
    Comment Type: draft
 
    <note type="note">
@@ -104,6 +104,17 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
       > Sie benötigen das Connector-Paket 1.1.38 oder höher, um die Funktion  **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden zu können.
 
 
+* (Nur AEM Forms as a Cloud Service) Die [Automatische Konvertierung von Abschnitten in Fragmente] -Option gilt für PDF forms mit mehr als 15 Seiten. Die erkannten Abschnitte der obersten Ebene werden in Fragmente konvertiert. Sie ermöglicht auch verzögertes Laden für alle erstellten Fragmente. Dies trägt zur Beschleunigung der Wiedergabe konvertierter Formulare bei und erleichtert das Laden großer Formulare im adaptiven Formulareditor.
+
+   >[!NOTE]
+   > Verwenden Sie keine responsive Layoutvorlage bei Verwendung der Option &quot;Abschnitte automatisch in Fragmente konvertieren&quot;.
+   > Verwenden Sie den Editor &quot;Überprüfen und Korrigieren&quot;, um kleine Bedienfelder mit einem großen zusammenzuführen. Dadurch wird die Anzahl der Fragmente im konvertierten adaptiven Formular reduziert.
+   > Wenn die Ausnahme &quot;zu viele Aufrufe&quot;auftritt,
+   >
+   > * Strukturieren Sie das Formular neu, um eine vereinfachte Hierarchie zu erstellen.
+   > * [den Wert des Parameters sling.max.calls erhöhen]auf eine hohe Zahl zu setzen, bis die Ausnahme verschwindet.
+   > * [Größe des Caches erhöhen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). Der Fehler tritt auf, wenn das Formular zu komplex ist, eine große Anzahl von Tabellen und eine hierarchische Struktur mit mehreren Ebenen aufweist.
+
 
 1. Tippen Sie auf **[!UICONTROL Konvertierung starten]**. Die Konvertierung wird gestartet. Der Konvertierungsfortschritt wird im Ordner oder im Formular angezeigt, bis die Konvertierung ausgeführt wird. Die Nachricht wird nach Abschluss der Konvertierung durch eine andere Statusmeldung ersetzt (konvertiert, teilweise konvertiert oder Konvertierung fehlgeschlagen). Nach Abschluss der Konvertierung wird auch eine Status-E-Mail an die konfigurierte E-Mail-Adresse gesendet:
 
@@ -115,6 +126,7 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
    Der Konvertierungsdienst lädt das PDF-Formular nur dann automatisch als Vorlage für das Datensatzdokument in das konvertierte adaptive Formular hoch, wenn Sie die Option **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > **[!UICONTROL Eigenschaften der ausgewählten Konfiguration]** > **[!UICONTROL Erweitert]** > **[!UICONTROL Generieren von Datensatzdokument]** aktivieren.
 
    <!--
+
    Comment Type: draft
 
    <note type="note">
@@ -139,6 +151,6 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
    >
    >Wenn der Konvertierungsprozess länger als 60 Minuten dauert und das PDF-Formular noch nicht in ein adaptives Formular konvertiert ist, erstellen Sie einen Ordner in der AEM Forms-Instanz, laden Sie das PDF-Formular in den neu erstellten Ordner hoch und starten Sie die Konvertierung neu.
 
-## Überprüfen und korrigieren Sie die konvertierten Formulare{#review-and-correct-the-converted-forms}
+## Überprüfen und korrigieren Sie die konvertierten Formulare {#review-and-correct-the-converted-forms}
 
 Formulare für die reale Welt stellen komplexe Anforderungen an die Datenerfassung dar. Sobald die automatische Konvertierung abgeschlossen ist, können Kunden die Konvertierungsqualität des Formulars überprüfen und die erforderlichen Aktualisierungen am Formular vornehmen. AEM Forms bietet einen Editor [Überprüfen und Korrigieren](review-correct-ui-edited.md), um die erforderlichen Änderungen vorzunehmen. Sie können die automatische Identifizierung von Formularfeldern verbessern und identifizierte Felder von einem Typ in einen anderen konvertieren. Sie können beispielsweise dazu beitragen, das zweispaltige Layout eines Formulars zu identifizieren und ein Feld, das automatisch als Optionsfeld identifiziert wird, in ein Mehrfachauswahlfeld zu ändern.
