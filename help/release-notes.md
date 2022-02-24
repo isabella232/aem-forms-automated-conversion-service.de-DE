@@ -3,9 +3,9 @@ title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonve
 description: Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: eab71506513605728d8f925ab6e7e9bead7ca6fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '454'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Dienst für die automatische Formularkonvertierung wird ständig verbessert. Bes
 
 ## 24. Februar 2022 (AFC-2022.02.0) {#feb-2022}
 
-* Funktion hinzugefügt zu [Automatische Konvertierung von Abschnitten in Fragmente](convert-existing-forms-to-adaptive-forms.md) um die Rendering-Geschwindigkeit konvertierter Formulare zu verbessern und das Laden großer Formulare im adaptiven Formulareditor zu erleichtern.
+* Es wurde die Möglichkeit hinzugefügt, [Abschnitte automatisch in Fragmente zu konvertieren](convert-existing-forms-to-adaptive-forms.md), um die Darstellungsgeschwindigkeit von konvertierten Formularen zu verbessern und das Laden großer Formulare im Editor für adaptive Formulare zu erleichtern.
 
 ## 29. August 2021 (AFC-2021.08.0) {#aug-2021}
 
