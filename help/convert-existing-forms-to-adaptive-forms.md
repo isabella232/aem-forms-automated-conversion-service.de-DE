@@ -9,9 +9,9 @@ topic-tags: forms
 discoiquuid: 9358219c-6079-4552-92b9-b427a23811af
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
 source-git-commit: 5f07f5df6369007a491cf0873839f84a61827cb5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1740'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -33,11 +33,11 @@ Der von Adobe Sensei unterstützte Dienst für die automatische Formularkonverti
 
 Nachdem Sie Ihre AEM-Instanz mit dem Dienst für die automatische Formularkonvertierung von AEM Forms verbunden haben, können Sie Ihre PDF-Formulare in adaptive Formulare konvertieren. Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um die Formulare zu konvertieren:
 
-* [Laden Sie PDF-Formulare auf Ihren AEM Forms-Server hoch](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
+* [Laden Sie PDF-Formulare auf Ihren AEM-Formular-Server hoch](convert-existing-forms-to-adaptive-forms.md#upload-pdf-forms-to-your-aem-forms-server)
 * [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#run-the-conversion)
 * [Überprüfen und korrigieren Sie die konvertierten Formulare](review-correct-ui-edited.md)
 
-### Laden Sie PDF-Formulare auf Ihren AEM Forms-Server hoch {#upload-pdf-forms-to-your-aem-forms-server}
+### Laden Sie PDF-Formulare auf Ihren AEM-Formular-Server hoch {#upload-pdf-forms-to-your-aem-forms-server}
 
 Der Konvertierungsdienst konvertiert PDF-Formulare, die in Ihrer AEM Forms-Instanz verfügbar sind, in adaptive Formulare. Sie können alle PDF-Formulare je nach Bedarf gleichzeitig oder schrittweise hochladen. Beachten Sie vor dem Hochladen der Formulare Folgendes:
 
@@ -101,25 +101,25 @@ Wenn Sie diese Option auswählen, generiert der Konvertierungsdienst ein adaptiv
    * Standardmäßig erstellt der Dienst für jede Seite eines PDF-Formulars ein separates Bedienfeld der obersten Ebene. Jetzt können Sie die Option **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden, um keine Bereiche auf Seitenebene (Bereiche auf Seitenzahl-Basis) und nur logische Bereiche zu erstellen. Außerdem werden die Felder, die zu keinem Abschnitt mit dem vorhergehenden logischen Abschnitt gehören, und die Felder eines logischen Abschnitts, die auf zwei benachbarte Seiten verteilt sind, zu einem einzigen logischen Abschnitt zusammengefasst. Wenn sich beispielsweise einige Felder eines logischen Abschnitts am Ende von Seite eins und einige am Anfang von Seite zwei befinden, werden alle diese Felder in einem einzigen logischen Abschnitt zusammengefasst.
 
       >[!NOTE]
-      > Sie benötigen das Connector-Paket 1.1.38 oder höher, um die Funktion  **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden zu können.
+      > Sie benötigen das Connector-Paket 1.1.38 oder höher, um die Funktion **[!UICONTROL Logische Abschnitte automatisch erkennen]** verwenden zu können.
 
 
-* (Nur AEM Forms as a Cloud Service) Die [Automatische Konvertierung von Abschnitten in Fragmente] -Option gilt für PDF forms mit mehr als 15 Seiten. Die erkannten Abschnitte der obersten Ebene werden in Fragmente konvertiert. Sie ermöglicht auch verzögertes Laden für alle erstellten Fragmente. Dies trägt zur Beschleunigung der Wiedergabe konvertierter Formulare bei und erleichtert das Laden großer Formulare im adaptiven Formulareditor.
+* (Nur AEM Forms as a Cloud Service) Die Option [Automatische Konvertierung von Abschnitten in Fragmente] gilt für PDF-Formulare mit mehr als 15 Seiten. Die erkannten Abschnitte der obersten Ebene werden in Fragmente konvertiert. Es ist auch ein verzögertes Laden für alle erstellten Fragmente möglich. Dies trägt zur Beschleunigung der Darstellungsgeschwindigkeit konvertierter Formulare bei und erleichtert das Laden großer Formulare im Editor für adaptive Formulare.
 
    >[!NOTE]
-   > Verwenden Sie keine responsive Layoutvorlage bei Verwendung der Option &quot;Abschnitte automatisch in Fragmente konvertieren&quot;.
-   > Verwenden Sie den Editor &quot;Überprüfen und Korrigieren&quot;, um kleine Bedienfelder mit einem großen zusammenzuführen. Dadurch wird die Anzahl der Fragmente im konvertierten adaptiven Formular reduziert.
-   > Wenn die Ausnahme &quot;zu viele Aufrufe&quot;auftritt,
+   > Verwenden Sie keine responsive Layout-Vorlage bei Verwendung der Option „Abschnitte automatisch in Fragmente konvertieren“.
+   > Verwenden Sie den Editor zum Überprüfen und Korrigieren, um kleine Bedienfelder zu einem großen zusammenzuführen. Dadurch wird die Anzahl der Fragmente im konvertierten adaptiven Formular reduziert.
+   > Wenn die Ausnahme „zu viele Aufrufe“ auftritt,
    >
-   > * Strukturieren Sie das Formular neu, um eine vereinfachte Hierarchie zu erstellen.
-   > * [den Wert des Parameters sling.max.calls erhöhen]auf eine hohe Zahl zu setzen, bis die Ausnahme verschwindet.
-   > * [Größe des Caches erhöhen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). Der Fehler tritt auf, wenn das Formular zu komplex ist, eine große Anzahl von Tabellen und eine hierarchische Struktur mit mehreren Ebenen aufweist.
+   > * strukturieren Sie das Formular neu, um eine vereinfachte Hierarchie zu erstellen und
+   > * [erhöhen Sie den Wert des Parameters sling.max.calls] auf eine genügend hohe Zahl, bis die Ausnahme verschwindet.
+   > * [erhöhen Sie die Größe des Cache](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html?lang=de). Der Fehler tritt auf, wenn das Formular zu komplex ist, eine große Anzahl von Tabellen und eine hierarchische Struktur mit mehreren Ebenen aufweist.
 
 
 1. Tippen Sie auf **[!UICONTROL Konvertierung starten]**. Die Konvertierung wird gestartet. Der Konvertierungsfortschritt wird im Ordner oder im Formular angezeigt, bis die Konvertierung ausgeführt wird. Die Nachricht wird nach Abschluss der Konvertierung durch eine andere Statusmeldung ersetzt (konvertiert, teilweise konvertiert oder Konvertierung fehlgeschlagen). Nach Abschluss der Konvertierung wird auch eine Status-E-Mail an die konfigurierte E-Mail-Adresse gesendet:
 
    * Bei einer erfolgreichen Konvertierung werden das konvertierte adaptive Formular und das zugehörige Schema in den Pfad heruntergeladen, der auf der Registerkarte **[!UICONTROL Standard]** des Konvertierungsdialogs angegeben ist. Formularfragmente und das entsprechende Schema werden nur heruntergeladen, wenn vor dem Start der Konvertierung die Option „Fragment extrahieren“ ausgewählt ist.
-   * Bei einer fehlgeschlagenen Konvertierung wird die Meldung **[!UICONTROL Konvertierung fehlgeschlagen]** angezeigt, wenn alle Eingabeformulare nicht konvertiert werden konnten. Wenn nur einige der Eingabeformulare nicht konvertiert werden konnten, wird die Meldung **[!UICONTROL Teilweise fehlgeschlagen]** angezeigt. Eine Status-E-Mail wird an die [konfigurierte E-Mail-Adresse ](configure-service.md#configureemailnotification) gesendet und ein Fehler in der Datei error.log protokolliert.
+   * Bei einer fehlgeschlagenen Konvertierung wird die Meldung **[!UICONTROL Konvertierung fehlgeschlagen]** angezeigt, wenn alle Eingabeformulare nicht konvertiert werden konnten. Wenn nur einige der Eingabeformulare nicht konvertiert werden konnten, wird die Meldung **[!UICONTROL Teilweise fehlgeschlagen]** angezeigt. Eine Status-E-Mail wird an die [konfigurierte E-Mail-Adresse](configure-service.md#configureemailnotification) gesendet und ein Fehler in der Datei error.log protokolliert.
 
    Wenn Sie ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren, ordnet der Konvertierungsdienst das PDF-Formular automatisch dem konvertierten adaptiven Formular als Datensatzdokumentvorlage zu. Sie können die Eigenschaften des adaptiven Formulars nach der Konvertierung öffnen, um die Datensatzdokumentvorlage im Abschnitt **[!UICONTROL Konfiguration der Datensatzdokumentvorlage]** der Registerkarte **[!UICONTROL Formularmodell]** anzuzeigen. </br>
 
