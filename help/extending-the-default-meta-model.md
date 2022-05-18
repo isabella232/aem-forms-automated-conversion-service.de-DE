@@ -8,7 +8,7 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 source-git-commit: e3ba3807668084495acb77f57ea2da6d5a53e626
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2594'
 ht-degree: 100%
 
@@ -272,7 +272,7 @@ Führen Sie die folgenden Schritte aus, um während der Konvertierung ein benutz
 1. Erstellen Sie einen Ordner in **[!UICONTROL Formulare]** > **[!UICONTROL Formulare und Dokumente]** und laden Sie die benutzerdefinierte JSON-Schemadatei für das Metamodell in den Ordner hoch.
 1. Öffnen Sie die Eigenschaften des Konvertierungsdienstes mit:
 
-   **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > **&lt;Eigenschaften der ausgewählten Konfiguration>**
+   **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > **&lt;Eigenschaften der ausgewählten Konfiguration>**
 
 1. Geben Sie auf der Registerkarte **[!UICONTROL Standard]** den Speicherort des benutzerdefinierten Metamodells im Feld **[!UICONTROL Benutzerdefiniertes Metamodell]** an und tippen Sie auf **[!UICONTROL Speichern und Schließen]**.
 1. [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process), um das benutzerdefinierte Metamodell auf den Konvertierungsprozess anzuwenden.
@@ -430,10 +430,10 @@ In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den 
 
 In diesem benutzerdefinierten Metamodell verwendet der Konvertierungsdienst den Text in **aem:affKeyword** als Suchschlüsselwort. Nach Abrufen des Textes **Land** im Formular wandelt der Konvertierungsdienst das Feld in die folgenden Dropdown-Listen-Optionen mit der Eigenschaft **enum** um:
 
-* Indien
+* India
 * England
-* Australien
-* Neuseeland
+* Australia
+* New Zealand
 
 Die Eigenschaften **sling:resourceType** und **guideNodeClass** ordnen ein Formularfeld der Dropdown-Komponente des adaptiven Formulars zu.
 
