@@ -12,8 +12,8 @@ feature: Adaptive Forms
 role: User
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
