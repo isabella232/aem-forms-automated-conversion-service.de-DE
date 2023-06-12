@@ -3,7 +3,7 @@ title: Neuerungen? Versionshinweise - Dienst für die automatische Formularkonve
 description: Erfahren Sie mehr über die neuesten Funktionen und Fehler, die für den Dienst für die automatische Formularkonvertierung behoben wurden
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 100%
 
