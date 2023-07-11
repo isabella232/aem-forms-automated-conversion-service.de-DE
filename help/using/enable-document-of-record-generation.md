@@ -9,7 +9,7 @@ contentOwner: khsingh
 discoiquuid: 75f6e6bc-7636-4b40-919c-8b20a6ccbb1f
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '939'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Dieser Artikel beschreibt die empfohlenen Pfade zum Generieren eines Datensatzdo
  </tbody> 
 </table>
 
-## Generieren von Datensatzdokumenten für nicht-interaktive PDF-Formulare {#generate-document-of-record-non-interactive-pdf}
+## Generieren eines Datensatzdokuments für nicht-interaktive PDF-Formulare {#generate-document-of-record-non-interactive-pdf}
 
 Wenn Sie ein nicht-interaktives PDF-Formular als Quellformular für den Dienst zur automatischen Formularkonvertierung verwenden, haben Sie folgende Möglichkeiten:
 
@@ -125,7 +125,7 @@ Wenn Sie ein Acro Form oder ein XFA-basiertes PDF-Formular als Quellformular fü
 
 * oder bearbeiten Sie die Eigenschaften des adaptiven Formulars nach der Konvertierung in ein adaptives Formular, um die Datensatzdokument-Generierung unter Verwendung der Standardvorlage, des Quellformulars als Vorlage oder einer beliebigen anderen Formularvorlage zu ermöglichen
 
-### Aktivieren Sie die Datensatzdokument-Generierung vor der Konvertierung, um Datensatzdokumente mithilfe einer Quellvorlage zu generieren {#use-input-form-as-template-to-generate-document-of-record}
+### Aktivieren der Datensatzdokument-Generierung vor der Konvertierung, um Datensatzdokumente mithilfe einer Quellvorlage zu generieren {#use-input-form-as-template-to-generate-document-of-record}
 
 1. Wählen Sie die Option **[!UICONTROL Tools]** > **[!UICONTROL Cloud-Dienste]** > **[!UICONTROL Konfiguration der automatischen Formularkonvertierung]** > Eigenschaften der für die Konvertierung verwendeten Cloud-Konfiguration > **[!UICONTROL Erweitert]** > **[!UICONTROL Datensatzdokument erstellen]**.
 
