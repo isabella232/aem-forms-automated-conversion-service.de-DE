@@ -5,14 +5,14 @@ uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1214'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 
-# Integrieren adaptiver Formulare in Datenbank mithilfe von Forms Portal {#submit-forms-to-database-using-forms-portal}
+# Integrieren adaptiver Formulare in die Datenbank mithilfe von Forms Portal {#submit-forms-to-database-using-forms-portal}
 
 Mit dem Dienst zur automatischen Formularkonvertierung können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
 
@@ -34,11 +34,11 @@ Das in diesem Artikel gezeigte Beispiel ist eine Referenzimplementierung benutze
 * Konfigurieren Sie den [Dienst für die automatische Formularkonvertierung](configure-service.md)
 * Richten Sie eine Datenbank ein. Die in der Beispielimplementierung verwendete Datenbank ist MySQL 5.6.24. Sie können das konvertierte adaptive Formular jedoch in jede beliebige Datenbank Ihrer Wahl integrieren.
 
-## Verbindung zwischen der AEM-Instanz und der Datenbank einrichten {#set-up-connection-aem-instance-database}
+## Einrichten der Verbindung zwischen der AEM-Instanz und der Datenbank {#set-up-connection-aem-instance-database}
 
 Zur Einrichtung einer Verbindung zwischen einer AEM-Instanz und einer MYSQL-Datenbank gehören folgende Schritte:
 
-* [Installation eines MYSQL-Connector-Pakets](#install-mysql-connector-java-file)
+* [MYSQL-Connector-Paket installieren](#install-mysql-connector-java-file)
 
 * [Schema und Tabellen in der Datenbank erstellen](#create-schema-and-tables-in-database)
 
@@ -57,7 +57,7 @@ Führen Sie die folgenden Schritte auf allen Autoren- und Veröffentlichungsinst
 1. Klicken Sie auf **[!UICONTROL Installieren]** oder **[!UICONTROL Aktualisieren]**. Wenn dies abgeschlossen ist, starten Sie den Server neu.
 1. (Nur Windows) Deaktivieren Sie die System-Firewall für Ihr Betriebssystem.
 
-### Schema und Tabellen in der Datenbank erstellen {#create-schema-and-tables-in-database}
+### Erstellen von Schema und Tabellen in der Datenbank {#create-schema-and-tables-in-database}
 
 Führen Sie die folgenden Schritte aus, um ein Schema und Tabellen in der Datenbank zu erstellen:
 
@@ -160,32 +160,32 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     <th><strong>Wert</strong></th> 
     </tr> 
     <tr> 
-    <td><p>Forms Portal-Datendienst für Entwurf</p></td> 
-    <td><p>Bezeichner für den Datendienst für Entwurf</p></td>
+    <td><p>Entwurfs-Datendienst des Formularportals</p></td> 
+    <td><p>Kennung für Entwurfs-Datendienst</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Forms Portal-Metadatendienst für Entwurf</p></td> 
+    <td><p>Entwurfs-Metadatendienst des Formularportals</p></td> 
     <td><p>Bezeichner für den Dienst für Entwurfs-Metadaten</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Forms Portal-Datendienst für Übermittlung</p></td> 
+    <td><p>Übermittlungs-Datendienst des Formularportals</p></td> 
     <td><p>Bezeichner für den Dienst zur Datenübermittlung</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Forms Portal-Metadatendienst für Übermittlung</p></td> 
+    <td><p>Übermittlungs-Metadatendienst des Formularportals</p></td> 
     <td><p>Bezeichner für den Dienst Metadatenübermittlung</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Forms Portal-Dienst für ausstehende Sign-Daten</p></td> 
+    <td><p>Datendienst für ausstehende Signaturen des Formularportals</p></td> 
     <td><p>Bezeichner für den Dienst für Daten zu ausstehende Signaturen</p></td>
     <td><p>formsportal.sampledataservice</p></td> 
     </tr>
     <tr> 
-    <td><p>Forms Portal-Metadatendienst für ausstehende Signaturen</p></td> 
+    <td><p>Metadatendienst für ausstehende Signaturen des Formularportals</p></td> 
     <td><p>Bezeichner für den Dienst für Metadaten zu ausstehende Signaturen</p></td>
     <td><p>formsportal.samplemetadataservice</p></td> 
     </tr>
@@ -210,7 +210,7 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tr>
     <tr> 
     <td><p>JDBC-Verbindungs-URI</p></td> 
-    <td><p>jdbc:mysql://[Host]:[Anschluss]/[Schemaname]</p></td>
+    <td><p>jdbc:mysql://[host]:[port]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Benutzername</p></td> 
@@ -218,10 +218,10 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tr>
     <tr> 
     <td><p>Kennwort</p></td> 
-    <td><p>Kennwort für den Benutzernamen</p></td>
+    <td><p>Passwort für den Benutzernamen</p></td>
     </tr>
     <tr> 
-    <td><p>Transaktionsisolation</p></td> 
+    <td><p>Transaktions-Isolierung</p></td> 
     <td><p>READ_COMMITTED</p></td>
     </tr>
     <tr> 
@@ -245,25 +245,25 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     <td><p>100000</p></td>
     </tr>
      <tr> 
-    <td><p>Borgentest</p></td> 
+    <td><p>Test zu Leihung</p></td> 
     <td><p>Aktiviert</p></td>
     </tr>
      <tr> 
-    <td><p>Testen beim Leerlauf</p></td> 
+    <td><p>Test bei Inaktivität</p></td> 
     <td><p>Aktiviert</p></td>
     </tr>
      <tr> 
-    <td><p>Überprüfungsabfrage</p></td> 
+    <td><p>Validierungsabfrage</p></td> 
     <td><p>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Validation Query Timeout</p></td> 
+    <td><p>Maximale Wartezeit der Validierungsabfrage</p></td> 
     <td><p>10000</p></td>
     </tr>
     </tbody> 
     </table>
 
-### Beispiel installieren und konfigurieren {#set-up-and-configure-sample}
+### Einrichten und Konfigurieren des Beispiels {#set-up-and-configure-sample}
 
 Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinstanzen durch, um das Beispiel zu installieren und zu konfigurieren:
 
@@ -276,7 +276,7 @@ Führen Sie die folgenden Schritte für alle Autoren- und Veröffentlichungsinst
 1. Navigieren Sie zum Paket **aem-fp-db-integration-sample-pkg-6.1.2.zip**, wählen Sie es aus und klicken Sie auf **[!UICONTROL OK]**.
 1. Klicken Sie neben dem Paket auf **[!UICONTROL Installieren]**, um das Paket zu installieren.
 
-## Konfigurieren des konvertierten adaptiven Formulars für die Integration von Forms Portal {#configure-converted-adaptive-form-for-forms-portal-integration}
+## Konfigurieren des konvertierten adaptiven Formulars für die Integration ins Formularportal {#configure-converted-adaptive-form-for-forms-portal-integration}
 
 Führen Sie die folgenden Schritte aus, um die Übermittlung des adaptiven Formulars über die Seite „Formularportal“ zu aktivieren:
 1. [Führen Sie die Konvertierung aus](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process), um ein Quellformular in ein adaptives Formular zu konvertieren.
@@ -285,7 +285,7 @@ Führen Sie die folgenden Schritte aus, um die Übermittlung des adaptiven Formu
 1. Wählen Sie im Abschnitt **[!UICONTROL Sendung]** **[!UICONTROL Forms Portal-Sendeaktion]** aus der Dropdown-Liste **[!UICONTROL Sendeaktion]**.
 1. Tippen Sie auf ![Vorlagenrichtlinie speichern](assets/edit_template_done.png), um die Einstellungen zu speichern.
 
-## Erstellen und Konfigurieren der Forms Portal-Seite {#create-configure-forms-portal-page}
+## Erstellen und Konfigurieren der Formularportal-Seite {#create-configure-forms-portal-page}
 
 Führen Sie die folgenden Schritte aus, um eine Forms Portal-Seite zu erstellen und zu konfigurieren, damit Sie über diese Seite adaptive Formulare senden können:
 
