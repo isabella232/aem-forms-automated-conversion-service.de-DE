@@ -6,13 +6,13 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Integrieren des adaptiven Formulars mithilfe des AEM-Workflows in die Datenbank {#submit-forms-to-database-using-forms-portal}
+# Integrieren eines adaptiven Formulars mithilfe des AEM-Workflows in die Datenbank {#submit-forms-to-database-using-forms-portal}
 
 Mit dem Dienst zur automatischen Formularkonvertierung können Sie ein nicht-interaktives PDF-Formular, ein Acro Form oder ein XFA-basiertes PDF-Formular in ein adaptives Formular konvertieren. Während Sie den Konvertierungsprozess starten, haben Sie die Möglichkeit, ein adaptives Formular mit oder ohne Datenbindung zu generieren.
 
@@ -98,7 +98,7 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tr>
     <tr> 
     <td><p>JDBC-Verbindungs-URI</p></td> 
-    <td><p>jdbc:mysql://[Host]:[Anschluss]/[Schemaname]</p></td>
+    <td><p>jdbc:mysql://[host]:[port]/[schema_name]</p></td>
     </tr>
     <tr> 
     <td><p>Benutzername</p></td> 
@@ -106,10 +106,10 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     </tr>
     <tr> 
     <td><p>Kennwort</p></td> 
-    <td><p>Kennwort für den Benutzernamen</p></td>
+    <td><p>Passwort für den Benutzernamen</p></td>
     </tr>
     <tr> 
-    <td><p>Transaktionsisolation</p></td> 
+    <td><p>Transaktions-Isolierung</p></td> 
     <td><p>READ_COMMITTED</p></td>
     </tr>
     <tr> 
@@ -133,19 +133,19 @@ Führen Sie die folgenden Konfigurationsschritte aus, um eine Verbindung zwische
     <td><p>100000</p></td>
     </tr>
      <tr> 
-    <td><p>Borgentest</p></td> 
+    <td><p>Test zu Leihung</p></td> 
     <td><p>Aktiviert</p></td>
     </tr>
      <tr> 
-    <td><p>Testen beim Leerlauf</p></td> 
+    <td><p>Test bei Inaktivität</p></td> 
     <td><p>Aktiviert</p></td>
     </tr>
      <tr> 
-    <td><p>Überprüfungsabfrage</p></td> 
+    <td><p>Validierungsabfrage</p></td> 
     <td><p>Beispielwerte sind SELECT 1(mysql), select 1 from dual(oracle), SELECT 1(MS Sql Server) (validationQuery)</p></td>
     </tr>
      <tr> 
-    <td><p>Validation Query Timeout</p></td> 
+    <td><p>Maximale Wartezeit der Validierungsabfrage</p></td> 
     <td><p>10000</p></td>
     </tr>
     </tbody> 
@@ -216,7 +216,7 @@ Melden Sie sich bei **crx-repository** an und navigieren Sie zu */content/forms/
 
 Sie müssen jetzt ein Arbeitsablaufmodell erstellen, das diese Daten verarbeiten und über das in den vorherigen Abschnitten erstellte Formulardatenmodell an die MYSQL-Datenbank senden kann.
 
-## Erstellen Sie ein Arbeitsablaufmodell zur Verarbeitung von JSON-Daten {#create-workflow-model}
+## Erstellen Sie ein Workflow-Modell zur Verarbeitung von JSON-Daten {#create-workflow-model}
 
 Führen Sie die folgenden Schritte aus, um ein Arbeitsablaufmodell zum Senden der adaptiven Formulardaten an die Datenbank zu erstellen:
 
