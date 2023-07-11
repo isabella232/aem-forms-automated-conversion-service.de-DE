@@ -10,13 +10,13 @@ discoiquuid: cad34fff-7f9f-4a27-8b5c-d0a523903eec
 privatebeta: true
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
 source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2574'
 ht-degree: 100%
 
 ---
 
-# Empfohlene datenquellenbasierte Vorfüll- und Übermittlungsarbeitsabläufe für adaptive Formulare {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
+# Empfohlene datenquellenbasierte Vorfüll- und Übermittlungs-Workflows für adaptive Formulare {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
 Sie können eine der folgenden Datenquellen mit adaptiven Formularen verwenden, die mit dem Dienst für die automatische Formularkonvertierung konvertiert wurden:
 
@@ -93,12 +93,12 @@ In diesem Artikel werden die empfohlenen Arbeitsabläufe zum Vorausfüllen von F
 
 Weitere Informationen zum Dienst für die automatische Formularkonvertierung finden Sie in den folgenden Artikeln:
 
-* [Einführung in den Automated Forms Conversion Service (AFCS)](introduction.md)
-* [Service für die automatisierte Formularkonvertierung konfigurieren](configure-service.md)
+* [Einführung in den Dienst für die automatische Formularkonvertierung (AFCS)](introduction.md)
+* [Konfigurieren des Dienstes für die automatische Formularkonvertierung](configure-service.md)
 * [Konvertieren von Druckformularen in adaptive Formulare](convert-existing-forms-to-adaptive-forms.md)
 * [Überprüfen und Korrigieren konvertierter Formulare](review-correct-ui-edited.md)
 
-Den Informationen in diesem Artikel liegt die Annahme zugrunde dass jeder, der sie liest, über Grundkenntnisse der Konzepte für adaptive Formulare verfügt.
+Den Informationen in diesem Artikel liegt die Annahme zugrunde, dass alle, die ihn lesen, über Grundkenntnisse der Konzepte für adaptive Formulare verfügen.
 
 ## Voraussetzungen {#pre-requisites}
 
@@ -231,7 +231,7 @@ Verwenden Sie den [Dienst für die automatische Formularkonvertierung](convert-e
 
 Wählen Sie nach dem Generieren eines adaptiven Formulars ohne Datenbindung eine Datenquelle für das adaptive Formular aus:
 
-* [Datenbank, OData oder beliebiger Drittanbieter-Dienst](#sqldatasource)
+* [Datenbank, OData oder ein beliebiger Drittanbieter-Dienst](#sqldatasource)
 * [JSON-Schema](#jsondatasource)
 * [XSD-Schema](#xsddatasource)
 
@@ -239,7 +239,7 @@ Wählen Sie nach dem Generieren eines adaptiven Formulars ohne Datenbindung eine
 > Wenn das adaptive Formular, das Sie mit dem Dienst für die automatische Formularkonvertierung konvertieren, mehrere Felder mit demselben Namen enthält, stellen Sie sicher, dass diese Felder an Datenquellenentitäten gebunden sind, um einen möglichen Datenverlust während der Übermittlung zu vermeiden.
 >
 
-### Datenbank, OData oder Dienste von Drittanbietern als Datenquelle verwenden {#sqldatasource}
+### Verwenden einer Datenbank, von OData oder beliebigen Drittanbieter-Diensten als Datenquelle {#sqldatasource}
 
 Anwendungsfall: Sie generieren unter Verwendung des Dienstes für die automatische Formularkonvertierung ein adaptives Formular ohne Datenbindung und konfigurieren die MYSQL-Datenbank als Datenquelle. Sie binden die adaptiven Formularfelder manuell an Entitäten des Formulardatenmodells und verwenden die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**, um Feldwerte vorab auszufüllen. Verwenden Sie die Option **[!UICONTROL Senden mit Formulardatenmodell]**, um das adaptive Formular zu senden.
 
@@ -321,7 +321,7 @@ Führen Sie die folgenden Schritte aus, um mit dem [Regeleditor](https://helpx.a
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### JSON-Schema als Datenquelle verwenden {#jsondatasource}
+### Verwenden eines JSON-Schemas als Datenquelle {#jsondatasource}
 
 **Anwendungsfall**: Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung und konfigurieren das JSON-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das JSON-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
 
@@ -349,7 +349,7 @@ Führen Sie die folgenden Schritte aus:
 
    `http://host name:port/crx/de/index.jsp#/content/forms/fp/admin/submit/data/latest file available in the folder`
 
-### XSD-Schema als Datenquelle verwenden {#xsddatasource}
+### Verwenden eines XSD-Schemas als Datenquelle {#xsddatasource}
 
 **Anwendungsfall**: Sie generieren ein adaptives Formular ohne Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung und konfigurieren das XSD-Schema als Datenquelle. Sie binden die Felder des adaptiven Formulars manuell an das XSD-Schema und verwenden die Option **Vorschau mit Daten**, um Feldwerte im Voraus auszufüllen. Ändern Sie gegebenenfalls die Feldwerte und senden Sie die Daten an das crx-Repository.
 
@@ -383,7 +383,7 @@ Verwenden Sie den [Dienst für die automatische Formularkonvertierung](convert-e
 
 ![Adaptives Formular mit JSON-Bindung](assets/generate_af_with_data_bindings.png)
 
-### JSON-Schema als Datenquelle verwenden {#jsonwithdatabinding}
+### Verwenden eines JSON-Schemas als Datenquelle {#jsonwithdatabinding}
 
 **Anwendungsfall**: Sie generieren ein adaptives Formular mit JSON-Datenbindung unter Verwendung des Dienstes für die automatische Formularkonvertierung. Die Funktionen zum Vorausfüllen und zum Senden funktionieren nahtlos. Sie benötigen keine Konfigurationsschritte.
 
