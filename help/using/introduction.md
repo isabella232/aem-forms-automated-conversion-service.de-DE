@@ -1,17 +1,17 @@
 ---
-title: Einführung in den automatischen Formularkonvertierungsdienst
+title: Einführung in den automated forms conversion-Dienst
 description: Schnellere Konvertierung von Druckformularen in adaptive Formulare
 solution: Experience Manager Forms
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 topic: Administration
 topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
-workflow-type: ht
-source-wordcount: '708'
-ht-degree: 100%
+source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 99%
 
 ---
 
